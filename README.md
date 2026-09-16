@@ -201,13 +201,9 @@ An NLP-focused project exploring natural language processing techniques using Py
 ## 📊 GitHub Activity
 
 <p align="center">
+  <img src="https://img.shields.io/github/followers/BijoySarkar19?style=for-the-badge&logo=github&label=Followers" alt="GitHub Followers" />
 
-  <img src="https://img.shields.io/github/followers/BijoySarkar19?style=for-the-badge&logo=github&label=Followers" />
-
-  <img src="https://img.shields.io/github/stars/BijoySarkar19?style=for-the-badge&logo=github&label=Total%20Stars" />
-
-  <img src="https://img.shields.io/github/repos/BijoySarkar19?style=for-the-badge&logo=github&label=Repositories" />
-
+  <img src="https://img.shields.io/github/stars/BijoySarkar19?style=for-the-badge&logo=github&label=Total%20Stars" alt="GitHub Stars" />
 </p>
 
 ---
