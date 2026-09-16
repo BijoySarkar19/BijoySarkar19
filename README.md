@@ -201,8 +201,11 @@ An NLP-focused project exploring natural language processing techniques using Py
 ## 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BijoySarkar19&show_icons=true&theme=github_dark&hide_border=true" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BijoySarkar19&layout=compact&theme=github_dark&hide_border=true" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=BijoySarkar19&show_icons=true&theme=github_dark&hide_border=true&cache_seconds=86400" alt="Bijoy's GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BijoySarkar19&layout=compact&theme=github_dark&hide_border=true&cache_seconds=86400" alt="Top Languages" />
 </p>
 
 ---
