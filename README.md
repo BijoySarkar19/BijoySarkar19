@@ -91,6 +91,10 @@ Currently pursuing my Bachelor's degree in Computer Science & Engineering.
 
 **Swami Dhananjay Das Kathia Baba Mission School**
 
+### 🏫 Secondary Education
+
+**Pranavananda Vidya Mandir**
+
 ---
 
 ## 💼 Internship Experience
@@ -228,7 +232,7 @@ An NLP-focused project exploring natural language processing techniques using Py
   <a href="https://github.com/BijoySarkar19">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="YOUR_LINKEDIN_URL">
+  <a href="www.linkedin.com/in/bijoysarkar19">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="mailto:bijoysarkar7252@gmail.com">
