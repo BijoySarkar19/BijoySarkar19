@@ -198,7 +198,7 @@ An NLP-focused project exploring natural language processing techniques using Py
 
 ---
 
-## 📊 GitHub Statistics
+## 📊 GitHub Activity
 
 <p align="center">
 
