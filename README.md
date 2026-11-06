@@ -203,11 +203,17 @@ Natural-language-processing experiments using Python and real-world datasets.
 ## RECENTLY UPDATED REPOSITORIES
 
 <!-- RECENT-REPOS:START -->
-<div align="center">
 
-[![Browse Public Repositories](https://img.shields.io/badge/EXPLORE_MY_PROJECTS-View_All_Repositories-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
+<!-- AUTO-UPDATED FROM THE GITHUB API -->
+- **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
+  <sub>HTML · ★ 0 · Updated Nov 2026</sub>
+- **[priv](https://github.com/BijoySarkar19/priv)** — No description provided.  
+  <sub>★ 0 · Updated Nov 2026</sub>
+- **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — 🚀 Full-stack developer portfolio & intelligent systems showcase. Features a 300-frame scroll canvas, AI/ML engineering proje  
+  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
+- **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — My professional CV created using LaTeX  
+  <sub>TeX · ★ 0 · Updated Nov 2026</sub>
 
-</div>
 <!-- RECENT-REPOS:END -->
 
 ---
