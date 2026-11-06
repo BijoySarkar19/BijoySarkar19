@@ -1,264 +1,196 @@
-# Hi 👋, I'm Bijoy Sarkar
+<div align="center">
 
-### 💻 B.Tech CSE Student | Software Developer | AI/ML Enthusiast
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:071426,45:102A4C,100:2563EB&height=210&section=header&text=BIJOY%20SARKAR&fontSize=48&fontColor=EAF2FF&animation=fadeIn&fontAlignY=36&desc=Software%20Developer%20%7C%20AI%2FML%20Enthusiast&descAlignY=58&descSize=17" alt="Animated navy blue header" />
 
-I'm a Computer Science Engineering student passionate about building practical software solutions and exploring **Artificial Intelligence, Machine Learning, Full-Stack Development, App Development, and Cybersecurity**.
+<a href="https://github.com/BijoySarkar19">
+  <img src="https://github.com/BijoySarkar19.png" width="145" alt="Bijoy Sarkar profile photo" />
+</a>
 
-I enjoy turning ideas into working projects and continuously improving my programming and problem-solving skills.
+<br/>
 
----
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=900&color=60A5FA&center=true&vCenter=true&width=700&lines=B.Tech+CSE+Student;Software+Developer;AI%2FML+%26+Computer+Vision+Enthusiast;Full-Stack+%26+App+Developer;Build.+Learn.+Improve.+Repeat." alt="Animated typing introduction" />
 
-## 🚀 About Me
+<br/>
 
-* 🎓 Pursuing **B.Tech in Computer Science & Engineering**
-* 💻 Interested in **Software Development and AI/ML**
-* 🤖 Building projects using **Python, Machine Learning, Computer Vision and NLP**
-* 📱 Experience in **Flutter & Mobile App Development**
-* 🌐 Experience in **Full-Stack Web Development**
-* 🔐 Interested in **Cybersecurity**
-* 🧠 Currently improving my **Data Structures & Algorithms and software development skills**
-* 🚀 Always learning, building and experimenting with new technologies
-* 💼 Open to **internships, entry-level opportunities and collaborations**
+<a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+<a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-Follow-1D4ED8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-2563EB?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-1E40AF?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 
----
+<br/><br/>
 
-## 💻 Programming Languages
+<img src="https://komarev.com/ghpvc/?username=BijoySarkar19&style=for-the-badge&color=1D4ED8&label=PROFILE+VIEWS" alt="Profile views" />
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-</p>
+</div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:071426,100:1D4ED8&height=3&section=header" width="100%" alt="" />
 
-## 🛠️ Technologies & Tools
+## `01 / ABOUT ME`
 
-### 🤖 AI / Machine Learning
+```yaml
+name: Bijoy Sarkar
+education: B.Tech Computer Science & Engineering
+university: ICFAI University Tripura
+interests:
+  - Software Development
+  - Artificial Intelligence & Machine Learning
+  - Computer Vision and NLP
+  - Full-Stack and Mobile App Development
+  - Cybersecurity
+currently_learning:
+  - Data Structures & Algorithms
+  - Production-ready software engineering
+  - AI/ML and scalable application development
+open_to: Internships, entry-level opportunities, collaborations
+```
 
-<p>
-  <img src="https://img.shields.io/badge/Machine_Learning-102230?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Computer_Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
-  <img src="https://img.shields.io/badge/NLP-FF6F00?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
-</p>
+I enjoy turning ideas into working software, experimenting with emerging technologies, and continuously improving my programming and problem-solving skills.
 
-### 🌐 Web Development
+## `02 / GITHUB ANALYTICS`
 
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
-</p>
+<div align="center">
 
-### 📱 App Development
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=BijoySarkar19&show_icons=true&hide_border=true&bg_color=071426&title_color=60A5FA&text_color=DCE8F8&icon_color=3B82F6&rank_icon=github" alt="GitHub statistics" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BijoySarkar19&layout=compact&hide_border=true&bg_color=071426&title_color=60A5FA&text_color=DCE8F8" alt="Top languages" />
 
-<p>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white"/>
-</p>
+<br/>
 
-### 🗄️ Databases & Tools
+<img width="95%" src="https://streak-stats.demolab.com?user=BijoySarkar19&hide_border=true&background=071426&ring=3B82F6&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=DCE8F8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=94A3B8" alt="GitHub streak" />
+
+</div>
+
+## `03 / TECH STACK`
+
+**Languages**
 
 <p>
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,dart&theme=dark" alt="Programming languages"/>
 </p>
 
----
+**AI / ML / Data**
 
-## 📚 Education
+<p>
+<img src="https://skillicons.dev/icons?i=opencv,sklearn,tensorflow,pytorch,flask,jupyter&theme=dark" alt="AI and data tools"/>
+</p>
 
-### 🎓 B.Tech in Computer Science & Engineering
+**Web / App / Database / Tools**
 
-**ICFAI University Tripura**
+<p>
+<img src="https://skillicons.dev/icons?i=html,css,nextjs,react,flutter,firebase,sqlite,postgres,docker,git,github,vscode,linux&theme=dark" alt="Development tools"/>
+</p>
 
-Currently pursuing my Bachelor's degree in Computer Science & Engineering.
+## `04 / FEATURED PROJECTS`
 
-### 🏫 Higher Secondary Education
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Swami Dhananjay Das Kathia Baba Mission School**
+### 🛡️ Rakshak-AI
+AI-powered health assistant with conversational assistance, BMI calculation, speech recognition, text-to-speech and local data storage.
 
-### 🏫 Secondary Education
+`Python` `Llama 3.2` `LM Studio` `Tkinter` `SQLite`
 
-**Pranavananda Vidya Mandir**
+</td>
+<td width="50%" valign="top">
 
----
+### 🛰️ Road Segmentation
+Computer-vision project focused on identifying and segmenting roads from satellite imagery.
 
-## 💼 Internship Experience
+`Python` `Jupyter` `Computer Vision` `Kaggle`
 
-### 🤖 AI & Machine Learning — NIT Silchar
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Worked on an **AI/ML project involving road segmentation from satellite imagery**.
+### 👁️ Smart Attendance System
+Face-recognition-based attendance workflow designed to automate attendance recording.
 
-**Technologies:** Python, Jupyter Notebook, Machine Learning, Computer Vision, Kaggle datasets
+`Python` `OpenCV` `Face Recognition`
 
----
-
-### 🤖 AI & Machine Learning Internship
-
-Worked on practical AI/ML problems and developed machine-learning-based solutions.
-
-**Areas:** Machine Learning, Computer Vision, Python
-
----
-
-### 🌐 Full-Stack Web Development — Apni Vidya
-
-Gained practical experience in **full-stack web development**, working with frontend and backend technologies.
-
-**Focus:** Web Development, Backend Development, Databases
-
----
-
-### 📱 App Development — TalkEng
-
-Worked on **mobile application development** and gained practical experience with application development workflows.
-
-**Focus:** Flutter, Dart, Mobile App Development
-
----
-
-### 🔐 Cybersecurity — STQC
-
-Gained practical exposure to **Cybersecurity and security-related concepts**.
-
-**Focus:** Cybersecurity, Security Practices
-
----
-
-## 🚀 Featured Projects
-
-### 🛡️ Rakshak-AI — AI Health Assistant
-
-An AI-powered assistant application designed to provide an interactive health-assistance experience.
-
-**Features:**
-
-* 🤖 AI-powered conversational assistance
-* 🧮 BMI Calculator
-* 🎙️ Speech Recognition
-* 🔊 Text-to-Speech
-* 🗃️ SQLite database
-* 🖥️ Desktop GUI
-
-**Technologies:** Python, LM Studio, Llama 3.2, Tkinter, SQLite, SpeechRecognition, pyttsx3
-
----
-
-### 🛰️ Road Segmentation Using Satellite Images
-
-An AI/ML computer vision project focused on identifying and segmenting roads from satellite imagery.
-
-**Technologies:** Python, Jupyter Notebook, Computer Vision, Machine Learning, Kaggle Dataset
-
----
-
-### 👁️ Smart Attendance System Using Face Recognition
-
-A computer-vision-based attendance system that uses facial recognition to automate attendance recording.
-
-**Technologies:** Python, OpenCV, Face Recognition, Computer Vision
-
----
+</td>
+<td width="50%" valign="top">
 
 ### 📱 Expense Tracker
+Mobile application for recording and managing personal expenses.
 
-A mobile expense-management application designed to help users record and manage their expenses.
+`Flutter` `Dart` `Firebase` `Firestore`
 
-**Technologies:** Flutter, Dart, Firebase, Firestore
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
----
+### 😊 SentimentX
+Web-based text and YouTube-comment sentiment analysis.
 
-### 😊 AI-Based Text Sentiment Analysis
+`Python` `Flask` `NLTK` `VADER` `YouTube API`
 
-A web-based sentiment analysis application capable of analyzing text and determining sentiment.
-
-**Technologies:** Python, Flask, NLTK, VADER, YouTube API
-
----
+</td>
+<td width="50%" valign="top">
 
 ### 🧠 Advanced NLP
+Natural-language-processing experiments using Python and real-world datasets.
 
-An NLP-focused project exploring natural language processing techniques using Python and real-world datasets.
+`Python` `NLP` `Jupyter` `Kaggle`
 
-**Technologies:** Python, Jupyter Notebook, NLP, Kaggle Datasets
+</td>
+</tr>
+</table>
 
----
+<div align="center">
+<a href="https://github.com/BijoySarkar19?tab=repositories">
+<img src="https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-1D4ED8?style=for-the-badge&logo=github&logoColor=white" alt="Explore all repositories"/>
+</a>
+</div>
 
-## 📊 GitHub Activity
+## `05 / EXPERIENCE`
 
-<p align="center">
-  <img src="https://img.shields.io/github/followers/BijoySarkar19?style=for-the-badge&logo=github&label=Followers" alt="GitHub Followers" />
+| Area | Organization | Focus |
+|:--|:--|:--|
+| AI & Machine Learning | NIT Silchar | Road segmentation, satellite imagery, computer vision |
+| AI & Machine Learning | Interesting Technologies Pvt. Ltd. | Practical AI/ML solutions |
+| Full-Stack Development | Apni Vidya | Frontend, backend and databases |
+| App Development | TalkEng | Flutter, Dart and mobile development |
+| Cybersecurity | STQC, MeitY, Government of India | Cybersecurity concepts and security practices |
 
-  <img src="https://img.shields.io/github/stars/BijoySarkar19?style=for-the-badge&logo=github&label=Total%20Stars" alt="GitHub Stars" />
-</p>
+## `06 / EDUCATION`
 
----
+- **B.Tech — Computer Science & Engineering:** ICFAI University Tripura
+- **Higher Secondary:** Swami Dhananjay Das Kathia Baba Mission School
+- **Secondary:** Pranavananda Vidya Mandir
 
-## 🔥 GitHub Streak
+## `07 / CONTRIBUTION GRAPH`
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=BijoySarkar19&theme=github-dark-blue&hide_border=true" />
-</p>
+<div align="center">
 
----
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=BijoySarkar19&bg_color=071426&color=BFDBFE&line=3B82F6&point=93C5FD&area=true&hide_border=true" width="100%" alt="Contribution activity graph"/>
 
-## 🎯 Current Goals
+### Watch the contributions come alive
 
-* 📌 Strengthen **Data Structures & Algorithms**
-* 📌 Build production-ready software projects
-* 📌 Improve my **AI/ML and Computer Vision** skills
-* 📌 Develop scalable web and mobile applications
-* 📌 Contribute to open-source projects
-* 📌 Prepare for **Software Developer / AI-ML opportunities**
+<img src="https://raw.githubusercontent.com/BijoySarkar19/BijoySarkar19/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated GitHub contribution snake"/>
 
----
+</div>
 
-## 🤝 Let's Connect
+## `08 / CURRENT MISSION`
 
-<p>
-  <a href="https://github.com/BijoySarkar19">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/bijoysarkar19/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:bijoysarkar7252@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-</p>
+- Strengthen Data Structures & Algorithms.
+- Build and ship production-ready software.
+- Deepen AI/ML and Computer Vision skills.
+- Develop scalable web and mobile applications.
+- Contribute to open-source projects.
+- Prepare for software engineering and AI/ML opportunities.
 
----
+<div align="center">
 
-### 💡 "Build. Learn. Improve. Repeat."
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,55:102A4C,100:071426&height=120&section=footer" width="100%" alt="Navy animated footer"/>
 
-⭐ Feel free to explore my repositories and connect with me!
+### LET'S BUILD SOMETHING MEANINGFUL.
 
+**Build. Learn. Improve. Repeat.**
 
-<!--
-**BijoySarkar19/BijoySarkar19** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[Portfolio](https://bijoy-sarkar-portfolio.vercel.app/) · [GitHub](https://github.com/BijoySarkar19) · [LinkedIn](https://www.linkedin.com/in/bijoysarkar19) · [Instagram](https://www.instagram.com/bijoyysarkarr/)
 
-Here are some ideas to get you started:
+<sub>Midnight navy · Animated SVG elements · Live GitHub widgets</sub>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</div>
