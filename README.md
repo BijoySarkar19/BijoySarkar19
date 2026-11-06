@@ -12,7 +12,7 @@
 
 <div align="center">
 
-<img src="./assets/profile-avatar.png" width="190" alt="Bijoy Sarkar portrait"/>
+<img src="./assets/profile-avatar.png" width="190" alt="Bijoy Sarkar — GitHub profile photo synced automatically"/>
 
 ### BIJOY SARKAR
 
@@ -20,6 +20,8 @@
 ICFAI University Tripura
 
 [Portfolio](https://bijoy-sarkar-portfolio.vercel.app/)
+
+<sub>Profile photo syncs automatically from your current GitHub avatar through the daily profile refresh workflow.</sub>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
 
@@ -177,13 +179,31 @@ _This section updates automatically after the GitHub Actions workflow runs._
 
 ## EXPERIENCE
 
-| Area | Organization | Focus |
+| Role | Organization | Period |
 |:--|:--|:--|
-| AI & Machine Learning | NIT Silchar | Road segmentation, satellite imagery, computer vision |
-| AI & Machine Learning | Interesting Technologies Pvt. Ltd. | Practical AI/ML solutions |
-| Full-Stack Development | Apni Vidya | Frontend, backend and databases |
-| App Development | TalkEng | Flutter, Dart and mobile development |
-| Cybersecurity | STQC, MeitY, Government of India | Cybersecurity concepts and security practices |
+| Cybersecurity Intern | ETDC, STQC Directorate, MeitY, Government of India | Jun 2026 – Jul 2026 |
+| AI/ML Intern | National Institute of Technology Silchar | Jan 2026 – Mar 2026 |
+| App Developer Intern | TalkEng, Agartala | Jun 2025 – Jul 2025 |
+| Full-Stack Development Intern | Apni Vidya, Agartala | Jun 2024 – Aug 2024 |
+| Computer Tutor | Novel Computer, Agartala | Mar 2022 – Aug 2022 |
+
+## CURRICULUM VITAE
+
+<div align="center">
+
+<a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf">
+  <img src="./assets/cv-preview.gif" width="100%" alt="Animated preview of Bijoy Sarkar's CV — click to open the PDF"/>
+</a>
+
+[![View CV PDF](https://img.shields.io/badge/VIEW_CV-Open_PDF-2563EB?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf)
+[![Download CV](https://img.shields.io/badge/DOWNLOAD-CV-1D4ED8?style=for-the-badge&logo=googledrive&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf)
+[![LaTeX Source](https://img.shields.io/badge/LATEX-Source-0F766E?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/main.tex)
+
+<sub>Animated CV cover preview · Select the preview or button to open the actual PDF.</sub>
+
+</div>
+
+---
 
 ## EDUCATION
 
