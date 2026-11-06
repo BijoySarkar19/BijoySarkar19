@@ -46,6 +46,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
+      - name: Generate animated contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Place snake in README assets
+        run: |
+          mkdir -p assets/generated
+          cp dist/github-contribution-grid-snake-dark.svg assets/generated/contribution-snake.svg
+
       - name: Commit refreshed profile assets
         run: |
           git config user.name "github-actions[bot]"

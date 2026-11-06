@@ -19,9 +19,9 @@
 **B.Tech CSE Student**  
 ICFAI University Tripura
 
-[Portfolio](https://bijoy-sarkar-portfolio.vercel.app/)
+[![Explore My Portfolio](https://img.shields.io/badge/✦_EXPLORE_MY_PORTFOLIO-Visit_Now-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
 
-<sub>Profile photo syncs automatically from your current GitHub avatar through the daily profile refresh workflow.</sub>
+<sub>Profile photo is fetched from the GitHub API and rebuilt as a circular image by the daily refresh workflow. Change your GitHub avatar and run **Actions → Refresh profile data** to sync it immediately.</sub>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
 
@@ -42,7 +42,7 @@ ICFAI University Tripura
 
 ### OPEN TO
 
-Internships · Collaborations · Open source
+Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer · Entry-Level Roles · Internships · Collaborations · Open Source
 
 </td>
 <td width="70%" valign="top">
@@ -217,8 +217,17 @@ ICFAI University Tripura
 
 ## CONTRIBUTION ACTIVITY
 
-<img src="./assets/generated/contributions.svg" width="100%" alt="Automatically refreshed GitHub contribution calendar"/>
+<div align="center">
 
+<img src="./assets/generated/contributions.svg" width="100%" alt="GitHub contribution calendar heatmap"/>
+
+### Watch my contributions move 🐍
+
+<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub contribution snake"/>
+
+<sub>The heatmap and snake are generated from my GitHub contribution history by GitHub Actions.</sub>
+
+</div>
 ---
 
 ## BEYOND THE CODE

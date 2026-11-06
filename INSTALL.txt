@@ -36,3 +36,13 @@ PROFILE PHOTO SYNC
 - It runs daily and can also be run manually from Actions > Refresh profile data > Run workflow.
 - After changing your GitHub profile picture, the README image updates after the next successful workflow run (or after you run it manually).
 - No manual photo replacement or local image commit is needed.
+
+
+LATEST UPDATES
+- GitHub avatar is fetched from the GitHub API and converted into a circular PNG.
+- To sync a changed avatar immediately: Repository > Actions > Refresh profile data > Run workflow.
+- The workflow now generates assets/generated/contribution-snake.svg and commits it to main.
+- The README displays both the contribution heatmap and animated snake.
+- The hero banner no longer contains the PORTFOLIO / 2026 pill.
+- OPEN TO now includes software, Python, AI/ML, full-stack and entry-level job opportunities.
+- The portfolio CTA is a prominent blue badge.
