@@ -1,153 +1,228 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:071426,45:102A4C,100:2563EB&height=180&section=header&text=BIJOY%20SARKAR&fontSize=46&fontColor=EAF2FF&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%7C%20AI%2FML%20Enthusiast&descAlignY=60&descSize=16" alt="Navy animated profile header"/>
+<img src="./assets/hero-banner.gif" width="100%" alt="Animated navy blue Bijoy Sarkar portfolio banner"/>
 
-<img src="./assets/bijoy-profile.png" width="142" alt="Bijoy Sarkar profile photo"/>
+<img src="./assets/role-ticker.gif" width="80%" alt="Animated software developer and AI machine learning role ticker"/>
 
-<br/>
+</div>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=60A5FA&center=true&vCenter=true&width=650&lines=B.Tech+CSE+Student;Software+Developer;AI%2FML+%26+Computer+Vision+Enthusiast;Full-Stack+%26+App+Developer;Build.+Learn.+Improve.+Repeat." alt="Animated typing introduction"/>
+<table>
+<tr>
+<td width="30%" valign="top">
 
-<br/>
+<div align="center">
 
-<a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-Follow-1D4ED8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-2563EB?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-1E40AF?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<img src="./assets/profile-avatar.png" width="190" alt="Bijoy Sarkar portrait"/>
 
-<br/><br/>
+### BIJOY SARKAR
 
-<img src="https://komarev.com/ghpvc/?username=BijoySarkar19&style=flat-square&color=1D4ED8&label=PROFILE+VIEWS" alt="Profile views"/>
+**B.Tech CSE Student**  
+ICFAI University Tripura
+
+[Portfolio](https://bijoy-sarkar-portfolio.vercel.app/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
+
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
 
 </div>
 
 ---
 
-## `01 / ABOUT ME`
+### CURRENT FOCUS
 
-Hi, I’m **Bijoy Sarkar** — a **B.Tech Computer Science & Engineering student at ICFAI University Tripura** who enjoys turning ideas into useful software. I work across software development and AI/ML, with a particular interest in computer vision, natural language processing, and building web and mobile applications.
+- Data Structures & Algorithms
+- Applied AI / ML
+- Computer Vision & NLP
+- Scalable software development
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### OPEN TO
 
-**🎓 Education**  
-B.Tech in Computer Science & Engineering  
-ICFAI University Tripura
-
-**💻 What I enjoy building**  
-Practical software, AI-powered applications, web platforms and mobile apps
+Internships · Collaborations · Open source
 
 </td>
-<td width="50%" valign="top">
+<td width="70%" valign="top">
 
-**🧠 Currently learning**  
-Data Structures & Algorithms, production-ready software engineering, and scalable AI/ML applications
+## HELLO, WORLD! 👋
 
-**🤝 Open to**  
-Internships, entry-level opportunities, open-source contributions and collaborations
+I'm **Bijoy Sarkar**, a Computer Science & Engineering student who enjoys turning ideas into practical software. I work across AI/ML, computer vision, NLP, web development and mobile applications.
+
+I believe in learning by building: experimenting with technologies, solving real problems and improving every project through iteration.
+
+### LIVE GITHUB SNAPSHOT
+
+<img src="./assets/generated/github-stats.svg" width="100%" alt="Automatically refreshed GitHub statistics"/>
+
+<img src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
+
+<sub>These cards and the repository list refresh daily and whenever you push to the profile repository. To refresh immediately, open **Actions → Refresh profile data → Run workflow**.</sub>
 
 </td>
 </tr>
 </table>
 
-My goal is to keep learning by building real projects, solving meaningful problems, and improving one iteration at a time.
+---
 
-## `02 / GITHUB SNAPSHOT`
-
-<div align="center">
-
-<a href="https://github.com/BijoySarkar19?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/BijoySarkar19&query=%24.public_repos&label=PUBLIC%20REPOSITORIES&color=1D4ED8&style=for-the-badge&logo=github" alt="Public repositories"/></a>
-<a href="https://github.com/BijoySarkar19?tab=followers"><img src="https://img.shields.io/github/followers/BijoySarkar19?label=FOLLOWERS&style=for-the-badge&color=2563EB&logo=github" alt="GitHub followers"/></a>
-<a href="https://github.com/BijoySarkar19?tab=stars"><img src="https://img.shields.io/github/stars/BijoySarkar19?affiliations=OWNER%2CCOLLABORATOR&label=STARS&style=for-the-badge&color=1E40AF&logo=github" alt="GitHub stars"/></a>
-
-<br/><br/>
-
-<a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/github/last-commit/BijoySarkar19/BijoySarkar19?label=LAST%20PROFILE%20UPDATE&style=for-the-badge&color=1D4ED8" alt="Last profile update"/></a>
-<a href="https://github.com/BijoySarkar19?tab=repositories"><img src="https://img.shields.io/badge/LANGUAGES-See%20repositories-2563EB?style=for-the-badge&logo=github" alt="Explore languages in repositories"/></a>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=BijoySarkar19&hide_border=true&background=071426&ring=3B82F6&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=DCE8F8&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=94A3B8" width="68%" alt="GitHub contribution streak"/>
-
-</div>
-
-> If a third-party statistics card is temporarily unavailable, the GitHub profile and Shields badges above still provide the key profile links and live counts.
-
-## `03 / TECH STACK`
+## MY TECH STACK
 
 **Programming languages**
 
-<p><img src="https://skillicons.dev/icons?i=python,c,cpp,java,js,dart&theme=dark" alt="Programming languages"/></p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=111827)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111827)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-**AI / ML / Data**
+**AI / Machine Learning / Data**
 
-<p><img src="https://skillicons.dev/icons?i=opencv,sklearn,tensorflow,pytorch,flask,jupyter&theme=dark" alt="AI and data tools"/></p>
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-172554?style=flat-square)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=flat-square)
+![NLP](https://img.shields.io/badge/NLP-0F766E?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
 **Web / App / Database / Tools**
 
-<p><img src="https://skillicons.dev/icons?i=html,css,nextjs,react,flutter,firebase,sqlite,postgres,docker,git,github,vscode,linux&theme=dark" alt="Development tools"/></p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=nextdotjs&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=111827)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
-## `04 / FEATURED PROJECTS`
+---
 
-| Project | Description | Technologies |
-|:--|:--|:--|
-| 🛡️ **Rakshak-AI** | AI health assistant with conversational assistance, BMI calculator, speech recognition and text-to-speech | Python, Llama 3.2, LM Studio, Tkinter, SQLite |
-| 🛰️ **Road Segmentation** | Identifying and segmenting roads from satellite imagery | Python, Jupyter, Computer Vision, Kaggle |
-| 👁️ **Smart Attendance** | Face-recognition-based attendance automation | Python, OpenCV, Face Recognition |
-| 📱 **Expense Tracker** | Mobile expense recording and management app | Flutter, Dart, Firebase, Firestore |
-| 😊 **SentimentX** | Text and YouTube-comment sentiment analysis | Python, Flask, NLTK, VADER |
-| 🧠 **Advanced NLP** | Natural-language-processing experiments with real-world datasets | Python, NLP, Jupyter, Kaggle |
+## FEATURED PROJECTS
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ Rakshak-AI
+AI-powered health assistant with conversational assistance, BMI calculation, speech recognition, text-to-speech and local data storage.
+
+`Python` `Llama 3.2` `LM Studio` `Tkinter` `SQLite`
+
+</td>
+<td width="50%" valign="top">
+
+### 🛰️ Road Segmentation
+Computer-vision project focused on identifying and segmenting roads from satellite imagery.
+
+`Python` `Jupyter` `Computer Vision` `Kaggle`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 👁️ Smart Attendance System
+Face-recognition-based attendance workflow designed to automate attendance recording.
+
+`Python` `OpenCV` `Face Recognition`
+
+</td>
+<td width="50%" valign="top">
+
+### 📱 Expense Tracker
+Mobile application for recording and managing personal expenses.
+
+`Flutter` `Dart` `Firebase` `Firestore`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 😊 SentimentX
+Web-based text and YouTube-comment sentiment analysis.
+
+`Python` `Flask` `NLTK` `VADER` `YouTube API`
+
+</td>
+<td width="50%" valign="top">
+
+### 🧠 Advanced NLP
+Natural-language-processing experiments using Python and real-world datasets.
+
+`Python` `NLP` `Jupyter` `Kaggle`
+
+</td>
+</tr>
+</table>
 
 <div align="center">
-<a href="https://github.com/BijoySarkar19?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-1D4ED8?style=for-the-badge&logo=github&logoColor=white" alt="Explore repositories"/></a>
+
+[![Explore repositories](https://img.shields.io/badge/EXPLORE_ALL_GITHUB_REPOSITORIES-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
+
 </div>
 
-## `05 / EXPERIENCE`
+---
 
-| Organization | Area | Focus |
+## RECENTLY UPDATED REPOSITORIES
+
+<!-- RECENT-REPOS:START -->
+_This section updates automatically after the GitHub Actions workflow runs._
+<!-- RECENT-REPOS:END -->
+
+---
+
+## EXPERIENCE
+
+| Area | Organization | Focus |
 |:--|:--|:--|
-| NIT Silchar | AI & Machine Learning | Road segmentation, satellite imagery, computer vision |
-| Interesting Technologies Pvt. Ltd. | AI & Machine Learning | Practical AI/ML solutions |
-| Apni Vidya | Full-Stack Development | Frontend, backend and databases |
-| TalkEng | App Development | Flutter, Dart and mobile development |
-| STQC, MeitY, Government of India | Cybersecurity | Cybersecurity concepts and security practices |
+| AI & Machine Learning | NIT Silchar | Road segmentation, satellite imagery, computer vision |
+| AI & Machine Learning | Interesting Technologies Pvt. Ltd. | Practical AI/ML solutions |
+| Full-Stack Development | Apni Vidya | Frontend, backend and databases |
+| App Development | TalkEng | Flutter, Dart and mobile development |
+| Cybersecurity | STQC, MeitY, Government of India | Cybersecurity concepts and security practices |
 
-## `06 / EDUCATION`
+## EDUCATION
 
-- **B.Tech — Computer Science & Engineering:** ICFAI University Tripura
-- **Higher Secondary:** Swami Dhananjay Das Kathia Baba Mission School
-- **Secondary:** Pranavananda Vidya Mandir
+**B.Tech — Computer Science & Engineering**  
+ICFAI University Tripura
 
-## `07 / CONTRIBUTION ACTIVITY`
+**Higher Secondary** — Swami Dhananjay Das Kathia Baba Mission School  
+**Secondary** — Pranavananda Vidya Mandir
+
+---
+
+## CONTRIBUTION ACTIVITY
+
+<img src="./assets/generated/contributions.svg" width="100%" alt="Automatically refreshed GitHub contribution calendar"/>
+
+---
+
+## BEYOND THE CODE
 
 <div align="center">
-
-### Animated contribution snake
-
-<img src="https://raw.githubusercontent.com/BijoySarkar19/BijoySarkar19/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated GitHub contribution snake"/>
-
+<table>
+<tr>
+<td width="33%"><img src="./assets/portrait-casual.jpg" width="100%" alt="Bijoy portrait in a dark shirt"/></td>
+<td width="33%"><img src="./assets/portrait-editorial.jpg" width="100%" alt="Bijoy portrait in a light jacket"/></td>
+<td width="33%"><img src="./assets/portrait-outdoor.jpg" width="100%" alt="Bijoy portrait in a light shirt"/></td>
+</tr>
+</table>
 </div>
 
-*The contribution snake is generated by the GitHub Actions workflow in this repository. It will appear after the workflow completes successfully.*
-
-## `08 / CURRENT MISSION`
-
-- Strengthen Data Structures & Algorithms.
-- Build and ship production-ready software.
-- Deepen AI/ML and Computer Vision skills.
-- Develop scalable web and mobile applications.
-- Contribute to open-source projects.
-- Prepare for software engineering and AI/ML opportunities.
+---
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,55:102A4C,100:071426&height=110&section=footer" alt="Navy footer"/>
-
-### LET'S BUILD SOMETHING MEANINGFUL.
+## LET'S BUILD SOMETHING MEANINGFUL.
 
 **Build. Learn. Improve. Repeat.**
 
 [Portfolio](https://bijoy-sarkar-portfolio.vercel.app/) · [GitHub](https://github.com/BijoySarkar19) · [LinkedIn](https://www.linkedin.com/in/bijoysarkar19) · [Instagram](https://www.instagram.com/bijoyysarkarr/)
+
+<sub>Designed in navy · Animated locally hosted visuals · GitHub-powered live data</sub>
 
 </div>
