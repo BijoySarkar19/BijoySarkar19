@@ -1,191 +1,188 @@
 <div align="center">
 
-<img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Banner"/>
+<img src="./assets/hero-banner.gif" width="100%" alt="Animated navy blue Bijoy Sarkar portfolio banner"/>
 
-<img src="./assets/role-ticker.gif" width="85%" alt="Developer Role Animation"/>
+<img src="./assets/role-ticker.gif" width="80%" alt="Animated software developer and AI machine learning role ticker"/>
 
-<br/>
+</div>
 
-<img src="./assets/profile-avatar.png" width="170" alt="Bijoy Sarkar GitHub Profile Photo"/>
+<table>
+<tr>
+<td width="30%" valign="top">
 
-# BIJOY SARKAR
+<div align="center">
 
-### B.Tech CSE Student | Software Developer | AI/ML Enthusiast
+<img src="./assets/profile-avatar.png" width="190" alt="Bijoy Sarkar — GitHub profile photo synced automatically"/>
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
+### BIJOY SARKAR
 
-📍 Tripura, India
+**B.Tech CSE Student**  
+ICFAI University Tripura
+
+[![Explore My Portfolio](https://img.shields.io/badge/✦_EXPLORE_MY_PORTFOLIO-Visit_Now-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
+
+<sub>My profile photo stays in sync with my GitHub avatar.</sub>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
+
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
 
 </div>
 
 ---
-
-## 01 / ABOUT ME
-
-Hello! I'm **Bijoy Sarkar**, a Computer Science & Engineering student at **ICFAI University Tripura**.
-
-I'm passionate about building practical software solutions and exploring Artificial Intelligence, Machine Learning, Computer Vision, NLP, Full-Stack Development, Mobile App Development and Cybersecurity.
-
-I enjoy turning ideas into working applications, solving problems and continuously improving my technical skills.
-
-### WHAT I LIKE TO BUILD
-
-| Area | Interests |
-|:--|:--|
-| 🤖 AI & Intelligent Systems | Machine Learning, Computer Vision, NLP, Python |
-| 🌐 Web & App Development | Full-Stack Applications, Next.js, Flutter, Firebase |
-| 🛡️ Software & Security | APIs, Databases, Docker, Cybersecurity |
-| 🧠 Problem Solving | Data Structures, Algorithms, Software Engineering |
 
 ### CURRENT FOCUS
 
-- Strengthening Data Structures & Algorithms.
-- Building production-ready applications.
-- Improving AI/ML and Computer Vision skills.
-- Developing scalable web and mobile applications.
-- Contributing to open-source projects.
+- Data Structures & Algorithms
+- Applied AI / ML
+- Computer Vision & NLP
+- Scalable software development
 
 ### OPEN TO
 
-Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer · Entry-Level Opportunities · Internships · Collaborations · Open Source.
+Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer · Entry-Level Roles · Internships · Collaborations · Open Source
+
+</td>
+<td width="70%" valign="top">
+
+## HELLO, WORLD! 👋
+
+I'm **Bijoy Sarkar**, a Computer Science & Engineering student who enjoys turning ideas into practical software. I work across AI/ML, computer vision, NLP, web development and mobile applications.
+
+I believe in learning by building: experimenting with technologies, solving real problems and improving every project through iteration.
+
+### LIVE GITHUB SNAPSHOT
+
+<img src="./assets/generated/github-stats.svg" width="100%" alt="Automatically refreshed GitHub statistics"/>
+
+<img src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
+
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 02 / GITHUB LIVE METRICS
+## MY TECH STACK
 
-<div align="center">
+**Programming languages**
 
-<img src="./assets/generated/github-stats.svg" width="100%" alt="GitHub Statistics"/>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=111827)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111827)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-<img src="./assets/generated/top-languages.svg" width="100%" alt="Most Used Programming Languages"/>
+**AI / Machine Learning / Data**
 
-</div>
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-172554?style=flat-square)
+![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=flat-square)
+![NLP](https://img.shields.io/badge/NLP-0F766E?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
----
+**Web / App / Database / Tools**
 
-## 03 / TECHNICAL SKILLS
-
-### Programming Languages
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-### AI / Machine Learning
-
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-102230?style=for-the-badge)
-![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=for-the-badge)
-![NLP](https://img.shields.io/badge/NLP-FF6F00?style=for-the-badge)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-
-### Web Development
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-
-### App Development
-
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white)
-
-### Databases & Tools
-
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Firestore](https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-111827?style=flat-square&logo=nextdotjs&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=111827)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
 ---
 
-## 04 / FEATURED PROJECTS
+## FEATURED PROJECTS
 
-### 🛡️ Rakshak-AI — AI Health Assistant
+<table>
+<tr>
+<td width="50%" valign="top">
 
-An AI-powered assistant application designed to provide an interactive health-assistance experience.
+### 🛡️ Rakshak-AI
+AI-powered health assistant with conversational assistance, BMI calculation, speech recognition, text-to-speech and local data storage.
 
-**Features:**
-- AI-powered conversational assistance.
-- BMI Calculator.
-- Speech Recognition.
-- Text-to-Speech.
-- SQLite Database.
-- Desktop GUI.
+`Python` `Llama 3.2` `LM Studio` `Tkinter` `SQLite`
 
-**Technologies:** Python, LM Studio, Llama 3.2, Tkinter, SQLite, SpeechRecognition, pyttsx3.
+</td>
+<td width="50%" valign="top">
 
-### 🛰️ Road Segmentation Using Satellite Images
+### 🛰️ Road Segmentation
+Computer-vision project focused on identifying and segmenting roads from satellite imagery.
 
-An AI/ML computer vision project focused on identifying and segmenting roads from satellite imagery.
+`Python` `Jupyter` `Computer Vision` `Kaggle`
 
-**Technologies:** Python, Jupyter Notebook, Computer Vision, Machine Learning, Kaggle Dataset.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 👁️ Smart Attendance System Using Face Recognition
+### 👁️ Smart Attendance System
+Face-recognition-based attendance workflow designed to automate attendance recording.
 
-A computer-vision-based attendance system that uses facial recognition to automate attendance recording.
+`Python` `OpenCV` `Face Recognition`
 
-**Technologies:** Python, OpenCV, Face Recognition, Computer Vision.
+</td>
+<td width="50%" valign="top">
 
 ### 📱 Expense Tracker
+Mobile application for recording and managing personal expenses.
 
-A mobile expense-management application designed to help users record and manage their expenses.
+`Flutter` `Dart` `Firebase` `Firestore`
 
-**Technologies:** Flutter, Dart, Firebase, Firestore.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 😊 SentimentX — AI-Based Text Sentiment Analysis
+### 😊 SentimentX
+Web-based text and YouTube-comment sentiment analysis.
 
-A web-based sentiment analysis application capable of analyzing text and determining sentiment.
+`Python` `Flask` `NLTK` `VADER` `YouTube API`
 
-**Technologies:** Python, Flask, NLTK, VADER, YouTube API.
+</td>
+<td width="50%" valign="top">
 
 ### 🧠 Advanced NLP
+Natural-language-processing experiments using Python and real-world datasets.
 
-An NLP-focused project exploring natural language processing techniques using Python and real-world datasets.
+`Python` `NLP` `Jupyter` `Kaggle`
 
-**Technologies:** Python, Jupyter Notebook, NLP, Kaggle Datasets.
-
-### 🚀 CivicLens Core
-
-An intelligent public-infrastructure intelligence system.
-
-**Part 1:**
-- Interactive infrastructure map.
-- Road and public infrastructure information.
-- Public issue reporting.
-- Historical problem analysis.
-- Infrastructure dashboards.
-
-**Planned Part 2:**
-- AI-based infrastructure risk prediction.
-- Geographic hotspot detection.
-- Automatic issue prioritisation.
-- Intelligent maintenance recommendations.
+</td>
+</tr>
+</table>
 
 <div align="center">
 
-[![Explore All Projects](https://img.shields.io/badge/EXPLORE_ALL_MY_PROJECTS-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
+[![Explore repositories](https://img.shields.io/badge/EXPLORE_ALL_GITHUB_REPOSITORIES-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
 
 </div>
 
 ---
 
-## 05 / EXPERIENCE
+## RECENTLY UPDATED REPOSITORIES
 
-| Position | Organization | Period |
+<!-- RECENT-REPOS:START -->
+<div align="center">
+
+[![Browse Public Repositories](https://img.shields.io/badge/EXPLORE_MY_PROJECTS-View_All_Repositories-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
+
+</div>
+<!-- RECENT-REPOS:END -->
+
+---
+
+## EXPERIENCE
+
+| Role | Organization | Period |
 |:--|:--|:--|
 | Cybersecurity Intern | ETDC, STQC Directorate, MeitY, Government of India | Jun 2026 – Jul 2026 |
 | AI/ML Intern | National Institute of Technology Silchar | Jan 2026 – Mar 2026 |
@@ -193,109 +190,87 @@ An intelligent public-infrastructure intelligence system.
 | Full-Stack Development Intern | Apni Vidya, Agartala | Jun 2024 – Aug 2024 |
 | Computer Tutor | Novel Computer, Agartala | Mar 2022 – Aug 2022 |
 
----
-
-## 06 / EDUCATION
-
-**B.Tech in Computer Science & Engineering**
-
-ICFAI University Tripura  
-August 2023 – Present
-
-**Higher Secondary Education**
-
-Swami Dhananjay Das Kathia Baba Mission School
-
-**Secondary Education**
-
-Pranavananda Vidya Mandir
-
----
-
-## 07 / CURRICULUM VITAE
+## CURRICULUM VITAE
 
 <div align="center">
 
 <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf">
-<img src="./assets/cv-preview.gif" width="100%" alt="Animated CV Preview"/>
+  <img src="./assets/cv-preview.gif" width="100%" alt="Animated preview of Bijoy Sarkar's CV — click to open the PDF"/>
 </a>
 
-[![VIEW CV](https://img.shields.io/badge/VIEW_MY_CV-Open_PDF-2563EB?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf)
+[![View CV PDF](https://img.shields.io/badge/VIEW_CV-Open_PDF-2563EB?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf)
+[![Download CV](https://img.shields.io/badge/DOWNLOAD-CV-1D4ED8?style=for-the-badge&logo=googledrive&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf)
+[![LaTeX Source](https://img.shields.io/badge/LATEX-Source-0F766E?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/main.tex)
 
-[![DOWNLOAD CV](https://img.shields.io/badge/DOWNLOAD_CV-PDF-1D4ED8?style=for-the-badge&logo=googledrive&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf)
-
-[![LATEX SOURCE](https://img.shields.io/badge/LATEX_SOURCE-View_Code-0F766E?style=for-the-badge&logo=latex&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/main.tex)
+<sub>Animated CV cover preview · Select the preview or button to open the actual PDF.</sub>
 
 </div>
 
 ---
 
-## 08 / GITHUB CONTRIBUTION ACTIVITY
+## EDUCATION
+
+**B.Tech — Computer Science & Engineering**  
+ICFAI University Tripura
+
+**Higher Secondary** — Swami Dhananjay Das Kathia Baba Mission School  
+**Secondary** — Pranavananda Vidya Mandir
+
+---
+
+## CONTRIBUTION ACTIVITY
 
 <div align="center">
-
-### MY CONTRIBUTION CALENDAR
 
 <a href="https://github.com/BijoySarkar19">
-<img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar"/>
+  <img src="./assets/generated/contributions.svg" width="100%" alt="Live GitHub contribution calendar for Bijoy Sarkar"/>
 </a>
 
-### 🐍 WATCH MY CONTRIBUTIONS MOVE
+### 🐍 Watch my contributions move
 
-<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake"/>
+<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated snake generated from my GitHub contribution calendar"/>
 
-[![VIEW GITHUB ACTIVITY](https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
+<a href="https://github.com/BijoySarkar19">
+  <img src="https://img.shields.io/badge/VIEW_FULL_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="View full GitHub activity"/>
+</a>
 
-[![REFRESH CONTRIBUTIONS](https://img.shields.io/badge/REFRESH_ACTIVITY-GitHub_Actions-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml)
+<a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml">
+  <img src="https://img.shields.io/badge/REFRESH_LIVE_ACTIVITY-Run_GitHub_Action-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white" alt="Refresh contribution activity"/>
+</a>
+
+<sub>The first successful refresh replaces the included preview with your actual daily contribution calendar and data-driven snake.</sub>
 
 </div>
 
 ---
 
-## 09 / BEYOND THE CODE
+## BEYOND THE CODE
 
 <div align="center">
-
 <table>
 <tr>
-<td width="33%">
-<img src="./assets/portrait-casual.jpg" width="100%" alt="Bijoy Sarkar portrait"/>
-</td>
-<td width="33%">
-<img src="./assets/portrait-editorial.jpg" width="100%" alt="Bijoy Sarkar portrait"/>
-</td>
-<td width="33%">
-<img src="./assets/portrait-outdoor.jpg" width="100%" alt="Bijoy Sarkar portrait"/>
-</td>
+<td width="33%"><img src="./assets/portrait-casual.jpg" width="100%" alt="Bijoy portrait in a dark shirt"/></td>
+<td width="33%"><img src="./assets/portrait-editorial.jpg" width="100%" alt="Bijoy portrait in a light jacket"/></td>
+<td width="33%"><img src="./assets/portrait-outdoor.jpg" width="100%" alt="Bijoy portrait in a light shirt"/></td>
 </tr>
 </table>
-
-### MY INTERESTS
-
-🏏 Cricket · ⚽ Football · 🏋️ Gym · 🎨 Painting · 🎵 Singing · 🏍️ Riding · ✈️ Travelling · 🎭 Drama
-
 </div>
 
 ---
 
 <div align="center">
 
-# LET'S BUILD SOMETHING MEANINGFUL.
+## LET'S BUILD SOMETHING MEANINGFUL.
 
-### Build. Learn. Improve. Repeat.
+**Build. Learn. Improve. Repeat.**
 
-[![PORTFOLIO](https://img.shields.io/badge/✦_MY_PORTFOLIO-Visit_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
+<p align="center">
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/EXPLORE_MY_PORTFOLIO-Visit_Now-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Explore my portfolio"/></a>
+  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-View_Repositories-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repositories"/></a>
+  <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow_Me-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+</p>
 
-[![GITHUB](https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
-
-[![LINKEDIN](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
-
-[![INSTAGRAM](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
-
----
-
-**BUILT WITH CURIOSITY · POWERED BY CODE · ALWAYS LEARNING**
-
-⭐ Thanks for visiting my GitHub profile!
+<sub>BUILT WITH CURIOSITY · POWERED BY CODE · ALWAYS LEARNING</sub>
 
 </div>
