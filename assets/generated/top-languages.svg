@@ -1,8 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220">
-<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#08162D"/><stop offset="1" stop-color="#172C57"/></linearGradient><linearGradient id="a"><stop stop-color="#A78BFA"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>
-<rect width="100%" height="100%" rx="24" fill="url(#bg)" stroke="#27456F" stroke-width="2"/>
-<rect x="28" y="28" width="7" height="164" rx="4" fill="url(#a)"/>
-<text x="60" y="92" fill="#EAF2FF" font-family="Arial,sans-serif" font-size="36" font-weight="700">LANGUAGE BREAKDOWN</text>
-<text x="60" y="150" fill="#A9C5E8" font-family="Arial,sans-serif" font-size="23">Your repository languages will appear here after the first workflow run.</text>
-<text x="60" y="205" fill="#60A5FA" font-family="Arial,sans-serif" font-size="18">This card is refreshed automatically by GitHub Actions.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240"><defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".6" stop-color="#102B50"/><stop offset="1" stop-color="#1D2255"/></linearGradient>
+ <linearGradient id="accent"><stop stop-color="#38BDF8"/><stop offset=".55" stop-color="#818CF8"/><stop offset="1" stop-color="#C084FC"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ </defs><rect width="1000" height="240" rx="24" fill="url(#bg)" stroke="#294B79" stroke-width="2"/>
+ <rect x="24" y="24" width="6" height="192" rx="3" fill="url(#accent)"/>
+ <text x="52" y="54" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#8CCBFF" letter-spacing="2">LANGUAGES / REPOSITORY BREAKDOWN</text>
+ <text x="52" y="80" font-family="Arial,sans-serif" font-size="13" fill="#8EA9CE">Aggregated from the language data of your public repositories</text><rect x="52" y="108" width="665.5071963751384" height="18" fill="#3178C6"/><rect x="717.5071963751384" y="108" width="150.57432940481308" height="18" fill="#563D7C"/><rect x="868.0815257799514" y="108" width="37.615040487048766" height="18" fill="#F1E05A"/><rect x="905.6965662670002" y="108" width="25.921031002031704" height="18" fill="#60A5FA"/><rect x="931.6175972690319" y="108" width="13.756551228753576" height="18" fill="#E34C26"/><rect x="945.3741484977854" y="108" width="2.625851502214431" height="18" fill="#60A5FA"/><circle cx="57" cy="160" r="6" fill="#3178C6"/>
+   <text x="72" y="165" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">TypeScript</text>
+   <text x="302" y="165" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">74.3%</text><circle cx="352" cy="160" r="6" fill="#563D7C"/>
+   <text x="367" y="165" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">CSS</text>
+   <text x="597" y="165" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">16.8%</text><circle cx="647" cy="160" r="6" fill="#F1E05A"/>
+   <text x="662" y="165" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">JavaScript</text>
+   <text x="892" y="165" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">4.2%</text><circle cx="57" cy="194" r="6" fill="#60A5FA"/>
+   <text x="72" y="199" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">TeX</text>
+   <text x="302" y="199" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">2.9%</text><circle cx="352" cy="194" r="6" fill="#E34C26"/>
+   <text x="367" y="199" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">HTML</text>
+   <text x="597" y="199" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">1.5%</text><circle cx="647" cy="194" r="6" fill="#60A5FA"/>
+   <text x="662" y="199" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">Dockerfile</text>
+   <text x="892" y="199" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">0.3%</text></svg>
