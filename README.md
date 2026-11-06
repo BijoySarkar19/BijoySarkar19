@@ -21,7 +21,7 @@ ICFAI University Tripura
 
 [![Explore My Portfolio](https://img.shields.io/badge/✦_EXPLORE_MY_PORTFOLIO-Visit_Now-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
 
-<sub>Profile photo is fetched from the GitHub API and rebuilt as a circular image by the daily refresh workflow. Change your GitHub avatar and run **Actions → Refresh profile data** to sync it immediately.</sub>
+<sub>My profile photo stays in sync with my GitHub avatar.</sub>
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
 
@@ -59,7 +59,6 @@ I believe in learning by building: experimenting with technologies, solving real
 
 <img src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
 
-<sub>These cards and the repository list refresh daily and whenever you push to the profile repository. To refresh immediately, open **Actions → Refresh profile data → Run workflow**.</sub>
 
 </td>
 </tr>
@@ -172,17 +171,11 @@ Natural-language-processing experiments using Python and real-world datasets.
 ## RECENTLY UPDATED REPOSITORIES
 
 <!-- RECENT-REPOS:START -->
+<div align="center">
 
-<!-- AUTO-UPDATED FROM THE GITHUB API -->
-- **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
-  <sub>HTML · ★ 0 · Updated Nov 2026</sub>
-- **[priv](https://github.com/BijoySarkar19/priv)** — No description provided.  
-  <sub>★ 0 · Updated Nov 2026</sub>
-- **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — 🚀 Full-stack developer portfolio & intelligent systems showcase. Features a 300-frame scroll canvas, AI/ML engineering proje  
-  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
-- **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — My professional CV created using LaTeX  
-  <sub>TeX · ★ 0 · Updated Nov 2026</sub>
+[![Browse Public Repositories](https://img.shields.io/badge/EXPLORE_MY_PROJECTS-View_All_Repositories-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
 
+</div>
 <!-- RECENT-REPOS:END -->
 
 ---
@@ -278,6 +271,6 @@ ICFAI University Tripura
   <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow_Me-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 </p>
 
-<sub>Designed in navy · Animated locally hosted visuals · Live GitHub-powered data</sub>
+<sub>BUILT WITH CURIOSITY · POWERED BY CODE · ALWAYS LEARNING</sub>
 
 </div>
