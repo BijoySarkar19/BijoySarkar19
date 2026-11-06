@@ -46,3 +46,24 @@ LATEST UPDATES
 - The hero banner no longer contains the PORTFOLIO / 2026 pill.
 - OPEN TO now includes software, Python, AI/ML, full-stack and entry-level job opportunities.
 - The portfolio CTA is a prominent blue badge.
+
+
+CONTRIBUTION SECTION FIXES
+--------------------------
+- Removed the old "CONTRIBUTION MAP" placeholder card.
+- The first packaged contributions.svg shows the current public contribution total (449, as of 7 Nov 2026).
+- On the first successful Refresh profile data run, it is replaced with a day-by-day calendar built from GitHub GraphQL, with a public GitHub contributions-page fallback.
+- Added a valid animated preview SVG at assets/generated/contribution-snake.svg so README never shows a broken image before the first run.
+- The Platane/snk@v3 GitHub Action then overwrites that preview with the real activity-driven contribution snake.
+- The workflow validates every generated SVG before committing.
+- Footer social destinations now use coordinated clickable badges.
+
+
+TROUBLESHOOTING / WHY THE PREVIOUS CONTRIBUTION GRAPH DID NOT UPDATE
+--------------------------------------------------------------------
+- The previous .github/scripts/update-profile.mjs used CommonJS require() despite being an ES module (.mjs). Node 20 treats .mjs as ESM, so the workflow could fail before it generated the contribution files.
+- This version uses valid ES module imports and was run through a mocked GitHub API test. Generated statistics, language, and calendar SVGs passed XML validation.
+- The contribution calendar first tries GitHub GraphQL, then falls back to parsing the public GitHub contributions page.
+- The snake image is included as a valid animated preview so it does not render as a broken image before the first workflow run.
+- The GitHub Action replaces the preview with the actual contribution-based snake SVG and validates the generated assets before committing.
+- Footer links are styled as clickable Shields badges.

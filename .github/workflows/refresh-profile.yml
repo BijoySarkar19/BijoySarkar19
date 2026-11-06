@@ -46,17 +46,31 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
-      - name: Generate animated contribution snake
+      - name: Generate animated contribution snake from GitHub activity
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2338BDF8
 
-      - name: Place snake in README assets
+      - name: Install generated contribution snake
         run: |
+          test -s dist/github-contribution-grid-snake-dark.svg
           mkdir -p assets/generated
           cp dist/github-contribution-grid-snake-dark.svg assets/generated/contribution-snake.svg
+          test -s assets/generated/contribution-snake.svg
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          for path in [
+              "assets/generated/github-stats.svg",
+              "assets/generated/top-languages.svg",
+              "assets/generated/contributions.svg",
+              "assets/generated/contribution-snake.svg",
+          ]:
+              ET.parse(path)
+              print(f"Validated {path}")
+          PY
 
       - name: Commit refreshed profile assets
         run: |

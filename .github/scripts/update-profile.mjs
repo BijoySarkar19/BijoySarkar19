@@ -1,5 +1,5 @@
-const fs = require("node:fs");
-const path = require("node:path");
+import fs from "node:fs";
+import path from "node:path";
 
 const USER = process.env.GITHUB_USERNAME || "BijoySarkar19";
 const TOKEN = process.env.GITHUB_TOKEN;
@@ -57,8 +57,8 @@ function statSvg(user, repos, totalStars, totalForks, contributions) {
   <text x="${x+17}" y="${y+34}" fill="#9DB9DE" font-family="Arial,sans-serif" font-size="12" font-weight="700">${esc(label)}</text>
   <text x="${x+17}" y="${y+82}" fill="#F4F8FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">${Number(value).toLocaleString("en-US")}</text>`;
  });
- body+=`<text x="${w-45}" y="${h-18}" text-anchor="end" fill="#6686B3" font-family="Arial,sans-serif" font-size="11">PUBLIC GITHUB DATA · ${totalForks.toLocaleString("en-US")} FORKS ACROSS REPOSITORIES</text></svg>`;
- return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}`;
+ body+=`<text x="${w-45}" y="${h-18}" text-anchor="end" fill="#6686B3" font-family="Arial,sans-serif" font-size="11">PUBLIC GITHUB DATA · ${totalForks.toLocaleString("en-US")} FORKS ACROSS REPOSITORIES</text>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}</svg>`;
 }
 function languageSvg(langs) {
  const w=1000,h=240; const items=langs.slice(0,6); const total=items.reduce((a,b)=>a+b.bytes,0)||1;
@@ -77,32 +77,37 @@ function languageSvg(langs) {
    <text x="${x+20}" y="${y}" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="15">${esc(l.name)}</text>
    <text x="${x+250}" y="${y}" text-anchor="end" fill="#8DAED9" font-family="Arial,sans-serif" font-size="14">${(100*l.bytes/total).toFixed(1)}%</text>`;
  });
- body+="</svg>";
- return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}</svg>`;
 }
 function contributionSvg(calendar) {
- const w=1000,h=230, weeks=calendar.weeks;
- const cell=11,gap=5,startX=54,startY=105;
- let body=svgHeader(w,h,"CONTRIBUTION ACTIVITY","Your GitHub contribution calendar · last 12 months");
+ const cell=12,gap=4,startX=52,startY=103;
+ const weeks=calendar.weeks;
+ const w=Math.max(960,startX+weeks.length*(cell+gap)+32),h=224;
+ let body=svgHeader(w,h,"CONTRIBUTION ACTIVITY","Your real GitHub contribution calendar · rolling 12-month view");
  const monthNames=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
- let seen=new Set();
  weeks.forEach((week,wi)=>{
-   const first=week.contributionDays?.[0]?.date;
-   if(first){const d=new Date(first+"T00:00:00Z");const m=d.getUTCMonth();const x=startX+wi*(cell+gap); if(!seen.has(m)){seen.add(m);body+=`<text x="${x}" y="95" fill="#8EACD2" font-family="Arial,sans-serif" font-size="11">${monthNames[m]}</text>`;}}
-   week.contributionDays.forEach((day,di)=>{
-     const count=day.contributionCount;
+   const firstOfMonth=(week.contributionDays||[]).find(day=>day.date.slice(8,10)==="01");
+   if(firstOfMonth){
+    const d=new Date(firstOfMonth.date+"T00:00:00Z");
+    const x=startX+wi*(cell+gap);
+    body+=`<text x="${x}" y="91" fill="#8EACD2" font-family="Arial,sans-serif" font-size="11">${monthNames[d.getUTCMonth()]}</text>`;
+   }
+   (week.contributionDays||[]).forEach((day,di)=>{
+     const count=Number(day.contributionCount)||0;
      const level=count===0?0:count<3?1:count<6?2:count<10?3:4;
      const palette=["#142844","#164E63","#0E7490","#0284C7","#38BDF8"];
      const x=startX+wi*(cell+gap), y=startY+di*(cell+gap);
-     body+=`<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2" fill="${palette[level]}" stroke="#223E62" stroke-width=".4"><title>${esc(day.date)}: ${count} contributions</title></rect>`;
+     body+=`<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${palette[level]}" stroke="#223E62" stroke-width=".4"><title>${esc(day.date)}: ${count} contributions</title></rect>`;
    });
  });
+ const legendX=w-112;
  body+=`<text x="${startX}" y="218" fill="#8EACD2" font-family="Arial,sans-serif" font-size="12">${Number(calendar.totalContributions).toLocaleString("en-US")} contributions in the last year</text>
- <text x="${w-48}" y="218" text-anchor="end" fill="#8EACD2" font-family="Arial,sans-serif" font-size="11">LESS</text>`;
- ["#142844","#164E63","#0E7490","#0284C7","#38BDF8"].forEach((c,i)=>body+=`<rect x="${w-91+i*13}" y="207" width="10" height="10" rx="2" fill="${c}"/>`);
- body+="</svg>";
- return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}`;
+ <text x="${legendX-34}" y="218" fill="#8EACD2" font-family="Arial,sans-serif" font-size="11">LESS</text>`;
+ ["#142844","#164E63","#0E7490","#0284C7","#38BDF8"].forEach((c,i)=>body+=`<rect x="${legendX+i*13}" y="207" width="10" height="10" rx="2" fill="${c}"/>`);
+ body+=`<text x="${w-24}" y="218" text-anchor="end" fill="#8EACD2" font-family="Arial,sans-serif" font-size="11">MORE</text>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}</svg>`;
 }
+
 function makeRecentRepos(repos) {
  const selected=repos.filter(r=>!r.fork).slice(0,5);
  if(!selected.length) return "_No public repositories were returned by the GitHub API._";
@@ -136,12 +141,76 @@ for(let i=0;i<owned.length;i+=5){
 }
 const langs=Object.entries(languageTotals).map(([name,bytes])=>({name,bytes})).sort((a,b)=>b.bytes-a.bytes);
 
-let calendar={totalContributions:0,weeks:[]};
+function parseCalendarFromPublicProfile(html) {
+ const cells = [];
+ const tags = [...html.matchAll(/<td\b[^>]*>/gi)].map(match => match[0]);
+ const readAttr = (tag, name) => {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = tag.match(new RegExp(`\\b${escaped}=["']([^"']*)["']`, "i"));
+  return match ? match[1] : "";
+ };
+ for (const tag of tags) {
+  const date = readAttr(tag, "data-date");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+  const countAttr = readAttr(tag, "data-count");
+  const aria = readAttr(tag, "aria-label");
+  const countMatch = aria.match(/(\d+)\s+contributions?/i);
+  const count = countAttr !== "" ? Number(countAttr) : (countMatch ? Number(countMatch[1]) : 0);
+  const level = readAttr(tag, "data-level");
+  cells.push({ date, contributionCount: Number.isFinite(count) ? count : 0, contributionLevel: Number(level || 0) });
+ }
+ if (cells.length < 300) {
+  throw new Error(`GitHub public contributions page returned only ${cells.length} daily cells.`);
+ }
+ cells.sort((a,b)=>a.date.localeCompare(b.date));
+ const byDate = new Map(cells.map(day=>[day.date,day.contributionCount]));
+ const first = new Date(`${cells[0].date}T00:00:00Z`);
+ const last = new Date(`${cells[cells.length-1].date}T00:00:00Z`);
+ const start = new Date(first);
+ start.setUTCDate(start.getUTCDate() - start.getUTCDay());
+ const end = new Date(last);
+ end.setUTCDate(end.getUTCDate() + (6 - end.getUTCDay()));
+ const weeks = [];
+ for (let cursor=new Date(start); cursor<=end; cursor.setUTCDate(cursor.getUTCDate()+7)) {
+  const days=[];
+  for(let dow=0;dow<7;dow++) {
+   const d=new Date(cursor);
+   d.setUTCDate(d.getUTCDate()+dow);
+   const date=d.toISOString().slice(0,10);
+   const count=byDate.get(date) || 0;
+   days.push({date,contributionCount:count});
+  }
+  weeks.push({contributionDays:days});
+ }
+ const totalContributions=cells.reduce((sum,day)=>sum+day.contributionCount,0);
+ return {totalContributions,weeks};
+}
+
+async function fetchPublicCalendar() {
+ const response=await fetch(`https://github.com/users/${USER}/contributions`,{
+  headers:{
+   "Accept":"text/html",
+   "User-Agent":"BijoySarkar-profile-readme"
+  }
+ });
+ if(!response.ok) throw new Error(`GitHub contributions page returned HTTP ${response.status}`);
+ const html=await response.text();
+ return parseCalendarFromPublicProfile(html);
+}
+
+let calendar=null;
 try {
  const data=await graphql(`query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{contributionCount date}}}}}}`,{login:USER});
- calendar=data.user.contributionsCollection.contributionCalendar;
+ calendar=data?.user?.contributionsCollection?.contributionCalendar;
+ if(!calendar || !Array.isArray(calendar.weeks) || calendar.weeks.length<40) throw new Error("GraphQL returned an incomplete contribution calendar.");
+ console.log("Contribution calendar loaded through GitHub GraphQL.");
 } catch(e) {
- console.warn("Could not fetch contribution calendar:",e.message);
+ console.warn("GraphQL contribution lookup unavailable; using GitHub's public contribution page:",e.message);
+ calendar=await fetchPublicCalendar();
+ console.log("Contribution calendar loaded from GitHub's public profile page.");
+}
+if(!calendar || !Array.isArray(calendar.weeks) || calendar.weeks.length<40) {
+ throw new Error("A complete contribution calendar could not be generated. No placeholder chart will be published.");
 }
 
 fs.writeFileSync(path.join(outDir,"github-stats.svg"),statSvg(user,owned.length,totalStars,totalForks,calendar.totalContributions));

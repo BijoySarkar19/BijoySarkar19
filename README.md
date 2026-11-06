@@ -219,15 +219,26 @@ ICFAI University Tripura
 
 <div align="center">
 
-<img src="./assets/generated/contributions.svg" width="100%" alt="GitHub contribution calendar heatmap"/>
+<a href="https://github.com/BijoySarkar19">
+  <img src="./assets/generated/contributions.svg" width="100%" alt="Live GitHub contribution calendar for Bijoy Sarkar"/>
+</a>
 
-### Watch my contributions move 🐍
+### 🐍 Watch my contributions move
 
-<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub contribution snake"/>
+<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated snake generated from my GitHub contribution calendar"/>
 
-<sub>The heatmap and snake are generated from my GitHub contribution history by GitHub Actions.</sub>
+<a href="https://github.com/BijoySarkar19">
+  <img src="https://img.shields.io/badge/VIEW_FULL_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="View full GitHub activity"/>
+</a>
+
+<a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml">
+  <img src="https://img.shields.io/badge/REFRESH_LIVE_ACTIVITY-Run_GitHub_Action-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white" alt="Refresh contribution activity"/>
+</a>
+
+<sub>The first successful refresh replaces the included preview with your actual daily contribution calendar and data-driven snake.</sub>
 
 </div>
+
 ---
 
 ## BEYOND THE CODE
@@ -250,8 +261,13 @@ ICFAI University Tripura
 
 **Build. Learn. Improve. Repeat.**
 
-[Portfolio](https://bijoy-sarkar-portfolio.vercel.app/) · [GitHub](https://github.com/BijoySarkar19) · [LinkedIn](https://www.linkedin.com/in/bijoysarkar19) · [Instagram](https://www.instagram.com/bijoyysarkarr/)
+<p align="center">
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/EXPLORE_MY_PORTFOLIO-Visit_Now-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Explore my portfolio"/></a>
+  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-View_Repositories-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repositories"/></a>
+  <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow_Me-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+</p>
 
-<sub>Designed in navy · Animated locally hosted visuals · GitHub-powered live data</sub>
+<sub>Designed in navy · Animated locally hosted visuals · Live GitHub-powered data</sub>
 
 </div>

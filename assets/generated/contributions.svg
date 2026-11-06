@@ -1,8 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220">
-<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#08162D"/><stop offset="1" stop-color="#172C57"/></linearGradient><linearGradient id="a"><stop stop-color="#34D399"/><stop offset="1" stop-color="#A78BFA"/></linearGradient></defs>
-<rect width="100%" height="100%" rx="24" fill="url(#bg)" stroke="#27456F" stroke-width="2"/>
-<rect x="28" y="28" width="7" height="164" rx="4" fill="url(#a)"/>
-<text x="60" y="92" fill="#EAF2FF" font-family="Arial,sans-serif" font-size="36" font-weight="700">CONTRIBUTION MAP</text>
-<text x="60" y="150" fill="#A9C5E8" font-family="Arial,sans-serif" font-size="23">Your GitHub contribution calendar will appear here after the first workflow run.</text>
-<text x="60" y="205" fill="#60A5FA" font-family="Arial,sans-serif" font-size="18">This card is refreshed automatically by GitHub Actions.</text>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".58" stop-color="#102B50"/><stop offset="1" stop-color="#1D2255"/></linearGradient>
+ <linearGradient id="accent"><stop stop-color="#38BDF8"/><stop offset=".55" stop-color="#818CF8"/><stop offset="1" stop-color="#C084FC"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1000" height="220" rx="24" fill="url(#bg)" stroke="#294B79" stroke-width="2"/>
+<rect x="25" y="24" width="6" height="172" rx="3" fill="url(#accent)"/>
+<text x="58" y="52" fill="#8CCBFF" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2">GITHUB CONTRIBUTION SNAPSHOT</text>
+<text x="60" y="143" fill="#F4F8FF" font-family="Arial,sans-serif" font-size="76" font-weight="700">449</text>
+<text x="235" y="112" fill="#DCEBFF" font-family="Arial,sans-serif" font-size="26" font-weight="700">CONTRIBUTIONS</text>
+<text x="236" y="145" fill="#A9C5E8" font-family="Arial,sans-serif" font-size="17">in the last year · public GitHub profile</text>
+<text x="60" y="185" fill="#75BFFF" font-family="Arial,sans-serif" font-size="12">LIVE CONTRIBUTION CALENDAR WILL REPLACE THIS SNAPSHOT ON THE FIRST WORKFLOW RUN</text>
+<g filter="url(#glow)">
+ <circle cx="835" cy="110" r="43" fill="none" stroke="#27456F" stroke-width="12"/>
+ <path d="M835 67 A43 43 0 1 1 796 128" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linecap="round"/>
+ <circle cx="835" cy="110" r="7" fill="#E0F2FE"/>
+</g>
+<text x="902" y="205" text-anchor="end" fill="#6686B3" font-family="Arial,sans-serif" font-size="10">SNAPSHOT · 07 NOV 2026</text>
 </svg>
