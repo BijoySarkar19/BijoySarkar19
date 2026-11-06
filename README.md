@@ -47,18 +47,50 @@ Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer �
 </td>
 <td width="70%" valign="top">
 
-## HELLO, WORLD! 👋
+<div align="left">
 
-I'm **Bijoy Sarkar**, a Computer Science & Engineering student who enjoys turning ideas into practical software. I work across AI/ML, computer vision, NLP, web development and mobile applications.
+<h2>HELLO, WORLD! 👋</h2>
 
-I believe in learning by building: experimenting with technologies, solving real problems and improving every project through iteration.
+<p>I'm <strong>Bijoy Sarkar</strong>, a Computer Science &amp; Engineering student who enjoys turning ideas into practical software. I work across Artificial Intelligence, Machine Learning, Computer Vision, NLP, web development and mobile applications.</p>
 
-### LIVE GITHUB SNAPSHOT
+<p>I believe in learning by building: experimenting with technologies, solving real problems and improving every project through iteration.</p>
+
+<h3>WHAT I LIKE TO BUILD</h3>
+
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<h4>🤖 AI &amp; INTELLIGENT SYSTEMS</h4>
+<p>Machine learning applications, computer vision, natural language processing and data-driven tools built with Python.</p>
+</td>
+<td width="50%" valign="top">
+<h4>🌐 WEB &amp; APP DEVELOPMENT</h4>
+<p>Responsive web experiences, full-stack applications and mobile apps using JavaScript, Next.js, Flutter and Firebase.</p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h4>🛡️ SOFTWARE &amp; SECURITY</h4>
+<p>Practical software engineering, database-backed systems, API development, Docker and cybersecurity fundamentals.</p>
+</td>
+<td width="50%" valign="top">
+<h4>🧠 PROBLEM SOLVING</h4>
+<p>Strengthening Data Structures &amp; Algorithms, writing maintainable code and learning through hands-on projects.</p>
+</td>
+</tr>
+</table>
+
+<h3>🚀 PROJECT SPOTLIGHT — CIVICLENS CORE</h3>
+
+<p>A public-infrastructure intelligence project focused on mapping roads and community assets, collecting issue reports, exploring historical trends and presenting infrastructure insights. Its planned next stage explores AI-assisted risk prediction and maintenance prioritisation.</p>
+
+<h3>LIVE GITHUB SNAPSHOT</h3>
 
 <img src="./assets/generated/github-stats.svg" width="100%" alt="Automatically refreshed GitHub statistics"/>
 
 <img src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
 
+</div>
 
 </td>
 </tr>
@@ -171,17 +203,11 @@ Natural-language-processing experiments using Python and real-world datasets.
 ## RECENTLY UPDATED REPOSITORIES
 
 <!-- RECENT-REPOS:START -->
+<div align="center">
 
-<!-- AUTO-UPDATED FROM THE GITHUB API -->
-- **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
-  <sub>HTML · ★ 0 · Updated Nov 2026</sub>
-- **[priv](https://github.com/BijoySarkar19/priv)** — No description provided.  
-  <sub>★ 0 · Updated Nov 2026</sub>
-- **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — 🚀 Full-stack developer portfolio & intelligent systems showcase. Features a 300-frame scroll canvas, AI/ML engineering proje  
-  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
-- **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — My professional CV created using LaTeX  
-  <sub>TeX · ★ 0 · Updated Nov 2026</sub>
+[![Browse Public Repositories](https://img.shields.io/badge/EXPLORE_MY_PROJECTS-View_All_Repositories-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19?tab=repositories)
 
+</div>
 <!-- RECENT-REPOS:END -->
 
 ---
