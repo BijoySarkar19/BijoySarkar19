@@ -20,7 +20,7 @@
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
 
-📍 Tripura, India
+📍 Agartala, Tripura, India
 
 </div>
 
