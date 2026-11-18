@@ -212,18 +212,16 @@ Natural-language-processing experiments using Python and real-world datasets.
 
 An intelligent public-infrastructure intelligence system.
 
-**Part 1**
 - Interactive infrastructure map.
 - Road and public infrastructure information.
 - Public issue reporting.
 - Historical problem analysis.
 - Infrastructure dashboards.
-
-**Planned Part 2**
 - AI-based infrastructure risk prediction.
 - Geographic hotspot detection.
 - Automatic issue prioritisation.
 - Intelligent maintenance recommendations.
+
 
 <div align="center">
 
@@ -239,11 +237,11 @@ An intelligent public-infrastructure intelligence system.
 
 <!-- AUTO-UPDATED FROM THE GITHUB API -->
 - **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
-  <sub>HTML · ★ 0 · Updated Nov 2026</sub>
+  
 - **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — 🚀 Full-stack developer portfolio & intelligent systems showcase. Features a 300-frame scroll canvas, AI/ML engineering proje  
-  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
+  
 - **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — My professional CV created using LaTeX  
-  <sub>TeX · ★ 0 · Updated Nov 2026</sub>
+  
 
 <!-- RECENT-REPOS:END -->
 
