@@ -236,6 +236,8 @@ An intelligent public-infrastructure intelligence system.
 <!-- RECENT-REPOS:START -->
 
 <!-- AUTO-UPDATED FROM THE GITHUB API -->
+- **[CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core)** — It a solution for digital Municipal Corporation  
+  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
 - **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
   <sub>HTML · ★ 0 · Updated Nov 2026</sub>
 - **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — 🚀 Full-stack developer portfolio & intelligent systems showcase. Features a 300-frame scroll canvas, AI/ML engineering proje  
