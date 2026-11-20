@@ -236,6 +236,8 @@ An intelligent public-infrastructure intelligence system.
 <!-- RECENT-REPOS:START -->
 
 <!-- AUTO-UPDATED FROM THE GITHUB API -->
+- **[SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge)** — Privacy-first edge-to-cloud video intelligence platform featuring real-time AI object detection, multi-object tracking, priva  
+  <sub>★ 0 · Updated Nov 2026</sub>
 - **[CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core)** — It a solution for digital Municipal Corporation  
   <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
 - **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
