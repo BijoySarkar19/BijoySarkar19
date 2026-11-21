@@ -1,8 +1,10 @@
+
 name: Refresh profile data
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   schedule:
     - cron: "23 0 * * *"
   workflow_dispatch:
@@ -12,11 +14,12 @@ permissions:
 
 concurrency:
   group: refresh-profile-data
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v4
@@ -46,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
-      - name: Generate animated contribution snake from GitHub activity
+      - name: Generate animated contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -54,32 +57,44 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2338BDF8
 
-      - name: Install generated contribution snake
+      - name: Install generated snake
         run: |
           test -s dist/github-contribution-grid-snake-dark.svg
           mkdir -p assets/generated
           cp dist/github-contribution-grid-snake-dark.svg assets/generated/contribution-snake.svg
           test -s assets/generated/contribution-snake.svg
+
+      - name: Validate generated profile assets
+        run: |
           python - <<'PY'
           import xml.etree.ElementTree as ET
-          for path in [
+          from pathlib import Path
+
+          paths = [
               "assets/generated/github-stats.svg",
               "assets/generated/top-languages.svg",
               "assets/generated/contributions.svg",
               "assets/generated/contribution-snake.svg",
-          ]:
-              ET.parse(path)
-              print(f"Validated {path}")
+          ]
+
+          for path in paths:
+              file = Path(path)
+              if not file.exists() or file.stat().st_size == 0:
+                  raise SystemExit(f"Missing or empty asset: {path}")
+              ET.parse(file)
+              print(f"Validated: {path}")
           PY
 
       - name: Commit refreshed profile assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add assets/generated assets/profile-avatar.png README.md
+
           if git diff --cached --quiet; then
             echo "No profile changes to publish."
           else
             git commit -m "chore: refresh live GitHub profile data"
-            git push
+            git push origin HEAD:main
           fi
