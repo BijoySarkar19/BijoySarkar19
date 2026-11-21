@@ -235,17 +235,11 @@ An intelligent public-infrastructure intelligence system.
 
 <!-- RECENT-REPOS:START -->
 
-<!-- AUTO-UPDATED FROM THE GITHUB API -->
-- **[SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge)** — Privacy-first edge-to-cloud video intelligence platform featuring real-time AI object detection, multi-object tracking, priva  
-  <sub>Python · ★ 0 · Updated Nov 2026</sub>
-- **[CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core)** — It a solution for digital Municipal Corporation  
-  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
-- **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing my projects, technical skills, internships, and journey as a B.Tech CSE student and  
-  <sub>HTML · ★ 0 · Updated Nov 2026</sub>
-- **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — 🚀 Full-stack developer portfolio & intelligent systems showcase. Features a 300-frame scroll canvas, AI/ML engineering proje  
-  <sub>TypeScript · ★ 0 · Updated Nov 2026</sub>
-- **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — My professional CV created using LaTeX  
-  <sub>TeX · ★ 0 · Updated Nov 2026</sub>
+- **[SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge)** — Privacy-first edge-to-cloud video intelligence platform featuring real-time AI object detection, multi-object tracking, and privacy-preserving inference.
+- **[CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core)** — Intelligent public infrastructure intelligence system for digital municipal corporations and civic authorities.
+- **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing projects, technical skills, internships, and engineering journey.
+- **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — Full-stack developer portfolio & intelligent systems showcase featuring interactive 300-frame scroll canvas and AI/ML engineering projects.
+- **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — Professional developer curriculum vitae created using LaTeX.
 
 <!-- RECENT-REPOS:END -->
 

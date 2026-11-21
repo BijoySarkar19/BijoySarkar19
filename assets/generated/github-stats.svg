@@ -1,16 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250"><defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".6" stop-color="#102B50"/><stop offset="1" stop-color="#1D2255"/></linearGradient>
- <linearGradient id="accent"><stop stop-color="#38BDF8"/><stop offset=".55" stop-color="#818CF8"/><stop offset="1" stop-color="#C084FC"/></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- </defs><rect width="1000" height="250" rx="24" fill="url(#bg)" stroke="#294B79" stroke-width="2"/>
- <rect x="24" y="24" width="6" height="202" rx="3" fill="url(#accent)"/>
- <text x="52" y="54" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#8CCBFF" letter-spacing="2">GITHUB / LIVE METRICS</text>
- <text x="52" y="80" font-family="Arial,sans-serif" font-size="13" fill="#8EA9CE">@BijoySarkar19  •  refreshed 2026-11-21</text><rect x="48" y="112" width="220" height="105" rx="15" fill="#0C2342" stroke="#284A76"/>
-  <text x="65" y="146" fill="#9DB9DE" font-family="Arial,sans-serif" font-size="12" font-weight="700">PUBLIC REPOSITORIES</text>
-  <text x="65" y="194" fill="#F4F8FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">5</text><rect x="286" y="112" width="220" height="105" rx="15" fill="#0C2342" stroke="#284A76"/>
-  <text x="303" y="146" fill="#9DB9DE" font-family="Arial,sans-serif" font-size="12" font-weight="700">FOLLOWERS</text>
-  <text x="303" y="194" fill="#F4F8FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">0</text><rect x="524" y="112" width="220" height="105" rx="15" fill="#0C2342" stroke="#284A76"/>
-  <text x="541" y="146" fill="#9DB9DE" font-family="Arial,sans-serif" font-size="12" font-weight="700">TOTAL STARS</text>
-  <text x="541" y="194" fill="#F4F8FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">0</text><rect x="762" y="112" width="220" height="105" rx="15" fill="#0C2342" stroke="#284A76"/>
-  <text x="779" y="146" fill="#9DB9DE" font-family="Arial,sans-serif" font-size="12" font-weight="700">CONTRIBUTIONS · 1 YEAR</text>
-  <text x="779" y="194" fill="#F4F8FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">84</text><text x="955" y="232" text-anchor="end" fill="#6686B3" font-family="Arial,sans-serif" font-size="11">PUBLIC GITHUB DATA · 0 FORKS ACROSS REPOSITORIES</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240">
+  <defs>
+    <linearGradient id="statsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="60%" stop-color="#0E223D"/>
+      <stop offset="100%" stop-color="#162E52"/>
+    </linearGradient>
+    <linearGradient id="statsAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <style>
+      @keyframes pulseStats {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 2px #38BDF8); }
+        50% { opacity: 1; filter: drop-shadow(0 0 7px #38BDF8); }
+      }
+      .stats-accent { animation: pulseStats 3s ease-in-out infinite; }
+    </style>
+  </defs>
+  <rect width="1000" height="240" rx="20" fill="url(#statsBg)" stroke="#254873" stroke-width="1.5"/>
+  <rect x="24" y="24" width="5" height="192" rx="2.5" fill="url(#statsAccent)" class="stats-accent"/>
+  
+  <text x="46" y="50" fill="#60A5FA" font-size="18" font-weight="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" letter-spacing="2">GITHUB / LIVE METRICS</text>
+  <text x="46" y="74" fill="#94A3B8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">@BijoySarkar19 &#183; Refreshed 2026-11-21</text>
+  
+  
+      <rect x="46" y="104" width="216" height="106" rx="14" fill="#0D223E" stroke="#254873" stroke-width="1.2"/>
+      <text x="64" y="136" fill="#8DBBFF" font-size="11" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" letter-spacing="0.5">PUBLIC REPOSITORIES</text>
+      <text x="64" y="184" fill="#FFFFFF" font-size="34" font-weight="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">5</text>
+    
+      <rect x="276" y="104" width="216" height="106" rx="14" fill="#0D223E" stroke="#254873" stroke-width="1.2"/>
+      <text x="294" y="136" fill="#8DBBFF" font-size="11" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" letter-spacing="0.5">FOLLOWERS</text>
+      <text x="294" y="184" fill="#FFFFFF" font-size="34" font-weight="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">0</text>
+    
+      <rect x="506" y="104" width="216" height="106" rx="14" fill="#0D223E" stroke="#254873" stroke-width="1.2"/>
+      <text x="524" y="136" fill="#8DBBFF" font-size="11" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" letter-spacing="0.5">TOTAL STARS</text>
+      <text x="524" y="184" fill="#FFFFFF" font-size="34" font-weight="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">0</text>
+    
+      <rect x="736" y="104" width="216" height="106" rx="14" fill="#0D223E" stroke="#254873" stroke-width="1.2"/>
+      <text x="754" y="136" fill="#8DBBFF" font-size="11" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" letter-spacing="0.5">CONTRIBUTIONS · 1 YEAR</text>
+      <text x="754" y="184" fill="#FFFFFF" font-size="34" font-weight="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">535</text>
+    
+  <text x="968" y="226" text-anchor="end" fill="#5F7D9F" font-size="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">LIVE REPOSITORY METRICS &amp; ACTIVITY</text>
+</svg>

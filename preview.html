@@ -1,103 +1,850 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bijoy Sarkar — GitHub Profile Preview</title>
-<style>
-:root{--bg:#070d1b;--panel:#0d1a31;--panel2:#102445;--stroke:#254873;--text:#eaf2ff;--muted:#99b3d8;--blue:#38bdf8;--violet:#a78bfa;--mint:#34d399}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 0%,#1b2f63 0,#070d1b 58%);color:var(--text);font:15px/1.6 Inter,Segoe UI,Arial,sans-serif}
-a{color:#7dd3fc;text-decoration:none}a:hover{color:#c4b5fd;text-decoration:underline}
-.shell{max-width:1320px;margin:24px auto;padding:18px}
-.topnav{height:54px;border:1px solid #233e65;border-radius:14px;background:#08152bdb;display:flex;align-items:center;gap:24px;padding:0 20px;margin-bottom:18px;box-shadow:0 12px 35px #0005}
-.logo{font-weight:800;letter-spacing:.12em}.pill{font-size:12px;color:#adc7ea;padding:6px 12px;border-radius:30px;background:#10294a}.pill.active{background:#173b66;color:#a5e2ff}
-.layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:18px}
-.panel{background:linear-gradient(145deg,#0c1930f5,#0b172bf5);border:1px solid var(--stroke);border-radius:18px;box-shadow:0 18px 50px #0005}
-.sidebar{padding:22px;align-self:start;position:sticky;top:15px}
-.avatar{width:168px;height:168px;object-fit:cover;border-radius:50%;border:3px solid #38bdf8;box-shadow:0 0 0 6px #8b5cf633,0 0 32px #38bdf855}
-.center{text-align:center}.name{font-size:23px;font-weight:800;margin:12px 0 0}.handle{color:var(--muted);font-size:13px}.bio{font-size:13px;color:#c7d8ee;margin:16px 0}
-.btn{display:inline-block;margin:4px 3px;padding:7px 10px;border-radius:8px;background:#122d52;border:1px solid #315986;color:#d8efff;font-size:12px;font-weight:700}.btn.primary{background:linear-gradient(90deg,#2563eb,#7c3aed);border:0;color:white}
-.sep{border:0;border-top:1px solid #233d60;margin:18px 0}.side-label{color:#80c8ff;font-weight:800;font-size:11px;letter-spacing:.15em}.fact{font-size:13px;color:#c5d7ed;padding:5px 0}
-.content{display:grid;gap:18px}.hero{overflow:hidden}.hero img.banner{width:100%;display:block}.hero-body{padding:22px 26px 25px}.kicker{color:#69c6ff;font:700 11px ui-monospace,monospace;letter-spacing:.18em}.hero h1{font-size:32px;margin:4px 0 0}.hero p{color:#bfd0e7;max-width:850px;margin:10px 0}
-.roles{width:min(100%,720px);margin-top:13px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{padding:17px;background:linear-gradient(145deg,#102547,#0b1b33);border:1px solid #24466f;border-radius:15px;min-width:0}.card h3{margin:0 0 8px;font-size:15px}.card p{color:#a9c0df;font-size:13px;margin:0}.wide{grid-column:1/-1}.section{padding:22px}.section-title{display:flex;align-items:center;gap:10px;margin:0 0 15px;font-size:15px;letter-spacing:.12em}.dot{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 16px var(--mint)}
-.metrics,.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{background:#10294a;border:1px solid #294e7b;border-radius:12px;padding:15px}.metric b{display:block;font-size:23px;color:#eaf6ff}.metric span{color:#95b3da;font-size:10px;letter-spacing:.12em}
-.stats{width:100%;display:block}.photos img{width:100%;height:245px;object-fit:cover;border-radius:12px;border:1px solid #325986;transition:transform .3s,box-shadow .3s}.photos img:hover{transform:translateY(-4px);box-shadow:0 12px 25px #0008}
-.chips span{display:inline-block;margin:4px;padding:5px 9px;border-radius:7px;background:#132d50;border:1px solid #2c4e76;color:#d6e8ff;font:12px ui-monospace,monospace}
-table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px;border-bottom:1px solid #203b60;text-align:left}th{color:#87cfff}
-.footer{text-align:center;padding:22px;color:#a7bbd6}.small{font-size:11px;color:#7899c4}
-@media(max-width:850px){.layout{grid-template-columns:1fr}.sidebar{position:static}.cards{grid-template-columns:1fr}.wide{grid-column:auto}.metrics,.photos{grid-template-columns:1fr}.topnav{overflow:hidden;white-space:nowrap}.hero h1{font-size:26px}}
-</style></head>
-<body><main class="shell">
-<nav class="topnav"><span class="logo">BS / PROFILE</span><span class="pill active">Overview</span><span class="pill">Projects</span><span class="pill">Skills</span><span class="pill">Activity</span><span style="margin-left:auto" class="pill">Updated by GitHub Actions</span></nav>
-<div class="layout">
-<aside class="panel sidebar">
-  <div class="center">
-    <img class="avatar" src="assets/profile-avatar.png" alt="Bijoy Sarkar">
-    <div class="name">Bijoy Sarkar</div><div class="handle">@BijoySarkar19 · B.Tech CSE</div>
-    <p class="bio">Software developer and AI/ML enthusiast building practical applications across web, mobile and intelligent systems.</p>
-    <a class="btn primary" href="https://bijoy-sarkar-portfolio.vercel.app/">✦ EXPLORE MY PORTFOLIO ↗</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bijoy Sarkar — GitHub Profile Preview</title>
+  <meta name="description" content="Personal animated GitHub profile preview for Bijoy Sarkar — Software Developer, B.Tech CSE, AI/ML Enthusiast">
+  <style>
+    :root {
+      --bg: #070d1b;
+      --bg-radial: radial-gradient(ellipse at 70% 0%, #15274e 0%, #070d1b 65%);
+      --panel: rgba(13, 26, 49, 0.88);
+      --panel-hover: rgba(16, 36, 69, 0.95);
+      --stroke: #254873;
+      --stroke-active: #38bdf8;
+      --text: #eaf2ff;
+      --muted: #94a3b8;
+      --blue: #38bdf8;
+      --indigo: #818cf8;
+      --mint: #34d399;
+      --card-radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      background: var(--bg);
+      background-image: var(--bg-radial);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    a:hover {
+      color: #93c5fd;
+      text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+    }
+
+    .shell {
+      max-width: 1360px;
+      margin: 20px auto;
+      padding: 0 18px 40px;
+    }
+
+    /* Topbar */
+    .topnav {
+      position: sticky;
+      top: 15px;
+      z-index: 100;
+      height: 56px;
+      border: 1px solid var(--stroke);
+      border-radius: 14px;
+      background: rgba(8, 21, 43, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .topnav::-webkit-scrollbar { display: none; }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      font-size: 14px;
+      color: #ffffff;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--mint);
+      box-shadow: 0 0 10px var(--mint);
+      animation: pulseGreen 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseGreen {
+      0%, 100% { opacity: 0.7; transform: scale(0.95); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    .pill {
+      font-size: 12px;
+      color: #b3c9e6;
+      padding: 6px 13px;
+      border-radius: 30px;
+      background: rgba(16, 41, 74, 0.7);
+      border: 1px solid rgba(37, 72, 115, 0.5);
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .pill:hover, .pill.active {
+      background: #173b66;
+      color: #a5e2ff;
+      border-color: var(--blue);
+      transform: translateY(-1px);
+    }
+
+    .pill.right {
+      margin-left: auto;
+      background: rgba(14, 116, 144, 0.2);
+      border-color: #0e7490;
+      color: #38bdf8;
+    }
+
+    /* Layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--stroke);
+      border-radius: var(--card-radius);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .panel:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Sticky Sidebar */
+    .sidebar {
+      padding: 24px;
+      position: sticky;
+      top: 86px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 16px;
+    }
+
+    .avatar-glow {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, #38bdf8, #818cf8, #34d399, #38bdf8);
+      filter: blur(8px);
+      opacity: 0.7;
+      animation: rotateGlow 8s linear infinite;
+    }
+
+    @keyframes rotateGlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .avatar {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+      display: block;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+    }
+
+    .handle {
+      color: #8daed9;
+      font-size: 13px;
+      margin-top: 2px;
+      font-weight: 500;
+    }
+
+    .bio {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin: 14px 0 18px;
+      line-height: 1.55;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      margin: 4px 3px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      background: #122d52;
+      border: 1px solid #315986;
+      color: #d8efff;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #1b4278;
+      border-color: #38bdf8;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(56, 189, 248, 0.25);
+    }
+
+    .btn.primary {
+      width: 100%;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      border: 1px solid #60a5fa;
+      color: #ffffff;
+      padding: 10px 16px;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn.primary:hover {
+      background: linear-gradient(135deg, #1d4ed8, #6d28d9);
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.55);
+      transform: translateY(-2px);
+    }
+
+    .sep {
+      border: 0;
+      border-top: 1px solid #233d60;
+      margin: 18px 0;
+    }
+
+    .side-label {
+      color: #80c8ff;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+    }
+
+    .fact {
+      font-size: 13px;
+      color: #cbd5e1;
+      padding: 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Content Area */
+    .content {
+      display: grid;
+      gap: 22px;
+    }
+
+    .hero {
+      position: relative;
+    }
+
+    .hero img.banner {
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid var(--stroke);
+    }
+
+    .hero-body {
+      padding: 24px 28px;
+    }
+
+    .kicker {
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      letter-spacing: 0.18em;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 6px 0 12px;
+      line-height: 1.25;
+      color: #ffffff;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      max-width: 860px;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .roles {
+      width: min(100%, 720px);
+      margin-top: 16px;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .section {
+      padding: 24px 28px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+    }
+
+    .section-title .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 12px var(--blue);
+    }
+
+    .stats {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Cards Grid */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 20px;
+      background: linear-gradient(145deg, #102547, #0b1b33);
+      border: 1px solid #24466f;
+      border-radius: 14px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card p {
+      color: #a9c0df;
+      font-size: 13.5px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .card .tags {
+      margin-top: auto;
+      font-size: 12px;
+      font-weight: 600;
+      color: #38bdf8;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chips span {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: #112948;
+      border: 1px solid #2a4c77;
+      color: #d6e8ff;
+      font-size: 12.5px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .chips span:hover {
+      background: #1b4379;
+      border-color: #38bdf8;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* Experience & CV */
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid #203b60;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13.5px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background: #0d213d;
+      color: #87cfff;
+      font-weight: 700;
+      border-bottom: 1px solid #203b60;
+    }
+
+    td {
+      border-bottom: 1px solid #193153;
+      color: #e2e8f0;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .cv-box {
+      margin-top: 24px;
+      padding: 24px;
+      border: 1px solid #2563eb;
+      border-radius: 16px;
+      background: linear-gradient(145deg, #091c36, #07152b);
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .cv-box img {
+      width: 100%;
+      max-width: 760px;
+      border-radius: 12px;
+      border: 1px solid #284c79;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .cv-box img:hover {
+      transform: scale(1.01);
+    }
+
+    /* Photos */
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .photos img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #325986;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .photos img:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.5);
+      border-color: #38bdf8;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: #a7bbd6;
+    }
+
+    .footer b {
+      font-size: 18px;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+    }
+
+    .footer .links {
+      margin: 18px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .small {
+      font-size: 12px;
+      color: #7899c4;
+      margin-top: 14px;
+    }
+
+    /* Responsive Breakpoints for TV, Apple, Laptops, Mobile */
+    @media (max-width: 960px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: static;
+      }
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .photos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .shell {
+        padding: 0 10px 30px;
+        margin: 10px auto;
+      }
+      .section {
+        padding: 18px;
+      }
+      .hero-body {
+        padding: 18px;
+      }
+      .hero h1 {
+        font-size: 24px;
+      }
+      .photos {
+        grid-template-columns: 1fr;
+      }
+      .topnav {
+        top: 8px;
+        height: 50px;
+        padding: 0 12px;
+        margin-bottom: 14px;
+      }
+    }
+
+    @media (min-width: 1920px) {
+      .shell {
+        max-width: 1500px;
+      }
+      body {
+        font-size: 16px;
+      }
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<main class="shell">
+  <!-- Top Navigation Bar -->
+  <nav class="topnav">
+    <div class="logo">
+      <span class="status-dot"></span>
+      BIJOY SARKAR
+    </div>
+    <a href="#overview" class="pill active">Overview</a>
+    <a href="#metrics" class="pill">Metrics</a>
+    <a href="#builds" class="pill">Selected Builds</a>
+    <a href="#toolkit" class="pill">Skills</a>
+    <a href="#experience" class="pill">Experience</a>
+    <a href="#contributions" class="pill">Contributions</a>
+    <a href="#gallery" class="pill">Gallery</a>
+    <span class="pill right">✓ Auto-Refreshed Daily</span>
+  </nav>
+
+  <div class="layout">
+    <!-- Sticky Profile Sidebar -->
+    <aside class="panel sidebar" id="profile">
+      <div class="center">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <img class="avatar" src="assets/profile-avatar.png" alt="Bijoy Sarkar">
+        </div>
+        <h2 class="name">Bijoy Sarkar</h2>
+        <div class="handle">@BijoySarkar19 · B.Tech CSE</div>
+        <p class="bio">Software developer and AI/ML enthusiast building practical applications across web, mobile, computer vision and intelligent systems.</p>
+        <a class="btn primary" href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener">✦ VISIT MY PORTFOLIO ↗</a>
+      </div>
+
+      <hr class="sep">
+
+      <div class="side-label">CONNECT</div>
+      <div class="fact">⌘ <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener">GitHub Profile</a></div>
+      <div class="fact">in <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div class="fact">◎ <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener">Instagram</a></div>
+      <div class="fact">📍 Agartala, Tripura, India</div>
+
+      <hr class="sep">
+
+      <div class="side-label">CURRENT FOCUS</div>
+      <div class="fact">▸ Data Structures &amp; Algorithms</div>
+      <div class="fact">▸ Production Software Systems</div>
+      <div class="fact">▸ AI/ML &amp; Computer Vision</div>
+      <div class="fact">▸ Open-Source Contributions</div>
+
+      <hr class="sep">
+
+      <div class="side-label">OPEN TO</div>
+      <div class="fact" style="display:block; line-height: 1.5; font-size: 12.5px; color: #a9c0df;">
+        Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer · Entry-Level Roles · Collaborations
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="content">
+      <!-- Hero Section -->
+      <section class="panel hero" id="overview">
+        <img class="banner" src="assets/hero-banner.gif" alt="Animated navy profile banner">
+        <div class="hero-body">
+          <div class="kicker">DEVELOPER PROFILE / 2026</div>
+          <h1>Hey, I'm Bijoy. <span style="color: #38bdf8;">Let's build.</span></h1>
+          <p>I'm a Computer Science &amp; Engineering student at ICFAI University Tripura. Passionate about turning complex real-world problems into working, scalable applications with clean architectures and intelligent models.</p>
+          <img class="roles" src="assets/role-ticker.gif" alt="Animated roles ticker">
+        </div>
+      </section>
+
+      <!-- Live GitHub Snapshot -->
+      <section class="panel section" id="metrics">
+        <h2 class="section-title"><i class="dot"></i> LIVE GITHUB SNAPSHOT</h2>
+        <img class="stats" src="assets/generated/github-stats.svg" alt="Live GitHub metrics card">
+        <div style="height: 16px;"></div>
+        <img class="stats" src="assets/generated/top-languages.svg" alt="Live language breakdown chart">
+      </section>
+
+      <!-- Selected Builds -->
+      <section class="panel section" id="builds">
+        <h2 class="section-title"><i class="dot"></i> SELECTED BUILDS &amp; PROJECTS</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>🛡️ Rakshak-AI</h3>
+            <p>AI health assistant featuring conversational AI support, BMI tracking, speech recognition, and local SQLite data store.</p>
+            <div class="tags">Python · Llama 3.2 · Tkinter · SQLite</div>
+          </article>
+
+          <article class="card">
+            <h3>🛰️ Road Segmentation</h3>
+            <p>Computer vision deep-learning system designed to detect and segment road networks from satellite imagery.</p>
+            <div class="tags">Python · Computer Vision · Jupyter · Kaggle</div>
+          </article>
+
+          <article class="card">
+            <h3>👁️ Smart Attendance System</h3>
+            <p>Automated face-recognition attendance pipeline delivering instant identification and logging.</p>
+            <div class="tags">Python · OpenCV · Face Recognition</div>
+          </article>
+
+          <article class="card">
+            <h3>📱 Expense Tracker</h3>
+            <p>Cross-platform mobile expense recording app with category analytics and real-time cloud sync.</p>
+            <div class="tags">Flutter · Dart · Firebase · Firestore</div>
+          </article>
+
+          <article class="card">
+            <h3>😊 SentimentX</h3>
+            <p>Web-based sentiment analysis engine classifying user input and YouTube video comments with NLP.</p>
+            <div class="tags">Python · Flask · NLTK · VADER</div>
+          </article>
+
+          <article class="card">
+            <h3>🚀 CivicLens Core</h3>
+            <p>Intelligent municipal infrastructure intelligence system featuring risk prediction and hotspot detection.</p>
+            <div class="tags">TypeScript · GIS · AI Infrastructure Analytics</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Toolkit -->
+      <section class="panel section" id="toolkit">
+        <h2 class="section-title"><i class="dot"></i> TECHNICAL TOOLKIT</h2>
+        <div class="chips">
+          <span>Python</span>
+          <span>C / C++</span>
+          <span>Java</span>
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>Dart</span>
+          <span>SQL</span>
+          <span>Machine Learning</span>
+          <span>Computer Vision</span>
+          <span>OpenCV</span>
+          <span>NLP</span>
+          <span>Flask</span>
+          <span>Flutter</span>
+          <span>Firebase</span>
+          <span>Docker</span>
+          <span>Git &amp; GitHub</span>
+        </div>
+      </section>
+
+      <!-- Experience & Education -->
+      <section class="panel section" id="experience">
+        <h2 class="section-title"><i class="dot"></i> EXPERIENCE &amp; EDUCATION</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Position / Degree</th>
+                <th>Organization</th>
+                <th>Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cybersecurity Intern</td>
+                <td>ETDC, STQC Directorate, MeitY, Govt. of India</td>
+                <td>Jun 2026 – Jul 2026</td>
+              </tr>
+              <tr>
+                <td>AI/ML Intern</td>
+                <td>National Institute of Technology Silchar</td>
+                <td>Jan 2026 – Mar 2026</td>
+              </tr>
+              <tr>
+                <td>App Developer Intern</td>
+                <td>TalkEng, Agartala</td>
+                <td>Jun 2025 – Jul 2025</td>
+              </tr>
+              <tr>
+                <td>Full-Stack Intern</td>
+                <td>Apni Vidya, Agartala</td>
+                <td>Jun 2024 – Aug 2024</td>
+              </tr>
+              <tr>
+                <td>B.Tech Computer Science &amp; Engineering</td>
+                <td>ICFAI University Tripura</td>
+                <td>Aug 2023 – Present</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Curriculum Vitae -->
+        <div class="cv-box" id="cv">
+          <h3 style="margin-bottom: 12px; color: #60a5fa;">CURRICULUM VITAE</h3>
+          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener">
+            <img src="assets/cv-preview.gif" alt="Animated CV preview">
+          </a>
+          <div>
+            <a class="btn primary" style="width: auto; margin-right: 8px;" href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener">📄 VIEW CV (PDF)</a>
+            <a class="btn" href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener">⬇ DOWNLOAD CV</a>
+            <a class="btn" href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/main.tex" target="_blank" rel="noopener">LATEX SOURCE</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contribution Activity -->
+      <section class="panel section" id="contributions">
+        <h2 class="section-title"><i class="dot"></i> GITHUB CONTRIBUTION ACTIVITY</h2>
+        <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener">
+          <img class="stats" src="assets/generated/contributions.svg" alt="GitHub contribution calendar heatmap showing 535 contributions">
+        </a>
+
+        <div style="text-align: center; margin: 24px 0 12px;">
+          <h3 style="color: #93c5fd; font-size: 16px; margin-bottom: 12px;">🐍 Watch My Contributions Move</h3>
+          <img class="stats" src="assets/generated/contribution-snake.svg" alt="Animated contribution snake animation">
+        </div>
+
+        <div style="text-align: center; margin-top: 16px;">
+          <a class="btn primary" style="width: auto;" href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener">↻ Refresh Live Activity on GitHub Actions</a>
+        </div>
+      </section>
+
+      <!-- Portrait Gallery -->
+      <section class="panel section" id="gallery">
+        <h2 class="section-title"><i class="dot"></i> BEYOND THE CODE</h2>
+        <div class="photos">
+          <img src="assets/portrait-casual.jpg" alt="Bijoy Sarkar casual portrait">
+          <img src="assets/portrait-editorial.jpg" alt="Bijoy Sarkar editorial portrait">
+          <img src="assets/portrait-outdoor.jpg" alt="Bijoy Sarkar outdoor portrait">
+        </div>
+        <div style="margin-top: 18px; text-align: center; font-size: 13.5px; color: #a9c0df;">
+          🏏 Cricket · ⚽ Football · 🏸 Badminton · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling · 🎭 Drama
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <b>LET'S BUILD SOMETHING MEANINGFUL.</b>
+        <div class="links">
+          <a class="btn primary" href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener">✦ EXPLORE MY PORTFOLIO</a>
+          <a class="btn" href="https://github.com/BijoySarkar19" target="_blank" rel="noopener">⌘ GITHUB</a>
+          <a class="btn" href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener">in LINKEDIN</a>
+          <a class="btn" href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener">◎ INSTAGRAM</a>
+        </div>
+        <p class="small">Built with curiosity · Powered by code · Always learning</p>
+      </footer>
+    </div>
   </div>
-  <hr class="sep">
-  <div class="side-label">QUICK LINKS</div>
-  <div class="fact">⌘ <a href="https://github.com/BijoySarkar19">GitHub profile</a></div>
-  <div class="fact">in <a href="https://www.linkedin.com/in/bijoysarkar19">LinkedIn</a></div>
-  <div class="fact">◎ <a href="https://www.instagram.com/bijoyysarkarr/">Instagram</a></div>
-  <hr class="sep">
-  <div class="side-label">CURRENT FOCUS</div>
-  <div class="fact">▸ Data Structures & Algorithms</div><div class="fact">▸ AI/ML and Computer Vision</div><div class="fact">▸ Production-ready applications</div>
-  <hr class="sep">
-  <div class="side-label">OPEN TO</div><div class="fact">Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer · Entry-Level Roles · Internships · Collaborations · Open Source</div>
-</aside>
-<div class="content">
-<section class="panel hero">
-  <img class="banner" src="assets/hero-banner.gif" alt="Animated navy profile banner">
-  <div class="hero-body">
-    <div class="kicker">DEVELOPER PROFILE / 2026</div>
-    <h1>Hey, I'm Bijoy. <span style="color:#60a5fa">Let's build.</span></h1>
-    <p>I'm a Computer Science & Engineering student at ICFAI University Tripura. I enjoy turning ideas into working software and exploring AI/ML, computer vision, NLP, full-stack development and mobile apps.</p>
-    <img class="roles" src="assets/role-ticker.gif" alt="Animated roles">
-  </div>
-</section>
-<section class="panel section">
-  <h2 class="section-title"><i class="dot"></i> LIVE GITHUB SNAPSHOT</h2>
-  <img class="stats" src="assets/generated/github-stats.svg" alt="Live GitHub metrics">
-  <div style="height:12px"></div>
-  <img class="stats" src="assets/generated/top-languages.svg" alt="Live language breakdown">
-</section>
-<section class="panel section">
-  <h2 class="section-title"><i class="dot"></i> SELECTED BUILDS</h2>
-  <div class="cards">
-   <article class="card"><h3>🛡️ Rakshak-AI</h3><p>AI health assistant with conversational support, BMI calculation and speech features.<br><br><b>Python · Llama 3.2 · Tkinter · SQLite</b></p></article>
-   <article class="card"><h3>🛰️ Road Segmentation</h3><p>Computer vision project identifying roads in satellite imagery.<br><br><b>Python · Jupyter · Kaggle</b></p></article>
-   <article class="card"><h3>👁️ Smart Attendance</h3><p>Face-recognition-based attendance workflow.<br><br><b>Python · OpenCV</b></p></article>
-   <article class="card"><h3>📱 Expense Tracker</h3><p>Mobile expense recording and management app.<br><br><b>Flutter · Dart · Firebase</b></p></article>
-   <article class="card"><h3>😊 SentimentX</h3><p>Text and YouTube comment sentiment analysis.<br><br><b>Python · Flask · NLTK · VADER</b></p></article>
-   <article class="card"><h3>🧠 Advanced NLP</h3><p>NLP experiments using Python and real-world datasets.<br><br><b>Python · Jupyter · Kaggle</b></p></article>
-  </div>
-</section>
-<section class="panel section">
-  <h2 class="section-title"><i class="dot"></i> TOOLKIT</h2>
-  <div class="chips"><span>Python</span><span>C / C++</span><span>Java</span><span>JavaScript</span><span>Dart</span><span>Machine Learning</span><span>Computer Vision</span><span>NLP</span><span>OpenCV</span><span>Flask</span><span>Flutter</span><span>Firebase</span><span>SQLite</span><span>Docker</span><span>Git</span></div>
-</section>
-<section class="panel section">
-  <h2 class="section-title"><i class="dot"></i> EXPERIENCE & <section id="cv" style="margin:32px 0;padding:24px;border:1px solid #2563eb;border-radius:18px;background:#081a32"><h2>CURRICULUM VITAE</h2><a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf"><img src="./assets/cv-preview.gif" alt="Animated CV preview" style="width:100%;max-width:760px;border-radius:14px"></a><p><a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/blob/main/Bijoy_Sarkar_CV.pdf">VIEW CV PDF</a> · <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf">DOWNLOAD CV</a></p></section>EDUCATION</h2>
-  <table><tr><th>Organization</th><th>Area</th></tr><tr><td>NIT Silchar</td><td>AI / ML · Road segmentation</td></tr><tr><td></td><td>AI / ML</td></tr><tr><td>Apni Vidya</td><td>Full-Stack Development</td></tr><tr><td>TalkEng</td><td>App Development</td></tr><tr><td>STQC, MeitY</td><td>Cybersecurity</td></tr></table>
-  <p class="small">B.Tech CSE · ICFAI University Tripura</p>
-</section>
-<section class="panel section">
-  <h2 class="section-title"><i class="dot"></i> CONTRIBUTION ACTIVITY</h2>
-  <a href="https://github.com/BijoySarkar19"><img class="stats" src="assets/generated/contributions.svg" alt="GitHub contribution calendar"></a>
-  <h3 style="text-align:center;color:#93c5fd">🐍 Watch my contributions move</h3>
-  <img class="stats" src="assets/generated/contribution-snake.svg" alt="Animated contribution snake">
-  <p style="text-align:center"><a class="btn primary" href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml">↻ Refresh live activity</a></p>
-</section>
-<section class="panel section">
-  <h2 class="section-title"><i class="dot"></i> PORTRAIT GALLERY</h2>
-  <div class="photos"><img src="assets/portrait-casual.jpg" alt="Bijoy in dark shirt"><img src="assets/portrait-editorial.jpg" alt="Bijoy in light jacket"><img src="assets/portrait-outdoor.jpg" alt="Bijoy in light shirt"></div>
-</section>
-<div class="footer">
-  <b>LET'S BUILD SOMETHING MEANINGFUL.</b><br><br>
-  <a class="btn primary" href="https://bijoy-sarkar-portfolio.vercel.app/">✦ EXPLORE MY PORTFOLIO ↗</a>
-  <a class="btn" href="https://github.com/BijoySarkar19">⌘ GITHUB</a>
-  <a class="btn" href="https://www.linkedin.com/in/bijoysarkar19">in LINKEDIN</a>
-  <a class="btn" href="https://www.instagram.com/bijoyysarkarr/">◎ INSTAGRAM</a>
-  <p class="small">Build · Learn · Improve · Repeat</p>
-</div>
-</div></div></main></body></html>
+</main>
+
+</body>
+</html>
