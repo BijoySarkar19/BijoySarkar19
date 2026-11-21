@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260" fill="none">
+  <defs>
+    <filter id="reactorGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <linearGradient id="reactorGrad" x1="0" y1="0" x2="260" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+    <style>
+      @keyframes spinCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinCCW {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes pulseHeart {
+        0%, 100% { r: 16px; opacity: 0.85; filter: drop-shadow(0 0 6px #00f2fe); }
+        50% { r: 22px; opacity: 1; filter: drop-shadow(0 0 16px #00f2fe); }
+      }
+      .ring-cw { animation: spinCW 22s linear infinite; transform-origin: 130px 130px; }
+      .ring-ccw { animation: spinCCW 14s linear infinite; transform-origin: 130px 130px; }
+      .heart-pulse { animation: pulseHeart 2.5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Outer Hexagonal Chassis -->
+  <polygon points="130,20 225,75 225,185 130,240 35,185 35,75" 
+           stroke="url(#reactorGrad)" stroke-width="3" fill="#050e20" opacity="0.95" filter="url(#reactorGlow)"/>
+
+  <!-- Outer HUD Ring -->
+  <circle cx="130" cy="130" r="82" stroke="#38bdf8" stroke-width="2" stroke-dasharray="16 8" class="ring-cw" opacity="0.75"/>
+
+  <!-- Middle Power Coils -->
+  <circle cx="130" cy="130" r="56" stroke="#00f2fe" stroke-width="2.5" stroke-dasharray="10 6" class="ring-ccw" opacity="0.9"/>
+
+  <!-- Core Chamber -->
+  <circle cx="130" cy="130" r="32" fill="#0a2144" stroke="#00f2fe" stroke-width="3" filter="url(#reactorGlow)"/>
+
+  <!-- Pulsing Quantum Core -->
+  <circle cx="130" cy="130" r="18" fill="#00f2fe" class="heart-pulse"/>
+  <circle cx="130" cy="130" r="8" fill="#ffffff"/>
+</svg>

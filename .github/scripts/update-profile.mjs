@@ -263,140 +263,143 @@ function buildCalendarSVG(contributionDays, totalContributions) {
   writeSVG("contributions.svg", svg);
 }
 
-// Generates the synchronized contribution snake that mirrors the exact same 535-contribution grid!
+// Generates the synchronized contribution snake that actively BITES and consumes the 535-contribution grid!
 function buildSynchronizedSnakeSVG(contributionDays) {
-  const width = 880;
-  const height = 180;
-  
-  const colors = {
-    0: "#14243B",
-    1: "#0E4429",
-    2: "#006D32",
-    3: "#26A641",
-    4: "#39D353",
-  };
-
   const days = [...contributionDays];
-  const weeks = [];
-  for (let i = 0; i < days.length; i += 7) {
-    weeks.push(days.slice(i, i + 7));
-  }
-
-  let rects = "";
-  weeks.forEach((week, wIdx) => {
-    const x = 20 + wIdx * 15.8;
-    week.forEach((day, dIdx) => {
-      const y = 20 + dIdx * 15.8;
-      const count = day.contributionCount || 0;
-      const lvl = getLevel(count);
-      const color = colors[lvl];
-      const isLvl34 = lvl >= 3;
-      rects += `    <rect class="c lvl-${lvl}${isLvl34 ? ' high-act' : ''}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="11.5" height="11.5" rx="2.5" ry="2.5" fill="${color}" stroke="#1B2F4E" stroke-width="0.5">
-      <title>${escapeHTML(day.date)}: ${count} contribution${count === 1 ? "" : "s"}</title>
-    </rect>\n`;
-    });
+  const grid = {};
+  
+  days.forEach((day, i) => {
+    const w = Math.floor(i / 7);
+    const d = i % 7;
+    const count = day.contributionCount || 0;
+    grid[`${w},${d}`] = getLevel(count);
   });
 
-  const svg = `<svg viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#071426"/>
-      <stop offset="60%" stop-color="#0E223D"/>
-      <stop offset="100%" stop-color="#162E52"/>
-    </linearGradient>
-    <linearGradient id="snakeNeon" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="50%" stop-color="#818CF8"/>
-      <stop offset="100%" stop-color="#34D399"/>
-    </linearGradient>
-    <style>
-      .c { shape-rendering: geometricPrecision; transition: all 0.2s; }
-      .c:hover { stroke: #38BDF8; stroke-width: 1.5px; cursor: pointer; }
-      .high-act { animation: shimmerDot 3s ease-in-out infinite alternate; }
-      @keyframes shimmerDot {
-        0% { opacity: 0.85; filter: drop-shadow(0 0 1px #26A641); }
-        100% { opacity: 1; filter: drop-shadow(0 0 3px #39D353); }
+  // Boustrophedon sweep through all 53 columns
+  const path = [];
+  for (let w = 0; w < 53; w++) {
+    if (w % 2 === 0) {
+      for (let d = 0; d < 7; d++) {
+        path.push([w, d]);
       }
-      
-      /* Snake Animation traversing across the full 535-contribution grid */
-      .snake-part {
-        shape-rendering: geometricPrecision;
-        filter: drop-shadow(0 0 4px #38BDF8);
+    } else {
+      for (let d = 6; d >= 0; d--) {
+        path.push([w, d]);
       }
-      
-      @keyframes moveHead {
-        0% { transform: translate(20px, 20px); }
-        12% { transform: translate(140px, 35.8px); }
-        24% { transform: translate(280px, 83.2px); }
-        36% { transform: translate(440px, 20px); }
-        48% { transform: translate(600px, 99px); }
-        60% { transform: translate(780px, 35.8px); }
-        72% { transform: translate(840px, 83.2px); }
-        84% { transform: translate(520px, 51.6px); }
-        94% { transform: translate(180px, 67.4px); }
-        100% { transform: translate(20px, 20px); }
+    }
+  }
+
+  // Return path via row -1 (above the board at y = -16px)
+  const last = path[path.length - 1];
+  for (let d = last[1] - 1; d >= -1; d--) {
+    path.push([last[0], d]);
+  }
+  for (let w = last[0] - 1; w >= 0; w--) {
+    path.push([w, -1]);
+  }
+  path.push([0, 0]);
+
+  const N = path.length;
+
+  // Track the step k when the snake head reaches each cell
+  const visitStep = {};
+  path.forEach(([w, d], k) => {
+    const key = `${w},${d}`;
+    if (!(key in visitStep) && d >= 0 && d < 7) {
+      visitStep[key] = k;
+    }
+  });
+
+  const cellKeyframes = [];
+  const cellClasses = [];
+  const cellRects = [];
+  let cellCounter = 0;
+
+  for (let w = 0; w < 53; w++) {
+    for (let d = 0; d < 7; d++) {
+      const lvl = grid[`${w},${d}`] || 0;
+      const x = 2 + w * 16;
+      const y = 2 + d * 16;
+      const key = `${w},${d}`;
+
+      if (lvl > 0 && key in visitStep) {
+        const k = visitStep[key];
+        const pct = (k / N) * 100;
+        const cName = `c${cellCounter++}`;
+        const pctBite = pct.toFixed(2);
+        const pctBiteEnd = Math.min(100, pct + 0.05).toFixed(2);
+        
+        cellKeyframes.push(`@keyframes ${cName}{${pctBite}%{fill:var(--c${lvl})}${pctBiteEnd}%,100%{fill:var(--ce)}}`);
+        cellClasses.push(`.c.${cName}{fill:var(--c${lvl});animation-name:${cName}}`);
+        cellRects.push(`<rect class="c ${cName}" x="${x}" y="${y}" rx="2" ry="2"/>`);
+      } else {
+        cellRects.push(`<rect class="c" x="${x}" y="${y}" rx="2" ry="2"/>`);
       }
-      
-      @keyframes moveBody1 {
-        0% { transform: translate(4px, 20px); }
-        12% { transform: translate(124px, 35.8px); }
-        24% { transform: translate(264px, 83.2px); }
-        36% { transform: translate(424px, 20px); }
-        48% { transform: translate(584px, 99px); }
-        60% { transform: translate(764px, 35.8px); }
-        72% { transform: translate(824px, 83.2px); }
-        84% { transform: translate(504px, 51.6px); }
-        94% { transform: translate(164px, 67.4px); }
-        100% { transform: translate(4px, 20px); }
+    }
+  }
+
+  // Snake segment keyframes (4 segments)
+  const snakeKeyframes = [];
+  for (let segIdx = 0; segIdx < 4; segIdx++) {
+    const kfList = [];
+    let prevPos = null;
+    for (let k = 0; k < N; k++) {
+      const idx = Math.max(0, k - segIdx);
+      const [w, d] = path[idx];
+      const pct = ((k / (N - 1)) * 100).toFixed(2);
+      const px = w * 16;
+      const py = d * 16;
+      if (!prevPos || prevPos[0] !== px || prevPos[1] !== py || k === 0 || k === N - 1) {
+        kfList.push(`${pct}%{transform:translate(${px}px,${py}px)}`);
+        prevPos = [px, py];
       }
+    }
+    snakeKeyframes.push(`@keyframes s${segIdx}{${kfList.join("")}}`);
+  }
 
-      @keyframes moveBody2 {
-        0% { transform: translate(-12px, 20px); }
-        12% { transform: translate(108px, 35.8px); }
-        24% { transform: translate(248px, 83.2px); }
-        36% { transform: translate(408px, 20px); }
-        48% { transform: translate(568px, 99px); }
-        60% { transform: translate(748px, 35.8px); }
-        72% { transform: translate(808px, 83.2px); }
-        84% { transform: translate(488px, 51.6px); }
-        94% { transform: translate(148px, 67.4px); }
-        100% { transform: translate(-12px, 20px); }
-      }
+  const css = `
+:root {
+  --cb: #1b2f4e;
+  --cs: #00f2fe;
+  --ce: #14243b;
+  --c0: #14243b;
+  --c1: #0e4429;
+  --c2: #006d32;
+  --c3: #26a641;
+  --c4: #39d353;
+}
+.c {
+  shape-rendering: geometricPrecision;
+  fill: var(--ce);
+  stroke-width: 1px;
+  stroke: var(--cb);
+  animation: none 20000ms linear infinite;
+  width: 12px;
+  height: 12px;
+}
+${cellKeyframes.join("")}
+${cellClasses.join("")}
+.s {
+  shape-rendering: geometricPrecision;
+  fill: var(--cs);
+  animation: none linear 20000ms infinite;
+}
+${snakeKeyframes.join("")}
+.s.s0 { transform: translate(0px, 0px); animation-name: s0; fill: #67e8f9; filter: drop-shadow(0 0 5px #00f2fe); }
+.s.s1 { transform: translate(0px, 0px); animation-name: s1; fill: #38bdf8; filter: drop-shadow(0 0 3px #0284c7); }
+.s.s2 { transform: translate(0px, 0px); animation-name: s2; fill: #0284c7; }
+.s.s3 { transform: translate(0px, 0px); animation-name: s3; fill: #1e40af; opacity: 0.8; }
+`;
 
-      @keyframes moveTail {
-        0% { transform: translate(-28px, 20px); }
-        12% { transform: translate(92px, 35.8px); }
-        24% { transform: translate(232px, 83.2px); }
-        36% { transform: translate(392px, 20px); }
-        48% { transform: translate(552px, 99px); }
-        60% { transform: translate(732px, 35.8px); }
-        72% { transform: translate(792px, 83.2px); }
-        84% { transform: translate(472px, 51.6px); }
-        94% { transform: translate(132px, 67.4px); }
-        100% { transform: translate(-28px, 20px); }
-      }
-
-      .snk-head { animation: moveHead 16s ease-in-out infinite; }
-      .snk-body1 { animation: moveBody1 16s ease-in-out infinite; }
-      .snk-body2 { animation: moveBody2 16s ease-in-out infinite; }
-      .snk-tail { animation: moveTail 16s ease-in-out infinite; }
-    </style>
-  </defs>
-
-  <!-- Frame Background with subtle glow -->
-  <rect width="${width}" height="${height}" rx="18" fill="url(#cardBg)" stroke="#254873" stroke-width="1.5"/>
-  <rect x="10" y="10" width="3" height="${height - 20}" rx="1.5" fill="url(#snakeNeon)"/>
-
-  <!-- 535-Contribution Synchronized Activity Squares -->
-${rects}
-
-  <!-- Glowing Slithering Neon Snake -->
-  <rect class="snake-part snk-tail" x="0" y="0" width="9.5" height="9.5" rx="3" ry="3" fill="#38BDF8" opacity="0.6"/>
-  <rect class="snake-part snk-body2" x="0" y="0" width="10.5" height="10.5" rx="3.5" ry="3.5" fill="#38BDF8" opacity="0.8"/>
-  <rect class="snake-part snk-body1" x="0" y="0" width="11.5" height="11.5" rx="4" ry="4" fill="#38BDF8" opacity="0.95"/>
-  <rect class="snake-part snk-head" x="0" y="0" width="12.5" height="12.5" rx="4.5" ry="4.5" fill="#67E8F9"/>
-
-  <text x="${width - 24}" y="${height - 12}" text-anchor="end" fill="#64748B" font-size="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">535 CONTRIBUTIONS &#183; ANIMATED ACTIVITY SNAKE</text>
+  const svg = `<svg viewBox="-16 -32 880 192" width="880" height="192" xmlns="http://www.w3.org/2000/svg">
+  <desc>535 Contributions Synchronized Snake Animation</desc>
+  <style>${css}</style>
+  <rect x="-16" y="-32" width="880" height="192" fill="#071426" rx="14" stroke="#254873" stroke-width="1.5"/>
+  ${cellRects.join("")}
+  <rect class="s s0" x="0.8" y="0.8" width="14.4" height="14.4" rx="4.5" ry="4.5"/>
+  <rect class="s s1" x="1.8" y="1.8" width="12.3" height="12.3" rx="4.1" ry="4.1"/>
+  <rect class="s s2" x="2.6" y="2.6" width="10.8" height="10.8" rx="3.6" ry="3.6"/>
+  <rect class="s s3" x="3.0" y="3.0" width="9.9" height="9.9" rx="3.3" ry="3.3"/>
 </svg>`;
 
   writeSVG("contribution-snake.svg", svg);
