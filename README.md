@@ -1,56 +1,51 @@
 <div align="center">
 
-<img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
+<!-- Floating Capsule Navigation Bar (Matching Reference Image) -->
+<a href="https://bijoy-sarkar-portfolio.vercel.app/">
+  <img src="./assets/navbar.svg" width="100%" alt="Bijoy Sarkar Floating Navigation Capsule"/>
+</a>
 
 <br/><br/>
-
-<!-- Floating Navigation Pill Bar -->
-<table border="0">
-<tr>
-<td align="center">
-  <a href="#about"><b>ABOUT</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#certificates"><b>CERTIFICATES</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#education"><b>EDUCATION</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#skills"><b>SKILLS</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#projects"><b>PROJECTS</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#contributions"><b>CONTRIBUTIONS</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#contact"><b>CONTACT</b></a> &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><b>PORTFOLIO ↗</b></a>
-</td>
-</tr>
-</table>
-
-<br/>
 
 <!-- Hero Section with Glowing Neon Aura Portrait -->
 <table width="100%" border="0">
 <tr>
-<td width="65%" valign="middle">
+<td width="64%" valign="middle" align="left">
 
 <sub>◈ BIJOY SARKAR ◈</sub>
 
 # ⚡ Hi, I'm <span style="color:#00F2FE;">BIJOY</span> ⚡
 
-### ◈ Software Developer | AI/ML Engineer | Full-Stack Architect ◈
+### ◈ I'm a Developer | ◈
 
 Computer Science & Engineering student at **ICFAI University Tripura**. Passionate about architecting scalable full-stack applications, deep-learning computer vision models, and intelligent automated systems.
 
 <br/>
 
-[![Download CV](https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-1E40AF?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf)
-[![Portfolio](https://img.shields.io/badge/✦_PORTFOLIO-Visit_Website-0284C7?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
-
-<br/>
-
-📍 *Agartala, Tripura, India*
+<a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf">
+  <img src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/>
+</a>
+&nbsp;
+<a href="https://github.com/BijoySarkar19">
+  <img src="https://img.shields.io/badge/GITHUB-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+&nbsp;
+<a href="https://www.linkedin.com/in/bijoysarkar19">
+  <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="https://www.instagram.com/bijoyysarkarr/">
+  <img src="https://img.shields.io/badge/INSTAGRAM-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+</a>
+&nbsp;
+<a href="mailto:bijoysarkar1919@gmail.com">
+  <img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
 
 </td>
-<td width="35%" align="center" valign="middle">
+<td width="36%" align="center" valign="middle">
 
-<img src="./assets/profile-avatar.png" width="180" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 35px rgba(0,242,254,0.45);" alt="Bijoy Sarkar Developer Portrait"/>
+<img src="./assets/profile-avatar.png" width="190" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 40px rgba(0,242,254,0.6);" alt="Bijoy Sarkar Developer Portrait"/>
 
 <br/>
 
@@ -219,7 +214,7 @@ Engineered responsive frontend interfaces, integrated RESTful APIs, and maintain
 
 ### 🎓 Bachelor's in Computer Science & Engineering
 **ICFAI University Tripura** · *2023 – Present*  
-- Cumulative Grade: **CGPA 8.5+**
+- Cumulative Grade: **CGPA 7.5+**
 - Core Specialization: Artificial Intelligence, Machine Learning, Operating Systems, Computer Vision, Distributed Systems, and Advanced Algorithms.
 
 <br/>
@@ -378,22 +373,22 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <a name="contributions"></a>
 <div align="center">
 
-<h2>◈ GITHUB CONTRIBUTION ACTIVITY ◈</h2>
-<p><i>535 verified contributions in the last year · rolling 12-month timeline</i></p>
+<h2>◈ GITHUB CONTRIBUTION ACTIVITY (535 CONTRIBUTIONS) ◈</h2>
+<p><i>Rolling 12-month activity timeline</i></p>
 
-### MY CONTRIBUTION CALENDAR (535 CONTRIBUTIONS)
+### My Contribution Calendar
 
 <a href="https://github.com/BijoySarkar19">
-  <img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar showing 535 contributions"/>
+  <img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar Heatmap"/>
 </a>
 
 <br/><br/>
 
-### 🐍 SYNCHRONIZED CONTRIBUTION SNAKE (535 SQUARES)
+### 🐍 Synchronized Contribution Snake
 
-<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake actively biting 535 contribution squares"/>
+<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake actively biting contribution squares"/>
 
-<p><i>⚡ The animated cyan snake actively bites and consumes the green contribution boxes across the 535-grid!</i></p>
+<p><i>⚡ The animated cyan snake actively bites and consumes the green contribution boxes!</i></p>
 
 [![VIEW ACTIVITY](https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
 [![REFRESH CONTRIBUTIONS](https://img.shields.io/badge/REFRESH_ACTIVITY-GitHub_Actions-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml)
@@ -497,7 +492,7 @@ Play the interactive **Commit Hunter** game in `preview.html`! Collect green Git
 </table>
 
 ### MY INTERESTS
-🏏 Cricket · ⚽ Football · 🏸 Badminton · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling · 🎭 Drama
+🏏 Cricket · ⚽ Football · 🏸 Badminton · 🎯 Carrom · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling
 
 <br/>
 
