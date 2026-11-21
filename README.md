@@ -195,7 +195,7 @@ Engineered responsive frontend interfaces, integrated RESTful APIs, and maintain
 
 ### 🏫 Higher Secondary Education (12th Science)
 **Swami Dhananjay Das Kathia Baba Mission School**  
-- Focus: Physics, Chemistry, Mathematics & Computer Science.
+- Focus: Physics, Chemistry & Mathematics.
 
 <br/>
 
