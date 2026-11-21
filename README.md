@@ -306,31 +306,21 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <div align="center">
 
 <h2>◈ GITHUB CONTRIBUTION ACTIVITY (535 CONTRIBUTIONS) ◈</h2>
-<p><i>Rolling 12-month activity timeline</i></p>
-
-### My Contribution Calendar
+<p><i>Rolling 12-month activity timeline &amp; synchronized activity snake</i></p>
 
 <a href="https://github.com/BijoySarkar19">
   <img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar Heatmap"/>
 </a>
 
-<br/><br/>
-
-### 🐍 Synchronized Contribution Snake
-
 <img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake actively biting contribution squares"/>
 
-<p><i>⚡ The animated cyan snake actively bites and consumes the green contribution boxes!</i></p>
-
-[![VIEW ACTIVITY](https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
-[![REFRESH CONTRIBUTIONS](https://img.shields.io/badge/REFRESH_ACTIVITY-GitHub_Actions-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml)
-
-<br/><br/>
-
-### LIVE GITHUB SNAPSHOT &amp; LANGUAGES
+<p align="center">
+  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="View Activity"/></a>
+  &nbsp;
+  <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml"><img src="https://img.shields.io/badge/REFRESH_ACTIVITY-GitHub_Actions-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white" alt="Refresh Activity"/></a>
+</p>
 
 <img src="./assets/generated/github-stats.svg" width="100%" alt="Automatically refreshed GitHub statistics"/>
-
 <img src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
 
 </div>
@@ -357,11 +347,13 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 
 <h2>◈ 🎮 PLAY LIVE: COMMIT HUNTER (SNAKE GAME) ◈</h2>
 
-[![PLAY LIVE ON WEB](https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white)](https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game)
-&nbsp;
-[![VISIT LIVE WEBSITE](https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
+<p align="center">
+  <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game"><img src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live"/></a>
+  &nbsp;
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio"/></a>
+</p>
 
-Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens. You can also run the game locally by opening `preview.html`.
+Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens.
 
 </div>
 
@@ -369,36 +361,24 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 
 <a name="contact"></a>
 <div align="center">
-  <h2>◈ CONTACT ME ◈</h2>
-  <p><i>Get in touch for opportunities, collaborations, or engineering projects</i></p>
+
+<h2>◈ CONTACT ME ◈</h2>
+<p><i>Get in touch for opportunities, collaborations, or engineering projects</i></p>
+
+<p align="center">
+  📧 <b>Email</b>: <a href="mailto:bijoysarkar7252@gmail.com">bijoysarkar7252@gmail.com</a> &nbsp;·&nbsp; 
+  📍 <b>Location</b>: Agartala, Tripura, India &nbsp;·&nbsp; 
+  💼 <b>Open To</b>: Software Developer · AI/ML Engineer · Full-Stack Developer
+</p>
+
+<p align="center">
+  <a href="mailto:bijoysarkar7252@gmail.com"><img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-Follow-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+</p>
+
 </div>
-
-<table width="100%">
-<tr>
-<td width="35%" align="center" valign="middle">
-
-<img src="./assets/radar-beacon.svg" width="180" alt="Hologram Radar Beacon"/>
-
-<br/>
-<sub>RADAR COMM BEACON</sub>
-
-</td>
-<td width="65%" valign="middle">
-
-📧 **Email**: [bijoysarkar7252@gmail.com](mailto:bijoysarkar7252@gmail.com)  
-📍 **Location**: Agartala, Tripura, India  
-💼 **Open To**: Software Developer · AI/ML Engineer · Full-Stack Developer · Entry-Level Roles  
-
-<br/>
-
-[![Email](https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bijoysarkar7252@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
-[![GitHub](https://img.shields.io/badge/GITHUB-Follow-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -406,43 +386,24 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 
 <h2>◈ BEYOND THE CODE ◈</h2>
 
-<table width="100%">
-<tr>
-<td width="33%">
+<p align="center">
+  <img src="./assets/portrait-casual.jpg" width="31%" alt="Bijoy Sarkar Casual Portrait"/>
+  &nbsp;
+  <img src="./assets/portrait-editorial.jpg" width="31%" alt="Bijoy Sarkar Editorial Portrait"/>
+  &nbsp;
+  <img src="./assets/portrait-outdoor.jpg" width="31%" alt="Bijoy Sarkar Outdoor Portrait"/>
+</p>
 
-<img src="./assets/portrait-casual.jpg" width="100%" alt="Bijoy Sarkar Casual Portrait"/>
-
-</td>
-<td width="33%">
-
-<img src="./assets/portrait-editorial.jpg" width="100%" alt="Bijoy Sarkar Editorial Portrait"/>
-
-</td>
-<td width="33%">
-
-<img src="./assets/portrait-outdoor.jpg" width="100%" alt="Bijoy Sarkar Outdoor Portrait"/>
-
-</td>
-</tr>
-</table>
-
-### MY INTERESTS
-🏏 Cricket · ⚽ Football · 🏸 Badminton · 🎯 Carrom · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling
+<p align="center">
+  🎯 <b>My Interests:</b> 🏏 Cricket · ⚽ Football · 🏸 Badminton · 🎯 Carrom · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling
+</p>
 
 <br/>
 
-# LET'S BUILD SOMETHING MEANINGFUL.
-
-### Build. Learn. Improve. Repeat.
-
-[![Portfolio](https://img.shields.io/badge/✦_MY_PORTFOLIO-Visit_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)
-
----
-
-**BUILT WITH CURIOSITY · POWERED BY CODE · ALWAYS LEARNING**  
-⭐ Thanks for visiting my GitHub profile!
+<h3>⚡ Let's build something meaningful together.</h3>
+<p>
+  <b>BUILT WITH CURIOSITY · POWERED BY CODE · ALWAYS LEARNING</b><br/>
+  ⭐ Thanks for visiting my GitHub profile!
+</p>
 
 </div>
