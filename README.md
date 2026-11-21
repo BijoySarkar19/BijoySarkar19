@@ -398,7 +398,11 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
   🎯 <b>My Interests:</b> 🏏 Cricket · ⚽ Football · 🏸 Badminton · 🎯 Carrom · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling
 </p>
 
-<br/>
+</div>
+
+---
+
+<div align="center">
 
 <h3>⚡ Let's build something meaningful together.</h3>
 <p>
