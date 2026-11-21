@@ -2,70 +2,59 @@
 
 <img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
 
+<br/>
+
+<!-- Interactive Live Preview Launcher (Animated Typing SVG & Badges) -->
+<a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2500&pause=1000&color=00F2FE&center=true&vCenter=true&width=520&lines=🚀+LAUNCH+LIVE+INTERACTIVE+PORTFOLIO+PREVIEW;🎮+PLAY+COMMIT+HUNTER+GAME+LIVE;⚡+CLICK+HERE+TO+OPEN+FULL+PREVIEW" alt="Launch Live Interactive Preview"/>
+</a>
+<br/>
+<a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
+  <img src="https://img.shields.io/badge/⚡_LAUNCH_LIVE_PREVIEW-Open_Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
+</a>
+&nbsp;
+<a href="https://bijoysarkar19.github.io/BijoySarkar19/">
+  <img src="https://img.shields.io/badge/🌐_GITHUB_PAGES_HOST-Live_Website-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages Host"/>
+</a>
+
 <br/><br/>
 
-<img src="./assets/profile-avatar.png" width="165" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 35px rgba(0,242,254,0.5);" alt="Bijoy Sarkar GitHub Profile Photo"/>
+<img src="./assets/profile-avatar.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
 # BIJOY SARKAR
 
 ### B.Tech CSE Student | Software Developer | AI/ML & Computer Vision Enthusiast
+📍 **Agartala, Tripura, India**
 
-![Software Developer](https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge)
-![AI/ML](https://img.shields.io/badge/AI%2FML_ENTHUSIAST-2563EB?style=for-the-badge)
-![Computer Vision](https://img.shields.io/badge/COMPUTER_VISION-0F766E?style=for-the-badge)
-![Full Stack](https://img.shields.io/badge/FULL_STACK_DEVELOPER-5B21B6?style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge" alt="Software Developer"/>
+  <img src="https://img.shields.io/badge/AI%2FML_ENTHUSIAST-2563EB?style=for-the-badge" alt="AI/ML"/>
+  <img src="https://img.shields.io/badge/COMPUTER_VISION-0F766E?style=for-the-badge" alt="Computer Vision"/>
+  <img src="https://img.shields.io/badge/FULL_STACK_DEVELOPER-5B21B6?style=for-the-badge" alt="Full Stack"/>
+</p>
 
-<br/>
-
-<a href="https://bijoy-sarkar-portfolio.vercel.app/">
-  <img src="https://img.shields.io/badge/✦_PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
-</a>
-&nbsp;
-<a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf">
-  <img src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/>
-</a>
-&nbsp;
-<a href="https://github.com/BijoySarkar19">
-  <img src="https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-&nbsp;
-<a href="https://www.linkedin.com/in/bijoysarkar19">
-  <img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-&nbsp;
-<a href="https://www.instagram.com/bijoyysarkarr/">
-  <img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-</a>
-&nbsp;
-<a href="mailto:bijoysarkar7252@gmail.com">
-  <img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
-<br/><br/>
-
-📍 Agartala, Tripura, India
-
-<br/><br/>
+<p align="center">
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/✦_PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf"><img src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/></a>
+  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="mailto:bijoysarkar7252@gmail.com"><img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
 <!-- Floating Tech Ribbon -->
-<table width="100%" border="0">
-<tr>
-<td align="center">
-
-![React](https://img.shields.io/badge/React_JS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://img.shields.io/badge/React_JS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+</p>
 
 </div>
 
@@ -311,51 +300,9 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
   <p><i>Technologies &amp; core competencies</i></p>
 </div>
 
-<!-- 3-Zone Layout: Left Skills | Center Cyber Arc-Reactor | Right Skills -->
-<table width="100%">
-<tr>
-<td width="38%" valign="middle">
-
-**Python &amp; Machine Learning**  
-`████████████████████` 95%
-
-**TypeScript &amp; Web Standards**  
-`██████████████████░░` 90%
-
-**React.js &amp; Next.js**  
-`█████████████████░░░` 88%
-
-**Computer Vision &amp; OpenCV**  
-`█████████████████░░░` 86%
-
-</td>
-
-<td width="24%" align="center" valign="middle">
-
-<img src="./assets/cyber-reactor.svg" width="180" alt="Hexagonal Cyber Arc-Reactor"/>
-
-<br/>
-<sub>CYBER ARC REACTOR</sub>
-
-</td>
-
-<td width="38%" valign="middle">
-
-**Flutter &amp; Dart Mobile**  
-`█████████████████░░░` 86%
-
-**Node.js &amp; REST APIs**  
-`█████████████████░░░` 88%
-
-**Docker &amp; Linux Systems**  
-`████████████████░░░░` 84%
-
-**SQL &amp; Database Design**  
-`█████████████████░░░` 88%
-
-</td>
-</tr>
-</table>
+<div align="center">
+  <img src="./assets/generated/skills.svg" width="100%" alt="Core Technical Skills & Proficiency Breakdown"/>
+</div>
 
 ---
 

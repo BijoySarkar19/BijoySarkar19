@@ -561,6 +561,76 @@ function buildLanguagesSVG(languages) {
   writeSVG("top-languages.svg", svg);
 }
 
+function buildSkillsSVG() {
+  const svg = `<svg viewBox="0 0 1000 260" width="1000" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="100%" stop-color="#0B1B33"/>
+    </linearGradient>
+    <linearGradient id="cyan-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="blue-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="996" height="256" rx="14" fill="url(#card-bg)" stroke="#254873" stroke-width="1.5"/>
+  
+  <text x="46" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="14" font-weight="bold" fill="#00F2FE" letter-spacing="1.5">CORE TECHNICAL SKILLS &amp; PROFICIENCY</text>
+  <text x="954" y="38" text-anchor="end" font-family="Consolas,monospace" font-size="12" fill="#64748B">VERIFIED COMPETENCIES</text>
+  <line x1="46" y1="50" x2="954" y2="50" stroke="#1B3358" stroke-width="1"/>
+  <line x1="500" y1="62" x2="500" y2="238" stroke="#152B4A" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- LEFT COLUMN -->
+  <text x="46" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Python &amp; Machine Learning</text>
+  <text x="474" y="80" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">95%</text>
+  <rect x="46" y="90" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="46" y="90" width="406.6" height="10" rx="5" fill="url(#cyan-bar)"/>
+
+  <text x="46" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">TypeScript &amp; Web Standards</text>
+  <text x="474" y="124" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">90%</text>
+  <rect x="46" y="134" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="46" y="134" width="385.2" height="10" rx="5" fill="url(#cyan-bar)"/>
+
+  <text x="46" y="168" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">React.js &amp; Next.js Ecosystem</text>
+  <text x="474" y="168" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">88%</text>
+  <rect x="46" y="178" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="46" y="178" width="376.6" height="10" rx="5" fill="url(#cyan-bar)"/>
+
+  <text x="46" y="212" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Computer Vision &amp; OpenCV</text>
+  <text x="474" y="212" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">86%</text>
+  <rect x="46" y="222" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="46" y="222" width="368.1" height="10" rx="5" fill="url(#cyan-bar)"/>
+
+  <!-- RIGHT COLUMN -->
+  <text x="526" y="80" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Flutter &amp; Dart Mobile Development</text>
+  <text x="954" y="80" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">86%</text>
+  <rect x="526" y="90" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="526" y="90" width="368.1" height="10" rx="5" fill="url(#blue-bar)"/>
+
+  <text x="526" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Node.js &amp; Scalable REST APIs</text>
+  <text x="954" y="124" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">88%</text>
+  <rect x="526" y="134" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="526" y="134" width="376.6" height="10" rx="5" fill="url(#blue-bar)"/>
+
+  <text x="526" y="168" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Docker &amp; Linux Environments</text>
+  <text x="954" y="168" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">84%</text>
+  <rect x="526" y="178" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="526" y="178" width="359.5" height="10" rx="5" fill="url(#blue-bar)"/>
+
+  <text x="526" y="212" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">SQL &amp; Database Architecture</text>
+  <text x="954" y="212" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="bold" fill="#38BDF8">88%</text>
+  <rect x="526" y="222" width="428" height="10" rx="5" fill="#13233B"/>
+  <rect x="526" y="222" width="376.6" height="10" rx="5" fill="url(#blue-bar)"/>
+</svg>`;
+
+  writeSVG("skills.svg", svg);
+}
+
 function replaceSection(readme, startMarker, endMarker, content) {
   const start = readme.indexOf(startMarker);
   const end = readme.indexOf(endMarker);
@@ -682,6 +752,7 @@ async function main() {
   });
 
   buildLanguagesSVG(languageTotals);
+  buildSkillsSVG();
   buildCalendarSVG(calendarDays, totalContributions);
   buildSynchronizedSnakeSVG(calendarDays);
 

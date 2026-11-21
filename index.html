@@ -2057,21 +2057,24 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been prepared.');">
+        <!-- Contact Form (Direct Email to bijoysarkar7252@gmail.com) -->
+        <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
+          <div id="form-feedback" style="display:none; margin-bottom:16px;"></div>
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
           </div>
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="4" class="form-control" placeholder="Tell me about your project, idea, or role..." required></textarea>
+            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell me about your project, idea, or role..." required></textarea>
           </div>
-          <button type="submit" class="btn-submit">⚡ Send Message ⚡</button>
+          <button type="submit" id="btn-submit" class="btn-submit">
+            <span id="btn-text">⚡ Send Message ⚡</span>
+          </button>
         </form>
       </div>
     </section>
@@ -2153,6 +2156,80 @@
     function toggleMobileMenu() {
       const menu = document.getElementById('navLinks');
       menu.classList.toggle('mobile-open');
+    }
+
+    async function handleContactSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contact-form');
+      const btn = document.getElementById('btn-submit');
+      const btnText = document.getElementById('btn-text');
+      const feedback = document.getElementById('form-feedback');
+      
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      
+      if (!name || !email || !message) return;
+      
+      btn.disabled = true;
+      btnText.textContent = '⏳ Sending Message...';
+      feedback.style.display = 'none';
+
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/bijoysarkar7252@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            _subject: `[Portfolio Contact] Message from ${name}`,
+            _template: 'table'
+          })
+        });
+        
+        const data = await res.json();
+        if (res.ok || data.success === 'true' || data.success === true) {
+          feedback.style.display = 'block';
+          feedback.innerHTML = `
+            <div style="background:rgba(16,185,129,0.18); border:1px solid #10b981; border-radius:12px; padding:18px; text-align:center; animation: fadeIn 0.4s ease;">
+              <div style="font-size:20px; font-weight:700; color:#10b981; margin-bottom:6px;">✓ Message Dispatched Successfully!</div>
+              <p style="color:#f1f5f9; font-size:14px; margin-bottom:8px;">Thank you <b>${escapeHtml(name)}</b>! Your message has been sent directly to <b>bijoysarkar7252@gmail.com</b>.</p>
+              <p style="color:#94a3b8; font-size:13px;">Bijoy will review your message and reply to <b>${escapeHtml(email)}</b> shortly.</p>
+            </div>
+          `;
+          form.reset();
+          btn.style.display = 'none';
+        } else {
+          throw new Error(data.message || 'Delivery error');
+        }
+      } catch (err) {
+        const mailtoUri = 'mailto:bijoysarkar7252@gmail.com?subject=' + 
+          encodeURIComponent('Portfolio Contact from ' + name) + 
+          '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')\n\nMessage:\n' + message);
+        
+        window.location.href = mailtoUri;
+        
+        feedback.style.display = 'block';
+        feedback.innerHTML = `
+          <div style="background:rgba(14,165,233,0.18); border:1px solid #38bdf8; border-radius:12px; padding:18px; text-align:center; animation: fadeIn 0.4s ease;">
+            <div style="font-size:18px; font-weight:700; color:#38bdf8; margin-bottom:6px;">✉️ Opening Mail Client...</div>
+            <p style="color:#f1f5f9; font-size:14px; margin-bottom:10px;">Your message has been prepared to send directly to <b>bijoysarkar7252@gmail.com</b>.</p>
+            <a href="${mailtoUri}" class="btn-submit" style="display:inline-block; text-decoration:none; padding:8px 20px; font-size:13px; border-radius:8px;">Click Here If Your Email App Didn't Open</a>
+          </div>
+        `;
+        btn.disabled = false;
+        btnText.textContent = '⚡ Send Message ⚡';
+      }
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>"']/g, function(m) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+      });
     }
   </script>
 
