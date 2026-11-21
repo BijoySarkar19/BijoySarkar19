@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Generate live statistics, contribution calendar and recent repositories
+      - name: Generate live statistics, synchronized contributions and recent repositories
         run: node .github/scripts/update-profile.mjs
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
@@ -50,21 +50,21 @@ jobs:
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
       - name: Generate animated contribution snake
+        if: ${{ secrets.GH_PAT != '' }}
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_PAT }}
           outputs: |
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2338BDF8&color_dots=%2314243b,%230e4429,%23006d32,%2326a641,%2339d353
 
-      - name: Install generated snake
+      - name: Install generated snake from PAT
+        if: ${{ secrets.GH_PAT != '' }}
         run: |
           if [ -s dist/github-contribution-grid-snake-dark.svg ]; then
             mkdir -p assets/generated
             cp dist/github-contribution-grid-snake-dark.svg assets/generated/contribution-snake.svg
-            echo "Contribution snake asset refreshed."
-          else
-            echo "Snake SVG empty or not generated; keeping current snake."
+            echo "Installed live PAT-driven contribution snake."
           fi
 
       - name: Validate generated profile assets

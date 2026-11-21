@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Banner"/>
+<img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
 
 <br/>
 
@@ -8,7 +8,7 @@
 
 # BIJOY SARKAR
 
-### B.Tech CSE Student | Software Developer | AI/ML Enthusiast
+### B.Tech CSE Student | Software Developer | AI/ML & Computer Vision Enthusiast
 
 ![Software Developer](https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge)
 ![AI/ML](https://img.shields.io/badge/AI%2FML_ENTHUSIAST-2563EB?style=for-the-badge)
@@ -30,9 +30,9 @@
 
 Hello! I'm **Bijoy Sarkar**, a Computer Science & Engineering student at **ICFAI University Tripura**.
 
-I'm passionate about building practical software solutions and exploring Artificial Intelligence, Machine Learning, Computer Vision, NLP, Full-Stack Development, Mobile App Development and Cybersecurity.
+I'm passionate about building practical software solutions and exploring Artificial Intelligence, Machine Learning, Computer Vision, NLP, Full-Stack Development, Mobile App Development, and Cybersecurity.
 
-I enjoy turning ideas into working applications, solving problems and continuously improving my technical skills.
+I enjoy turning ideas into working applications, solving complex problems, and continuously improving my technical skills through real-world builds.
 
 ### WHAT I LIKE TO BUILD
 
@@ -42,14 +42,14 @@ I enjoy turning ideas into working applications, solving problems and continuous
 
 ### 🤖 AI & INTELLIGENT SYSTEMS
 
-Machine Learning applications, Computer Vision, Natural Language Processing and data-driven tools built with Python.
+Machine Learning applications, Computer Vision pipelines, Natural Language Processing, and data-driven systems built with Python.
 
 </td>
 <td width="50%" valign="top">
 
 ### 🌐 WEB & APP DEVELOPMENT
 
-Responsive web experiences, full-stack applications and mobile apps using JavaScript, Next.js, Flutter and Firebase.
+Responsive web experiences, full-stack applications, and cross-platform mobile apps using JavaScript, TypeScript, Next.js, Flutter, and Firebase.
 
 </td>
 </tr>
@@ -58,14 +58,14 @@ Responsive web experiences, full-stack applications and mobile apps using JavaSc
 
 ### 🛡️ SOFTWARE & SECURITY
 
-Practical software engineering, database-backed systems, API development, Docker and cybersecurity fundamentals.
+Practical software engineering, database-backed architectures, REST APIs, Docker containerization, and cybersecurity fundamentals.
 
 </td>
 <td width="50%" valign="top">
 
 ### 🧠 PROBLEM SOLVING
 
-Strengthening Data Structures & Algorithms, writing maintainable code and learning through hands-on projects.
+Strengthening Data Structures & Algorithms, writing clean maintainable code, and learning through hands-on open-source projects.
 
 </td>
 </tr>
@@ -106,6 +106,7 @@ Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer �
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
@@ -151,7 +152,7 @@ Software Developer · Python Developer · AI/ML Intern · Full-Stack Developer �
 
 ### 🛡️ Rakshak-AI
 
-AI-powered health assistant with conversational assistance, BMI calculation, speech recognition, text-to-speech and local data storage.
+AI-powered health assistant with conversational intelligence, BMI calculation, speech recognition, text-to-speech, and local data storage.
 
 `Python` `Llama 3.2` `LM Studio` `Tkinter` `SQLite`
 
@@ -160,7 +161,7 @@ AI-powered health assistant with conversational assistance, BMI calculation, spe
 
 ### 🛰️ Road Segmentation
 
-Computer-vision project focused on identifying and segmenting roads from satellite imagery.
+Computer-vision deep-learning project focused on identifying and segmenting road networks from satellite imagery.
 
 `Python` `Jupyter` `Computer Vision` `Kaggle`
 
@@ -171,7 +172,7 @@ Computer-vision project focused on identifying and segmenting roads from satelli
 
 ### 👁️ Smart Attendance System
 
-Face-recognition-based attendance workflow designed to automate attendance recording.
+Face-recognition-based attendance workflow designed to automate student and employee attendance recording.
 
 `Python` `OpenCV` `Face Recognition`
 
@@ -180,7 +181,7 @@ Face-recognition-based attendance workflow designed to automate attendance recor
 
 ### 📱 Expense Tracker
 
-Mobile application for recording and managing personal expenses.
+Cross-platform mobile application for recording and managing personal expenses with category analytics.
 
 `Flutter` `Dart` `Firebase` `Firestore`
 
@@ -191,7 +192,7 @@ Mobile application for recording and managing personal expenses.
 
 ### 😊 SentimentX
 
-Web-based text and YouTube-comment sentiment analysis.
+Web-based text and YouTube-comment sentiment analysis powered by NLP classifiers.
 
 `Python` `Flask` `NLTK` `VADER` `YouTube API`
 
@@ -200,7 +201,7 @@ Web-based text and YouTube-comment sentiment analysis.
 
 ### 🧠 Advanced NLP
 
-Natural-language-processing experiments using Python and real-world datasets.
+Natural-language-processing experiments exploring linguistic classification on real-world datasets.
 
 `Python` `NLP` `Jupyter` `Kaggle`
 
@@ -210,18 +211,16 @@ Natural-language-processing experiments using Python and real-world datasets.
 
 ### 🚀 CivicLens Core
 
-An intelligent public-infrastructure intelligence system.
+An intelligent public-infrastructure intelligence platform.
 
-- Interactive infrastructure map.
-- Road and public infrastructure information.
-- Public issue reporting.
-- Historical problem analysis.
-- Infrastructure dashboards.
+- Interactive geospatial infrastructure map.
+- Road and public infrastructure reporting.
+- Public issue intake and automated verification.
+- Historical infrastructure defect analysis.
+- Executive municipal dashboards.
 - AI-based infrastructure risk prediction.
-- Geographic hotspot detection.
-- Automatic issue prioritisation.
-- Intelligent maintenance recommendations.
-
+- Geographic hotspot identification.
+- Automatic prioritization and repair recommendations.
 
 <div align="center">
 
@@ -298,17 +297,17 @@ Pranavananda Vidya Mandir
 
 <div align="center">
 
-### MY CONTRIBUTION CALENDAR
+### MY CONTRIBUTION CALENDAR (535 CONTRIBUTIONS)
 
 <a href="https://github.com/BijoySarkar19">
 
-<img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar"/>
+<img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar showing 535 contributions"/>
 
 </a>
 
-### 🐍 WATCH MY CONTRIBUTIONS MOVE
+### 🐍 SYNCHRONIZED CONTRIBUTION SNAKE (535 SQUARES)
 
-<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake"/>
+<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake synchronized with the 535 contribution calendar"/>
 
 [![VIEW ACTIVITY](https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
 
@@ -318,7 +317,20 @@ Pranavananda Vidya Mandir
 
 ---
 
-## 10 / BEYOND THE CODE
+## 10 / 🎮 PLAY LIVE: COMMIT HUNTER (SNAKE GAME)
+
+<div align="center">
+
+[![PLAY GAME](https://img.shields.io/badge/🎮_PLAY_LIVE_GAME-Commit_Hunter-10B981?style=for-the-badge&logo=gamepad&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/#game)
+[![OPEN LOCAL PREVIEW](https://img.shields.io/badge/🕹️_LAUNCH_GAME-Open_preview.html-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](preview.html#game)
+
+Play the interactive **Commit Hunter** game directly in `preview.html`! Collect green GitHub contribution blocks, grab bonus golden stars, and see if you can match the 535-contribution streak! Works on desktop keyboard (Arrow keys / WASD) and mobile touchscreens.
+
+</div>
+
+---
+
+## 11 / BEYOND THE CODE
 
 <div align="center">
 
@@ -344,9 +356,23 @@ Pranavananda Vidya Mandir
 
 ### MY INTERESTS
 
-🏏 Cricket · ⚽ Football . 🏸Badminton · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling · 🎭 Drama
+🏏 Cricket · ⚽ Football · 🏸 Badminton · 🏋️ Gym · 🚗 Driving · 🏍️ Riding · ✈️ Travelling · 🎭 Drama
 
 </div>
+
+---
+
+## 12 / 🌐 SEARCH & DISCOVERABILITY (SEO)
+
+<details>
+<summary><b>🔍 Search Engine &amp; Developer Keywords Index</b></summary>
+
+- **Developer Identity**: Bijoy Sarkar | BijoySarkar19 | B.Tech CSE Developer Agartala Tripura India
+- **Core Specializations**: Artificial Intelligence, Machine Learning, Computer Vision, Full-Stack Development, Flutter App Development, NLP, Python Programming, Cybersecurity STQC MeitY
+- **Featured Repositories**: [SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge), [CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core), [Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio), [Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)
+- **Verified Portfolio**: [bijoy-sarkar-portfolio.vercel.app](https://bijoy-sarkar-portfolio.vercel.app/)
+
+</details>
 
 ---
 

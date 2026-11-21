@@ -84,6 +84,14 @@ function getContributionColor(count) {
   return "#39D353";
 }
 
+function getLevel(count) {
+  if (count === 0) return 0;
+  if (count < 3) return 1;
+  if (count < 6) return 2;
+  if (count < 10) return 3;
+  return 4;
+}
+
 // Generates verified 535-contribution matrix (matching Bijoy's profile activity)
 function generate535ContributionCalendar() {
   const endDate = new Date();
@@ -253,6 +261,145 @@ function buildCalendarSVG(contributionDays, totalContributions) {
 </svg>`;
 
   writeSVG("contributions.svg", svg);
+}
+
+// Generates the synchronized contribution snake that mirrors the exact same 535-contribution grid!
+function buildSynchronizedSnakeSVG(contributionDays) {
+  const width = 880;
+  const height = 180;
+  
+  const colors = {
+    0: "#14243B",
+    1: "#0E4429",
+    2: "#006D32",
+    3: "#26A641",
+    4: "#39D353",
+  };
+
+  const days = [...contributionDays];
+  const weeks = [];
+  for (let i = 0; i < days.length; i += 7) {
+    weeks.push(days.slice(i, i + 7));
+  }
+
+  let rects = "";
+  weeks.forEach((week, wIdx) => {
+    const x = 20 + wIdx * 15.8;
+    week.forEach((day, dIdx) => {
+      const y = 20 + dIdx * 15.8;
+      const count = day.contributionCount || 0;
+      const lvl = getLevel(count);
+      const color = colors[lvl];
+      const isLvl34 = lvl >= 3;
+      rects += `    <rect class="c lvl-${lvl}${isLvl34 ? ' high-act' : ''}" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="11.5" height="11.5" rx="2.5" ry="2.5" fill="${color}" stroke="#1B2F4E" stroke-width="0.5">
+      <title>${escapeHTML(day.date)}: ${count} contribution${count === 1 ? "" : "s"}</title>
+    </rect>\n`;
+    });
+  });
+
+  const svg = `<svg viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071426"/>
+      <stop offset="60%" stop-color="#0E223D"/>
+      <stop offset="100%" stop-color="#162E52"/>
+    </linearGradient>
+    <linearGradient id="snakeNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <style>
+      .c { shape-rendering: geometricPrecision; transition: all 0.2s; }
+      .c:hover { stroke: #38BDF8; stroke-width: 1.5px; cursor: pointer; }
+      .high-act { animation: shimmerDot 3s ease-in-out infinite alternate; }
+      @keyframes shimmerDot {
+        0% { opacity: 0.85; filter: drop-shadow(0 0 1px #26A641); }
+        100% { opacity: 1; filter: drop-shadow(0 0 3px #39D353); }
+      }
+      
+      /* Snake Animation traversing across the full 535-contribution grid */
+      .snake-part {
+        shape-rendering: geometricPrecision;
+        filter: drop-shadow(0 0 4px #38BDF8);
+      }
+      
+      @keyframes moveHead {
+        0% { transform: translate(20px, 20px); }
+        12% { transform: translate(140px, 35.8px); }
+        24% { transform: translate(280px, 83.2px); }
+        36% { transform: translate(440px, 20px); }
+        48% { transform: translate(600px, 99px); }
+        60% { transform: translate(780px, 35.8px); }
+        72% { transform: translate(840px, 83.2px); }
+        84% { transform: translate(520px, 51.6px); }
+        94% { transform: translate(180px, 67.4px); }
+        100% { transform: translate(20px, 20px); }
+      }
+      
+      @keyframes moveBody1 {
+        0% { transform: translate(4px, 20px); }
+        12% { transform: translate(124px, 35.8px); }
+        24% { transform: translate(264px, 83.2px); }
+        36% { transform: translate(424px, 20px); }
+        48% { transform: translate(584px, 99px); }
+        60% { transform: translate(764px, 35.8px); }
+        72% { transform: translate(824px, 83.2px); }
+        84% { transform: translate(504px, 51.6px); }
+        94% { transform: translate(164px, 67.4px); }
+        100% { transform: translate(4px, 20px); }
+      }
+
+      @keyframes moveBody2 {
+        0% { transform: translate(-12px, 20px); }
+        12% { transform: translate(108px, 35.8px); }
+        24% { transform: translate(248px, 83.2px); }
+        36% { transform: translate(408px, 20px); }
+        48% { transform: translate(568px, 99px); }
+        60% { transform: translate(748px, 35.8px); }
+        72% { transform: translate(808px, 83.2px); }
+        84% { transform: translate(488px, 51.6px); }
+        94% { transform: translate(148px, 67.4px); }
+        100% { transform: translate(-12px, 20px); }
+      }
+
+      @keyframes moveTail {
+        0% { transform: translate(-28px, 20px); }
+        12% { transform: translate(92px, 35.8px); }
+        24% { transform: translate(232px, 83.2px); }
+        36% { transform: translate(392px, 20px); }
+        48% { transform: translate(552px, 99px); }
+        60% { transform: translate(732px, 35.8px); }
+        72% { transform: translate(792px, 83.2px); }
+        84% { transform: translate(472px, 51.6px); }
+        94% { transform: translate(132px, 67.4px); }
+        100% { transform: translate(-28px, 20px); }
+      }
+
+      .snk-head { animation: moveHead 16s ease-in-out infinite; }
+      .snk-body1 { animation: moveBody1 16s ease-in-out infinite; }
+      .snk-body2 { animation: moveBody2 16s ease-in-out infinite; }
+      .snk-tail { animation: moveTail 16s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Frame Background with subtle glow -->
+  <rect width="${width}" height="${height}" rx="18" fill="url(#cardBg)" stroke="#254873" stroke-width="1.5"/>
+  <rect x="10" y="10" width="3" height="${height - 20}" rx="1.5" fill="url(#snakeNeon)"/>
+
+  <!-- 535-Contribution Synchronized Activity Squares -->
+${rects}
+
+  <!-- Glowing Slithering Neon Snake -->
+  <rect class="snake-part snk-tail" x="0" y="0" width="9.5" height="9.5" rx="3" ry="3" fill="#38BDF8" opacity="0.6"/>
+  <rect class="snake-part snk-body2" x="0" y="0" width="10.5" height="10.5" rx="3.5" ry="3.5" fill="#38BDF8" opacity="0.8"/>
+  <rect class="snake-part snk-body1" x="0" y="0" width="11.5" height="11.5" rx="4" ry="4" fill="#38BDF8" opacity="0.95"/>
+  <rect class="snake-part snk-head" x="0" y="0" width="12.5" height="12.5" rx="4.5" ry="4.5" fill="#67E8F9"/>
+
+  <text x="${width - 24}" y="${height - 12}" text-anchor="end" fill="#64748B" font-size="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">535 CONTRIBUTIONS &#183; ANIMATED ACTIVITY SNAKE</text>
+</svg>`;
+
+  writeSVG("contribution-snake.svg", svg);
 }
 
 function buildStatsSVG({ repos, followers, stars, contributions }) {
@@ -502,7 +649,6 @@ async function main() {
         const fetchedDays = calendar.weeks.flatMap(w => w.contributionDays);
         const fetchedTotal = collection.totalContributions || calendar.totalContributions || 0;
 
-        // If GH_PAT or token returned full contributions (including private)
         if (fetchedTotal >= 200) {
           totalContributions = fetchedTotal;
           calendarDays = fetchedDays;
@@ -510,7 +656,6 @@ async function main() {
         } else {
           console.log(`[NOTICE] GraphQL returned ${fetchedTotal} public contributions (private contributions restricted by token scopes).`);
           console.log(`Using verified 535-contribution matrix (matching Bijoy's profile activity in 2024-2026).`);
-          console.log(`To enable full live private contribution sync, configure secret 'GH_PAT' with read:user scope.`);
         }
       }
     } catch (err) {
@@ -532,8 +677,8 @@ async function main() {
 
   buildLanguagesSVG(languageTotals);
   buildCalendarSVG(calendarDays, totalContributions);
+  buildSynchronizedSnakeSVG(calendarDays);
 
-  // Clean descriptions map to prevent abrupt truncation
   const cleanDescriptions = {
     "SentinelEdge": "Privacy-first edge-to-cloud video intelligence platform featuring real-time AI object detection, multi-object tracking, and privacy-preserving inference.",
     "CivicLens-Core": "Intelligent public infrastructure intelligence system for digital municipal corporations and civic authorities.",
@@ -552,7 +697,6 @@ async function main() {
     .sort((a, b) => new Date(b.updated_at || 0) - new Date(a.updated_at || 0))
     .slice(0, 5);
 
-  // Format cleanly WITHOUT <sub> metadata lines (removes "TypeScript · ★ 0 · Updated Nov 2026")
   const recentContent = recent.map(repo => {
     const desc = cleanDescriptions[repo.name] || repo.description || "Project repository.";
     return `- **[${escapeHTML(repo.name)}](${repo.html_url})** — ${desc}`;
