@@ -4,17 +4,13 @@
 
 <br/>
 
-<!-- Interactive Live Preview Launcher (Animated Typing SVG & Badges) -->
+<!-- Interactive Live Preview Launcher -->
 <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&duration=2500&pause=1000&color=00F2FE&center=true&vCenter=true&width=520&lines=🚀+LAUNCH+LIVE+INTERACTIVE+PORTFOLIO+PREVIEW;🎮+PLAY+COMMIT+HUNTER+GAME+LIVE;⚡+CLICK+HERE+TO+OPEN+FULL+PREVIEW" alt="Launch Live Interactive Preview"/>
-</a>
-<br/>
-<a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
-  <img src="https://img.shields.io/badge/⚡_LAUNCH_LIVE_PREVIEW-Open_Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
+  <img src="https://img.shields.io/badge/🎮_LAUNCH_LIVE_PREVIEW-Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
 </a>
 &nbsp;
-<a href="https://bijoysarkar19.github.io/BijoySarkar19/">
-  <img src="https://img.shields.io/badge/🌐_GITHUB_PAGES_HOST-Live_Website-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="GitHub Pages Host"/>
+<a href="https://bijoy-sarkar-portfolio.vercel.app/">
+  <img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Website"/>
 </a>
 
 <br/><br/>
@@ -363,7 +359,7 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 
 [![PLAY LIVE ON WEB](https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white)](https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game)
 &nbsp;
-[![PLAY ON GITHUB PAGES](https://img.shields.io/badge/🌐_PLAY_ON_GITHUB_PAGES-Live_Host-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://bijoysarkar19.github.io/BijoySarkar19/#game)
+[![VISIT LIVE WEBSITE](https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/)
 
 Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens. You can also run the game locally by opening `preview.html`.
 
