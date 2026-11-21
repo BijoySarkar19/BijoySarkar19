@@ -1,62 +1,51 @@
 <div align="center">
 
-<!-- Floating Capsule Navigation Bar (Matching Reference Image) -->
-<a href="https://bijoy-sarkar-portfolio.vercel.app/">
-  <img src="./assets/navbar.svg" width="100%" alt="Bijoy Sarkar Floating Navigation Capsule"/>
-</a>
+<img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
 
 <br/><br/>
 
-<!-- Hero Section with Glowing Neon Aura Portrait -->
-<table width="100%" border="0">
-<tr>
-<td width="64%" valign="middle" align="left">
+<img src="./assets/profile-avatar.png" width="165" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 35px rgba(0,242,254,0.5);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
-<sub>◈ BIJOY SARKAR ◈</sub>
+# BIJOY SARKAR
 
-# ⚡ Hi, I'm <span style="color:#00F2FE;">BIJOY</span> ⚡
+### B.Tech CSE Student | Software Developer | AI/ML & Computer Vision Enthusiast
 
-### ◈ I'm a Developer | ◈
-
-Computer Science & Engineering student at **ICFAI University Tripura**. Passionate about architecting scalable full-stack applications, deep-learning computer vision models, and intelligent automated systems.
+![Software Developer](https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge)
+![AI/ML](https://img.shields.io/badge/AI%2FML_ENTHUSIAST-2563EB?style=for-the-badge)
+![Computer Vision](https://img.shields.io/badge/COMPUTER_VISION-0F766E?style=for-the-badge)
+![Full Stack](https://img.shields.io/badge/FULL_STACK_DEVELOPER-5B21B6?style=for-the-badge)
 
 <br/>
 
+<a href="https://bijoy-sarkar-portfolio.vercel.app/">
+  <img src="https://img.shields.io/badge/✦_PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+</a>
+&nbsp;
 <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf">
   <img src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/>
 </a>
 &nbsp;
 <a href="https://github.com/BijoySarkar19">
-  <img src="https://img.shields.io/badge/GITHUB-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 &nbsp;
 <a href="https://www.linkedin.com/in/bijoysarkar19">
-  <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 &nbsp;
 <a href="https://www.instagram.com/bijoyysarkarr/">
-  <img src="https://img.shields.io/badge/INSTAGRAM-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  <img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
 </a>
 &nbsp;
-<a href="mailto:bijoysarkar1919@gmail.com">
-  <img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+<a href="mailto:bijoysarkar7252@gmail.com">
+  <img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
 
-</td>
-<td width="36%" align="center" valign="middle">
+<br/><br/>
 
-<img src="./assets/profile-avatar.png" width="190" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 40px rgba(0,242,254,0.6);" alt="Bijoy Sarkar Developer Portrait"/>
+📍 Agartala, Tripura, India
 
-<br/>
-
-<b>BIJOY SARKAR</b><br/>
-<sub>B.Tech CSE · AI/ML Specialist</sub>
-
-</td>
-</tr>
-</table>
-
-<br/>
+<br/><br/>
 
 <!-- Floating Tech Ribbon -->
 <table width="100%" border="0">
@@ -410,11 +399,13 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 </div>
 
 <!-- RECENT-REPOS:START -->
+
 - **[SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge)** — Privacy-first edge-to-cloud video intelligence platform featuring real-time AI object detection, multi-object tracking, and privacy-preserving inference.
 - **[CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core)** — Intelligent public infrastructure intelligence system for digital municipal corporations and civic authorities.
 - **[BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19)** — Personal GitHub profile README showcasing projects, technical skills, internships, and engineering journey.
 - **[Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio)** — Full-stack developer portfolio & intelligent systems showcase featuring interactive 300-frame scroll canvas and AI/ML engineering projects.
 - **[Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV)** — Professional developer curriculum vitae created using LaTeX.
+
 <!-- RECENT-REPOS:END -->
 
 ---
@@ -423,10 +414,11 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 
 <h2>◈ 🎮 PLAY LIVE: COMMIT HUNTER (SNAKE GAME) ◈</h2>
 
-[![PLAY LIVE](https://img.shields.io/badge/🎮_PLAY_LIVE_GAME-Commit_Hunter-10B981?style=for-the-badge&logo=gamepad&logoColor=white)](https://bijoy-sarkar-portfolio.vercel.app/#game)
-[![OPEN PREVIEW](https://img.shields.io/badge/🕹️_LAUNCH_LOCAL_PREVIEW-preview.html-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](preview.html#game)
+[![PLAY LIVE ON WEB](https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white)](https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game)
+&nbsp;
+[![PLAY ON GITHUB PAGES](https://img.shields.io/badge/🌐_PLAY_ON_GITHUB_PAGES-Live_Host-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white)](https://bijoysarkar19.github.io/BijoySarkar19/#game)
 
-Play the interactive **Commit Hunter** game in `preview.html`! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens.
+Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens. You can also run the game locally by opening `preview.html`.
 
 </div>
 
@@ -450,13 +442,13 @@ Play the interactive **Commit Hunter** game in `preview.html`! Collect green Git
 </td>
 <td width="65%" valign="middle">
 
-📧 **Email**: [bijoysarkar1919@gmail.com](mailto:bijoysarkar1919@gmail.com)  
+📧 **Email**: [bijoysarkar7252@gmail.com](mailto:bijoysarkar7252@gmail.com)  
 📍 **Location**: Agartala, Tripura, India  
 💼 **Open To**: Software Developer · AI/ML Engineer · Full-Stack Developer · Entry-Level Roles  
 
 <br/>
 
-[![Email](https://img.shields.io/badge/EMAIL-bijoysarkar1919%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bijoysarkar1919@gmail.com)
+[![Email](https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bijoysarkar7252@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bijoysarkar19)
 [![GitHub](https://img.shields.io/badge/GITHUB-Follow-172554?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BijoySarkar19)
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bijoyysarkarr/)

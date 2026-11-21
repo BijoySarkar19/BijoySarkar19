@@ -327,9 +327,12 @@ function buildSynchronizedSnakeSVG(contributionDays) {
         const pct = (k / N) * 100;
         const cName = `c${cellCounter++}`;
         const pctBite = pct.toFixed(2);
-        const pctBiteEnd = Math.min(100, pct + 0.05).toFixed(2);
+        const pctBiteEnd = Math.min(98, (pct + 0.15)).toFixed(2);
         
-        cellKeyframes.push(`@keyframes ${cName}{${pctBite}%{fill:var(--c${lvl})}${pctBiteEnd}%,100%{fill:var(--ce)}}`);
+        const kfStr = pct <= 0.01 
+          ? `0%{fill:var(--c${lvl})}${pctBiteEnd}%,98%{fill:var(--ce)}100%{fill:var(--c${lvl})}`
+          : `0%,${pctBite}%{fill:var(--c${lvl})}${pctBiteEnd}%,98%{fill:var(--ce)}100%{fill:var(--c${lvl})}`;
+        cellKeyframes.push(`@keyframes ${cName}{${kfStr}}`);
         cellClasses.push(`.c.${cName}{fill:var(--c${lvl});animation-name:${cName}}`);
         cellRects.push(`<rect class="c ${cName}" x="${x}" y="${y}" rx="2" ry="2"/>`);
       } else {
