@@ -4,9 +4,13 @@
 
 <br/>
 
-<!-- Official Portfolio Launcher -->
+<!-- Interactive Live Preview Launcher -->
+<a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
+  <img src="https://img.shields.io/badge/🎮_LAUNCH_LIVE_PREVIEW-Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
+</a>
+&nbsp;
 <a href="https://bijoy-sarkar-portfolio.vercel.app/">
-  <img src="https://img.shields.io/badge/🌐_VISIT_OFFICIAL_PORTFOLIO-Live_Website_&_Commit_Hunter_Game-00F2FE?style=for-the-badge&logo=vercel&logoColor=040914&labelColor=0284C7" alt="Visit Official Portfolio Website"/>
+  <img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Website"/>
 </a>
 
 <br/><br/>
@@ -344,9 +348,9 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <h2>◈ 🎮 PLAY LIVE: COMMIT HUNTER (SNAKE GAME) ◈</h2>
 
 <p align="center">
-  <a href="https://bijoy-sarkar-portfolio.vercel.app/#game"><img src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-Official_Portfolio-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live on Official Portfolio"/></a>
+  <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game"><img src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live"/></a>
   &nbsp;
-  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Official Portfolio"/></a>
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio"/></a>
 </p>
 
 Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens.
@@ -410,37 +414,19 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 
 ---
 
-<!-- ========================================================
-     SEARCH ENGINE OPTIMIZATION (SEO) & PROFILE DISCOVERABILITY
-     ======================================================== -->
-<div align="center">
-
-<h3>🔍 Developer Profile & Discoverability Index</h3>
-
-<p align="center">
-  <b>Official Profiles & Verified Links:</b><br/>
-  🔗 <b>GitHub Profile:</b> <a href="https://github.com/BijoySarkar19">https://github.com/BijoySarkar19</a> &nbsp;|&nbsp;
-  🌐 <b>Portfolio Website:</b> <a href="https://bijoy-sarkar-portfolio.vercel.app/">https://bijoy-sarkar-portfolio.vercel.app/</a> &nbsp;|&nbsp;
-  💼 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bijoysarkar19">linkedin.com/in/bijoysarkar19</a> &nbsp;|&nbsp;
-  📄 <b>Curriculum Vitae (CV):</b> <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf">Bijoy Sarkar CV (PDF)</a>
-</p>
-
-<p align="center">
-  <sub><b>Search Keywords & Indexing Terms:</b> Bijoy Sarkar · BijoySarkar19 · Bijoy Sarkar GitHub · BijoySarkar19 GitHub · github.com/BijoySarkar19 · Bijoy Sarkar Developer · Bijoy Sarkar Software Developer · Bijoy Sarkar AI ML Engineer · Bijoy Sarkar Computer Vision · Bijoy Sarkar Agartala · Bijoy Sarkar Tripura · Bijoy Sarkar ICFAI University Tripura · Bijoy Sarkar Portfolio · Bijoy Sarkar Projects · SentinelEdge · CivicLens Core · Rakshak-AI · Road Segmentation · 535+ GitHub Contributions · Software Developer India</sub>
-</p>
-
 <!--
-Structured Web Crawler Metadata:
+========================================================
+SEARCH ENGINE OPTIMIZATION (SEO) & SEARCH CRAWLER INDEX
+========================================================
 Name: Bijoy Sarkar (বিজয় সরকার)
 GitHub Handle: @BijoySarkar19
-Official GitHub Profile URL: https://github.com/BijoySarkar19
-Developer Portfolio: https://bijoy-sarkar-portfolio.vercel.app/
-Primary Specialization: Software Development, Artificial Intelligence (AI), Machine Learning (ML), Computer Vision (CV), Full-Stack Web Development, Edge AI, Flutter
-Institution: ICFAI University Tripura (Faculty of Science and Technology - B.Tech CSE)
+Official GitHub Profile: https://github.com/BijoySarkar19
+Official Portfolio Website: https://bijoy-sarkar-portfolio.vercel.app/
+LinkedIn Profile: https://www.linkedin.com/in/bijoysarkar19
+Curriculum Vitae (CV): https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf
 Location: Agartala, Tripura, India (799001)
-Featured Open Source Work: SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation Deep Learning, Smart Attendance Facial Recognition, Commit Hunter Game
-Email: bijoysarkar7252@gmail.com
+Alma Mater: ICFAI University Tripura (B.Tech Computer Science & Engineering)
+Primary Focus: Software Development, Artificial Intelligence (AI), Machine Learning (ML), Computer Vision (CV), Full-Stack Web Development, Edge AI, Flutter
+Featured Projects: SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation Deep Learning, Smart Attendance System, Commit Hunter Game
+Search Keywords & Indexing Terms: Bijoy Sarkar, BijoySarkar19, Bijoy Sarkar GitHub, BijoySarkar19 GitHub, github.com/BijoySarkar19, Bijoy Sarkar Developer, Bijoy Sarkar Software Developer, Bijoy Sarkar AI ML Engineer, Bijoy Sarkar Computer Vision, Bijoy Sarkar Agartala, Bijoy Sarkar Tripura, Bijoy Sarkar ICFAI University Tripura, Bijoy Sarkar Portfolio, Bijoy Sarkar Projects, SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation, 535+ GitHub Contributions, Software Developer India
 -->
-
-</div>
-
