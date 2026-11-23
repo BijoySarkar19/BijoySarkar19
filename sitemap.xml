@@ -22,13 +22,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  <!-- Interactive Live Preview -->
-  <url>
-    <loc>https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
   <!-- Verified CV Document -->
   <url>
     <loc>https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf</loc>

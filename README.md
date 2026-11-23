@@ -4,13 +4,9 @@
 
 <br/>
 
-<!-- Interactive Live Preview Launcher -->
-<a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
-  <img src="https://img.shields.io/badge/🎮_LAUNCH_LIVE_PREVIEW-Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
-</a>
-&nbsp;
+<!-- Official Portfolio Launcher -->
 <a href="https://bijoy-sarkar-portfolio.vercel.app/">
-  <img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Website"/>
+  <img src="https://img.shields.io/badge/🌐_VISIT_OFFICIAL_PORTFOLIO-Live_Website_&_Commit_Hunter_Game-00F2FE?style=for-the-badge&logo=vercel&logoColor=040914&labelColor=0284C7" alt="Visit Official Portfolio Website"/>
 </a>
 
 <br/><br/>
@@ -348,9 +344,9 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <h2>◈ 🎮 PLAY LIVE: COMMIT HUNTER (SNAKE GAME) ◈</h2>
 
 <p align="center">
-  <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game"><img src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live"/></a>
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/#game"><img src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-Official_Portfolio-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live on Official Portfolio"/></a>
   &nbsp;
-  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio"/></a>
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Official Portfolio"/></a>
 </p>
 
 Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens.
