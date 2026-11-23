@@ -18,10 +18,14 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    env:
+      HAS_PAT: ${{ secrets.GH_PAT }}
 
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -50,7 +54,8 @@ jobs:
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
       - name: Generate animated contribution snake
-        if: ${{ secrets.GH_PAT != '' }}
+        if: env.HAS_PAT != ''
+        continue-on-error: true
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -59,7 +64,8 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2338BDF8&color_dots=%2314243b,%230e4429,%23006d32,%2326a641,%2339d353
 
       - name: Install generated snake from PAT
-        if: ${{ secrets.GH_PAT != '' }}
+        if: env.HAS_PAT != ''
+        continue-on-error: true
         run: |
           if [ -s dist/github-contribution-grid-snake-dark.svg ]; then
             mkdir -p assets/generated

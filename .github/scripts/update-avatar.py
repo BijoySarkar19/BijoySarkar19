@@ -35,7 +35,6 @@ try:
 
     image_response = requests.get(
         avatar_url,
-        headers=headers,
         timeout=30,
     )
     image_response.raise_for_status()
