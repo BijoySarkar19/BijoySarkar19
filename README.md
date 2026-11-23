@@ -17,10 +17,10 @@
 
 <img src="./assets/profile-avatar.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
-# BIJOY SARKAR · [@BijoySarkar19](https://github.com/BijoySarkar19)
+# BIJOY SARKAR
 
 ### Software Developer · AI/ML & Computer Vision Engineer · B.Tech CSE
-📍 **Agartala, Tripura, India** &nbsp;|&nbsp; 🔗 **Official GitHub Profile:** [https://github.com/BijoySarkar19](https://github.com/BijoySarkar19) &nbsp;|&nbsp; 🌐 **Portfolio:** [bijoy-sarkar-portfolio.vercel.app](https://bijoy-sarkar-portfolio.vercel.app/)
+📍 **Agartala, Tripura, India**
 
 <p align="center">
   <img src="https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge" alt="Software Developer"/>
