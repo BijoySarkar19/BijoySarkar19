@@ -236,6 +236,7 @@
       color: var(--text-muted);
       padding: 6px 14px;
       border-radius: var(--radius-pill);
+      border: 1px solid transparent;
       transition: all 0.25s ease;
       letter-spacing: 0.04em;
     }
@@ -1489,6 +1490,14 @@
         font-size: 13.5px;
         font-weight: 700;
         border-radius: 12px;
+        border: 1px solid transparent;
+        transition: all 0.25s ease;
+      }
+      .nav-links a.active, .nav-links a:hover {
+        background: rgba(0, 242, 254, 0.16) !important;
+        border-color: rgba(0, 242, 254, 0.55) !important;
+        color: #00f2fe !important;
+        box-shadow: 0 0 16px rgba(0, 242, 254, 0.25);
       }
       .d-pad-box {
         display: grid !important;
@@ -1667,14 +1676,14 @@
       </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="active">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#contributions">CONTRIBUTIONS</a></li>
-        <li><a href="#game">GAME</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#home" data-target="home" class="active">HOME</a></li>
+        <li><a href="#about" data-target="about">ABOUT</a></li>
+        <li><a href="#certificates" data-target="certificates">Certificates</a></li>
+        <li><a href="#projects" data-target="projects">PROJECTS</a></li>
+        <li><a href="#skills" data-target="skills">SKILLS</a></li>
+        <li><a href="#contributions" data-target="contributions">CONTRIBUTIONS</a></li>
+        <li><a href="#game" data-target="game">GAME</a></li>
+        <li><a href="#contact" data-target="contact">CONTACT</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -2521,46 +2530,69 @@
 
     
     // ========================================================
-    // INTERACTIVE SCROLLSPY (Syncs with 3-bar mobile menu & navbar)
+    // INTERACTIVE SCROLLSPY (Syncs with 3-bar hamburger mobile menu & desktop navbar)
+    // Works reliably on direct domain, local preview, and htmlpreview.github.io
     // ========================================================
-    const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+    const navAnchors = Array.from(document.querySelectorAll('.nav-links a'));
     const scrollSectionIds = ['home', 'about', 'certificates', 'projects', 'skills', 'contributions', 'game', 'contact'];
     const scrollSections = scrollSectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
-    function updateActiveNav() {
-      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight || 800;
-      const docHeight = document.documentElement.scrollHeight || document.body.scrollHeight || 3000;
-
-      // If at bottom of page, highlight Contact
-      if (scrollPos + windowHeight >= docHeight - 90) {
-        setActiveNav('contact');
-        return;
-      }
-
-      // Check section bounding rects for accurate visible section detection
-      let currentId = 'home';
-      const offsetThreshold = 180; // Buffer for floating navbar
-
-      for (let i = 0; i < scrollSections.length; i++) {
-        const sec = scrollSections[i];
-        const rect = sec.getBoundingClientRect();
-        if (rect.top <= offsetThreshold) {
-          currentId = sec.id;
-        }
-      }
-
-      setActiveNav(currentId);
+    function getAnchorTargetId(a) {
+      if (a.hasAttribute('data-target')) return a.getAttribute('data-target');
+      if (a.hash) return a.hash.replace(/^#/, '');
+      const href = a.getAttribute('href') || '';
+      const match = href.match(/#([a-zA-Z0-9_-]+)$/);
+      return match ? match[1] : '';
     }
 
     function setActiveNav(id) {
+      if (!id) return;
+      const normalizedId = id.toLowerCase();
       navAnchors.forEach(a => {
-        if (a.getAttribute('href') === '#' + id) {
+        const target = getAnchorTargetId(a).toLowerCase();
+        if (target === normalizedId) {
           a.classList.add('active');
         } else {
           a.classList.remove('active');
         }
       });
+    }
+
+    function updateActiveNav() {
+      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight || 800;
+      const docHeight = Math.max(
+        document.body.scrollHeight || 0,
+        document.documentElement.scrollHeight || 0,
+        document.body.offsetHeight || 0,
+        document.documentElement.offsetHeight || 0
+      );
+
+      // 1. If at bottom of page, highlight Contact
+      if (scrollPos + windowHeight >= docHeight - 120) {
+        setActiveNav('contact');
+        return;
+      }
+
+      // 2. If at top of page, highlight Home
+      if (scrollPos < 100) {
+        setActiveNav('home');
+        return;
+      }
+
+      // 3. Scan visible sections using viewport bounding rects
+      let activeSectionId = 'home';
+      const navThreshold = 180; // Distance below floating navbar
+
+      for (let i = 0; i < scrollSections.length; i++) {
+        const sec = scrollSections[i];
+        const rect = sec.getBoundingClientRect();
+        if (rect.top <= navThreshold) {
+          activeSectionId = sec.id;
+        }
+      }
+
+      setActiveNav(activeSectionId);
     }
 
     // Live GitHub Profile Photo Synchronizer
@@ -2577,13 +2609,18 @@
         .catch(() => {});
     })();
 
+    // Listen to both window and document scroll for universal browser & iframe support
     window.addEventListener('scroll', updateActiveNav, { passive: true });
+    document.addEventListener('scroll', updateActiveNav, { passive: true });
     window.addEventListener('resize', updateActiveNav, { passive: true });
-    updateActiveNav();
+    window.addEventListener('load', updateActiveNav, { passive: true });
+    setTimeout(updateActiveNav, 100);
+    setTimeout(updateActiveNav, 500);
 
     function toggleMobileMenu() {
       const menu = document.getElementById('navLinks');
       const btn = document.getElementById('menuToggleBtn');
+      if (!menu) return;
       menu.classList.toggle('mobile-open');
       if (btn) btn.classList.toggle('is-active');
       if (menu.classList.contains('mobile-open')) {
@@ -2603,18 +2640,18 @@
       }
     });
 
-    // Smooth navigation link click handler with accurate scroll sync
-    document.querySelectorAll('.nav-links a').forEach(link => {
+    // Universal navigation link click handler (bypasses htmlpreview URL rewrite)
+    navAnchors.forEach(link => {
       link.addEventListener('click', (e) => {
-        const targetId = link.getAttribute('href');
-        if (targetId && targetId.startsWith('#')) {
-          const targetEl = document.querySelector(targetId);
+        const targetId = getAnchorTargetId(link);
+        if (targetId) {
+          const targetEl = document.getElementById(targetId);
           if (targetEl) {
             e.preventDefault();
             const headerOffset = 80;
-            const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+            const targetPos = targetEl.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop || 0) - headerOffset;
             window.scrollTo({ top: targetPos, behavior: 'smooth' });
-            setActiveNav(targetId.substring(1));
+            setActiveNav(targetId);
           }
         }
         const menu = document.getElementById('navLinks');
