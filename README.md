@@ -15,7 +15,7 @@
 
 <br/><br/>
 
-<img src="./assets/profile-avatar.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
+<img src="https://github.com/BijoySarkar19.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
 # BIJOY SARKAR
 
