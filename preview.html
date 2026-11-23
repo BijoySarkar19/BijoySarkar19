@@ -2336,11 +2336,17 @@
       <div class="sync-status-row">
         <div class="sync-badge">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-          Calendar &amp; Snake Grid 100% Synchronized
+          <span id="syncStatusText">Calendar &amp; Snake Grid 100% Synchronized</span>
         </div>
-        <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener" class="nav-cta" style="font-size: 11.5px; padding: 6px 14px;">
-          ↻ Refresh Activity on GitHub Actions
-        </a>
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <button type="button" id="btnRefreshActivity" onclick="refreshActivityData()" class="nav-cta" style="font-size: 11.5px; padding: 6px 14px; cursor: pointer; border: 1px solid rgba(0, 242, 254, 0.4); display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af 0%, #0284c7 60%, #00f2fe 100%);">
+            <span id="refreshIcon" style="display: inline-block;">↻</span>
+            <span id="refreshBtnText">Refresh Activity</span>
+          </button>
+          <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener" style="font-size: 11.5px; color: var(--sky); display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.25); background: rgba(14, 28, 56, 0.6); transition: all 0.2s ease;">
+            Actions Log ↗
+          </a>
+        </div>
       </div>
     </section>
 
@@ -2616,6 +2622,36 @@
     window.addEventListener('load', updateActiveNav, { passive: true });
     setTimeout(updateActiveNav, 100);
     setTimeout(updateActiveNav, 500);
+
+    function refreshActivityData() {
+      const icon = document.getElementById('refreshIcon');
+      const text = document.getElementById('refreshBtnText');
+      const badge = document.getElementById('syncStatusText');
+      const btn = document.getElementById('btnRefreshActivity');
+
+      if (!btn) return;
+      btn.disabled = true;
+      if (icon) icon.style.animation = 'rotateRing 0.8s linear infinite';
+      if (text) text.textContent = 'Refreshing...';
+
+      // Reload both SVGs with cache-busting timestamp in-place without page redirect
+      const timestamp = Date.now();
+      const calendarImgs = document.querySelectorAll('img[src*="contributions.svg"], img[src*="contribution-snake.svg"]');
+      calendarImgs.forEach(img => {
+        const baseSrc = img.src.split('?')[0];
+        img.src = `${baseSrc}?t=${timestamp}`;
+      });
+
+      setTimeout(() => {
+        if (icon) icon.style.animation = 'none';
+        if (text) text.textContent = '✓ Refreshed';
+        if (badge) badge.textContent = 'Activity & Grid Updated Just Now';
+        setTimeout(() => {
+          if (text) text.textContent = 'Refresh Activity';
+          btn.disabled = false;
+        }, 2000);
+      }, 700);
+    }
 
     function toggleMobileMenu() {
       const menu = document.getElementById('navLinks');
