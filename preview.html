@@ -18,6 +18,9 @@
   <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="theme-color" content="#060b18">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="profile">
@@ -1661,6 +1664,286 @@
       scrollbar-width: thin;
       scrollbar-color: #0284c7 #050a17;
     }
+
+    /* ========================================================
+       CYBERPUNK LIGHTBOX / MODAL SYSTEM
+       ======================================================== */
+    .cyber-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s;
+    }
+    .cyber-modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .cyber-modal-container {
+      background: #081226;
+      border: 1px solid rgba(56, 189, 248, 0.5);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 680px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 0 50px rgba(0, 242, 254, 0.25), 0 25px 60px rgba(0, 0, 0, 0.85);
+      position: relative;
+      transform: scale(0.92) translateY(18px);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .cyber-modal-overlay.active .cyber-modal-container {
+      transform: scale(1) translateY(0);
+    }
+    .cyber-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.18);
+      background: rgba(10, 20, 42, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .cyber-modal-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.02em;
+    }
+    .cyber-modal-close {
+      background: rgba(14, 28, 56, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #94a3b8;
+      border-radius: 8px;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cyber-modal-close:hover {
+      color: #00f2fe;
+      border-color: #00f2fe;
+      box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+    }
+    .cyber-modal-body {
+      padding: 24px;
+      color: #cbd5e1;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Modal Content Specific Styling */
+    .modal-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: rgba(0, 242, 254, 0.15);
+      border: 1px solid #00f2fe;
+      color: #00f2fe;
+      margin-bottom: 14px;
+    }
+    .modal-desc {
+      font-size: 14px;
+      color: #e2e8f0;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .modal-section-title {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      color: #38bdf8;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .pipeline-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .pipeline-step {
+      background: rgba(14, 28, 56, 0.65);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .step-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00f2fe, #2563eb);
+      color: #040914;
+      font-weight: 800;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-title {
+      font-weight: 700;
+      color: #fff;
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+    .step-desc {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    .modal-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .modal-tag {
+      background: rgba(14, 28, 56, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: ui-monospace, monospace;
+    }
+    .modal-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
+      padding-top: 18px;
+    }
+
+    /* Project Filtering Tabs */
+    .project-filter-tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .filter-tab {
+      background: rgba(10, 20, 42, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: #94a3b8;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+    .filter-tab:hover {
+      color: #fff;
+      border-color: #00f2fe;
+      background: rgba(14, 28, 58, 0.85);
+    }
+    .filter-tab.active {
+      background: linear-gradient(135deg, rgba(0, 242, 254, 0.2), rgba(37, 99, 235, 0.25));
+      border-color: #00f2fe;
+      color: #00f2fe;
+      box-shadow: 0 0 16px rgba(0, 242, 254, 0.25);
+    }
+    .project-card {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s, box-shadow 0.3s;
+    }
+    .project-card.is-hidden {
+      display: none !important;
+    }
+
+    /* Interactive Gallery Lightbox trigger */
+    .gallery-item, .portrait-frame {
+      cursor: pointer;
+      position: relative;
+    }
+    .gallery-item::after {
+      content: '🔍 View Full';
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(4, 9, 20, 0.8);
+      border: 1px solid rgba(0, 242, 254, 0.4);
+      color: #00f2fe;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: all 0.25s ease;
+      pointer-events: none;
+    }
+    .gallery-item:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Character counter and validation helpers */
+    .char-counter {
+      font-size: 12px;
+      color: #64748b;
+      text-align: right;
+      margin-top: 4px;
+      font-family: ui-monospace, monospace;
+    }
+    .char-counter.warning {
+      color: #f59e0b;
+    }
+    .char-counter.limit {
+      color: #ef4444;
+    }
+    .form-input-error {
+      font-size: 12px;
+      color: #ef4444;
+      margin-top: 4px;
+      display: none;
+    }
+    .score-reset-btn {
+      background: none;
+      border: none;
+      color: #64748b;
+      font-size: 11px;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-left: 6px;
+      font-family: inherit;
+    }
+    .score-reset-btn:hover {
+      color: #ef4444;
+    }
+
   </style>
 </head>
 <body>
@@ -1716,21 +1999,21 @@
           Computer Science &amp; Engineering student at ICFAI University Tripura. Passionate about building robust software systems, deep learning computer vision architectures, and scalable full-stack applications.
         </p>
         <div class="hero-actions">
-          <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener" class="btn-download-cv" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none; box-shadow: 0 0 20px rgba(0, 242, 254, 0.45);">
+          <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-download-cv" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none; box-shadow: 0 0 20px rgba(0, 242, 254, 0.45);">
             🌐 Visit Official Portfolio ↗
           </a>
-          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener" class="btn-download-cv">
+          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-download-cv">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download CV
           </a>
           <div class="social-pills">
-            <a href="https://github.com/BijoySarkar19" target="_blank" rel="me author noopener" class="social-icon-btn" aria-label="Bijoy Sarkar GitHub Profile (@BijoySarkar19)" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">
+            <a href="https://github.com/BijoySarkar19" target="_blank" rel="author me noopener noreferrer" class="social-icon-btn" aria-label="Bijoy Sarkar GitHub Profile (@BijoySarkar19)" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-            <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+            <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
             <a href="mailto:bijoysarkar7252@gmail.com" class="social-icon-btn" aria-label="Email">
@@ -1745,7 +2028,7 @@
         <div class="portrait-aura-wrapper">
           <div class="aura-backdrop"></div>
           <div class="aura-ring"></div>
-          <div class="portrait-frame">
+          <div class="portrait-frame" onclick="openGalleryModal('hero')" title="Click to view full portrait">
             <img class="portrait-img" id="heroProfileImg" src="https://github.com/BijoySarkar19.png" onerror="this.onerror=null; this.src='assets/profile-avatar.png';" alt="Bijoy Sarkar Developer Portrait">
             <div class="portrait-badge">
               <div>
@@ -1899,9 +2182,9 @@
               <span class="cert-pill">Compliance</span>
             </div>
           </div>
-          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV" target="_blank" rel="noopener" class="cert-link">
+          <button type="button" class="cert-link" onclick="openCertificateModal(\'stqc-vapt\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
-          </a>
+          </button>
         </div>
 
         <div class="cert-card">
@@ -1917,9 +2200,9 @@
               <span class="cert-pill">Computer Vision</span>
             </div>
           </div>
-          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV" target="_blank" rel="noopener" class="cert-link">
+          <button type="button" class="cert-link" onclick="openCertificateModal(\'nits-aiml\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
-          </a>
+          </button>
         </div>
 
         <div class="cert-card">
@@ -1935,9 +2218,9 @@
               <span class="cert-pill">REST APIs</span>
             </div>
           </div>
-          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV" target="_blank" rel="noopener" class="cert-link">
+          <button type="button" class="cert-link" onclick="openCertificateModal(\'talkeng-flutter\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
-          </a>
+          </button>
         </div>
 
         <div class="cert-card">
@@ -1953,9 +2236,9 @@
               <span class="cert-pill">SQL</span>
             </div>
           </div>
-          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV" target="_blank" rel="noopener" class="cert-link">
+          <button type="button" class="cert-link" onclick="openCertificateModal(\'apnividya-fs\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
-          </a>
+          </button>
         </div>
 
         <div class="cert-card">
@@ -1971,9 +2254,9 @@
               <span class="cert-pill">Segmentation</span>
             </div>
           </div>
-          <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener" class="cert-link">
+          <button type="button" class="cert-link" onclick="openCertificateModal(\'opencv-kaggle\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
-          </a>
+          </button>
         </div>
 
         <div class="cert-card">
@@ -1989,9 +2272,9 @@
               <span class="cert-pill">Python</span>
             </div>
           </div>
-          <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener" class="cert-link">
+          <button type="button" class="cert-link" onclick="openCertificateModal(\'algo-dsa\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -2066,9 +2349,16 @@
         <p class="section-subtitle">My latest work &amp; intelligent systems</p>
       </div>
 
+      <div class="project-filter-tabs" role="tablist" aria-label="Project Categories">
+        <button class="filter-tab active" data-filter="all" onclick="filterProjects('all')">All Projects (6)</button>
+        <button class="filter-tab" data-filter="ai-vision" onclick="filterProjects('ai-vision')">AI &amp; Vision (4)</button>
+        <button class="filter-tab" data-filter="fullstack" onclick="filterProjects('fullstack')">Full-Stack &amp; Cloud (2)</button>
+        <button class="filter-tab" data-filter="systems" onclick="filterProjects('systems')">Systems &amp; Edge (4)</button>
+      </div>
+
       <div class="projects-grid">
         <!-- Project 1 -->
-        <article class="project-card">
+        <article class="project-card" data-category="ai-vision systems">
           <div class="project-thumb">
             <div class="thumb-grid-pattern"></div>
             <div class="project-thumb-icon">🛡️</div>
@@ -2084,13 +2374,13 @@
               <span class="project-tag">FastAPI</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19/SentinelEdge" target="_blank" rel="noopener" class="btn-project primary">GitHub Repo</a>
-            </div>
+              <a href="https://github.com/BijoySarkar19/SentinelEdge" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a>
+             <button type="button" class="btn-project" onclick="openProjectSpec('sentineledge')" style="background: rgba(14,28,56,0.75); border: 1px solid var(--border-color); color: var(--sky); cursor: pointer; font-family: inherit;">Architecture ↗</button></div>
           </div>
         </article>
 
         <!-- Project 2 -->
-        <article class="project-card">
+        <article class="project-card" data-category="fullstack systems">
           <div class="project-thumb">
             <div class="thumb-grid-pattern"></div>
             <div class="project-thumb-icon">🚀</div>
@@ -2106,13 +2396,13 @@
               <span class="project-tag">Leaflet</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19/CivicLens-Core" target="_blank" rel="noopener" class="btn-project primary">GitHub Repo</a>
-            </div>
+              <a href="https://github.com/BijoySarkar19/CivicLens-Core" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a>
+             <button type="button" class="btn-project" onclick="openProjectSpec('civiclens')" style="background: rgba(14,28,56,0.75); border: 1px solid var(--border-color); color: var(--sky); cursor: pointer; font-family: inherit;">Architecture ↗</button></div>
           </div>
         </article>
 
         <!-- Project 3 -->
-        <article class="project-card">
+        <article class="project-card" data-category="ai-vision systems">
           <div class="project-thumb">
             <div class="thumb-grid-pattern"></div>
             <div class="project-thumb-icon">🤖</div>
@@ -2128,13 +2418,13 @@
               <span class="project-tag">SQLite</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener" class="btn-project primary">GitHub Repo</a>
-            </div>
+              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a>
+             <button type="button" class="btn-project" onclick="openProjectSpec('rakshak')" style="background: rgba(14,28,56,0.75); border: 1px solid var(--border-color); color: var(--sky); cursor: pointer; font-family: inherit;">Architecture ↗</button></div>
           </div>
         </article>
 
         <!-- Project 4 -->
-        <article class="project-card">
+        <article class="project-card" data-category="ai-vision">
           <div class="project-thumb">
             <div class="thumb-grid-pattern"></div>
             <div class="project-thumb-icon">🛰️</div>
@@ -2150,13 +2440,13 @@
               <span class="project-tag">Kaggle</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener" class="btn-project primary">GitHub Repo</a>
-            </div>
+              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a>
+             <button type="button" class="btn-project" onclick="openProjectSpec('roadseg')" style="background: rgba(14,28,56,0.75); border: 1px solid var(--border-color); color: var(--sky); cursor: pointer; font-family: inherit;">Architecture ↗</button></div>
           </div>
         </article>
 
         <!-- Project 5 -->
-        <article class="project-card">
+        <article class="project-card" data-category="ai-vision systems">
           <div class="project-thumb">
             <div class="thumb-grid-pattern"></div>
             <div class="project-thumb-icon">👁️</div>
@@ -2172,13 +2462,13 @@
               <span class="project-tag">SQLite</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener" class="btn-project primary">GitHub Repo</a>
-            </div>
+              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a>
+             <button type="button" class="btn-project" onclick="openProjectSpec('attendance')" style="background: rgba(14,28,56,0.75); border: 1px solid var(--border-color); color: var(--sky); cursor: pointer; font-family: inherit;">Architecture ↗</button></div>
           </div>
         </article>
 
         <!-- Project 6 -->
-        <article class="project-card">
+        <article class="project-card" data-category="fullstack">
           <div class="project-thumb">
             <div class="thumb-grid-pattern"></div>
             <div class="project-thumb-icon">🚀</div>
@@ -2194,9 +2484,9 @@
               <span class="project-tag">Vercel</span>
             </div>
             <div class="project-links" style="display: flex; gap: 8px;">
-              <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener" class="btn-project primary" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none;">Official Portfolio ↗</a>
-              <a href="https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio" target="_blank" rel="noopener" class="btn-project" style="background: rgba(14, 28, 56, 0.75); border: 1px solid var(--border-color); color: #fff;">GitHub Repo</a>
-            </div>
+              <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project primary" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none;">Official Portfolio ↗</a>
+              <a href="https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio" target="_blank" rel="noopener noreferrer" class="btn-project" style="background: rgba(14, 28, 56, 0.75); border: 1px solid var(--border-color); color: #fff;">GitHub Repo</a>
+             <button type="button" class="btn-project" onclick="openProjectSpec('portfolio')" style="background: rgba(14,28,56,0.75); border: 1px solid var(--border-color); color: var(--sky); cursor: pointer; font-family: inherit;">Architecture ↗</button></div>
           </div>
         </article>
       </div>
@@ -2322,7 +2612,7 @@
       <!-- Heatmap Calendar Card -->
       <div class="chart-container">
         <div class="chart-heading"><span class="dot"></span> My Contribution Calendar</div>
-        <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener">
+        <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer">
           <img class="chart-svg-img" src="assets/generated/contributions.svg" alt="GitHub Contribution Calendar Heatmap">
         </a>
       </div>
@@ -2343,7 +2633,7 @@
             <span id="refreshIcon" style="display: inline-block;">↻</span>
             <span id="refreshBtnText">Refresh Activity</span>
           </button>
-          <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener" style="font-size: 11.5px; color: var(--sky); display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.25); background: rgba(14, 28, 56, 0.6); transition: all 0.2s ease;">
+          <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener noreferrer" style="font-size: 11.5px; color: var(--sky); display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.25); background: rgba(14, 28, 56, 0.6); transition: all 0.2s ease;">
             Actions Log ↗
           </a>
         </div>
@@ -2363,7 +2653,7 @@
         <div class="game-scores">
           <span class="score-chip">COMMITS: <b id="scoreVal">0</b></span>
           <span class="score-chip">GOAL: <b style="color: #34d399;">535</b></span>
-          <span class="score-chip">BEST: <b id="bestVal">0</b></span>
+          <span class="score-chip">BEST: <b id="bestVal">0</b><button type="button" class="score-reset-btn" onclick="resetHighScore()" title="Reset local high score">reset</button></span>
         </div>
         <div class="game-actions">
           <button class="nav-cta" style="background: rgba(14,28,56,0.85); border-color: var(--border-color); font-size: 12px;" id="soundBtn" onclick="toggleSound()">🔊 SOUND: ON</button>
@@ -2378,11 +2668,11 @@
       <!-- Touch D-Pad for Mobile & iPad Players -->
       <div class="d-pad-box" aria-label="Touch Controls">
         <div></div>
-        <button class="d-pad-btn" onclick="triggerMove(0, -1)" aria-label="Up">▲</button>
+        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(0, -1)" ontouchstart="triggerMove(0, -1); event.preventDefault();" aria-label="Up">▲</button>
         <div></div>
-        <button class="d-pad-btn" onclick="triggerMove(-1, 0)" aria-label="Left">◀</button>
-        <button class="d-pad-btn" onclick="triggerMove(0, 1)" aria-label="Down">▼</button>
-        <button class="d-pad-btn" onclick="triggerMove(1, 0)" aria-label="Right">▶</button>
+        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(-1, 0)" ontouchstart="triggerMove(-1, 0); event.preventDefault();" aria-label="Left">◀</button>
+        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(0, 1)" ontouchstart="triggerMove(0, 1); event.preventDefault();" aria-label="Down">▼</button>
+        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(1, 0)" ontouchstart="triggerMove(1, 0); event.preventDefault();" aria-label="Right">▶</button>
       </div>
     </section>
 
@@ -2425,19 +2715,29 @@
         </div>
 
         <!-- Contact Form (Direct Email to bijoysarkar7252@gmail.com) -->
-        <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
+        <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)" novalidate>
           <div id="form-feedback" style="display:none; margin-bottom:16px;"></div>
+          
+          <!-- Anti-Spam Bot Honeypot (Hidden from humans, traps automated scrapers) -->
+          <input type="text" name="_gotcha" id="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
+
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" minlength="2" maxlength="60" required autocomplete="name">
+            <div id="name-error" class="form-input-error">Please enter your name (min 2 characters).</div>
           </div>
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" maxlength="100" required autocomplete="email" onblur="validateEmailInput()">
+            <div id="email-error" class="form-input-error">Please enter a valid email address.</div>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell me about your project, idea, or role..." required></textarea>
+            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell me about your project, idea, or role..." minlength="10" maxlength="3000" required oninput="updateCharCount()"></textarea>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div id="message-error" class="form-input-error">Message must be at least 10 characters.</div>
+              <div id="message-char-count" class="char-counter">0 / 3000</div>
+            </div>
           </div>
           <button type="submit" id="btn-submit" class="btn-submit">
             <span id="btn-text">Send Message</span>
@@ -2456,15 +2756,15 @@
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openGalleryModal('casual')">
           <img class="gallery-img img-casual" src="assets/portrait-casual.jpg" alt="Bijoy Sarkar Casual Portrait">
           <div class="gallery-tag"><span>Campus &amp; Casual</span></div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openGalleryModal('editorial')">
           <img class="gallery-img img-editorial" src="assets/portrait-editorial.jpg" alt="Bijoy Sarkar Editorial Portrait">
           <div class="gallery-tag"><span>Editorial &amp; Style</span></div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openGalleryModal('outdoor')">
           <img class="gallery-img img-outdoor" src="assets/portrait-outdoor.jpg" alt="Bijoy Sarkar Outdoor Portrait">
           <div class="gallery-tag"><span>Outdoor &amp; Travel</span></div>
         </div>
@@ -2488,14 +2788,14 @@
     <footer class="footer">
       <div class="footer-brand">LET'S BUILD SOMETHING MEANINGFUL.</div>
       <div class="footer-links">
-        <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener" class="nav-cta" style="font-size: 12px; padding: 6px 16px;">✦ Portfolio</a>
-        <a href="https://github.com/BijoySarkar19" target="_blank" rel="me author noopener" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">GitHub (@BijoySarkar19)</a>
-        <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">LinkedIn</a>
-        <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">Instagram</a>
+        <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-cta" style="font-size: 12px; padding: 6px 16px;">✦ Portfolio</a>
+        <a href="https://github.com/BijoySarkar19" target="_blank" rel="author me noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">GitHub (@BijoySarkar19)</a>
+        <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">LinkedIn</a>
+        <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">Instagram</a>
       </div>
       <p class="footer-small">Designed &amp; Engineered by <a href="https://github.com/BijoySarkar19" rel="me author" style="color: var(--cyan); text-decoration: none; font-weight: 700;">Bijoy Sarkar (@BijoySarkar19)</a> · Powered by Code · Built with Curiosity</p>
       <div class="footer-seo-tags" style="text-align: center; margin-top: 14px; font-size: 11px; color: var(--text-dim); line-height: 1.6;">
-        <span><b>Official Profile:</b> <a href="https://github.com/BijoySarkar19" rel="me author" style="color: var(--sky); text-decoration: underline;">https://github.com/BijoySarkar19</a> &nbsp;·&nbsp; <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bijoysarkar19" rel="me noopener" target="_blank" style="color: var(--sky); text-decoration: underline;">linkedin.com/in/bijoysarkar19</a> &nbsp;·&nbsp; <b>CV:</b> <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" style="color: var(--sky); text-decoration: underline;">Bijoy Sarkar CV</a></span>
+        <span><b>Official Profile:</b> <a href="https://github.com/BijoySarkar19" rel="me author" style="color: var(--sky); text-decoration: underline;">https://github.com/BijoySarkar19</a> &nbsp;·&nbsp; <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bijoysarkar19" rel="me noopener noreferrer" target="_blank" style="color: var(--sky); text-decoration: underline;">linkedin.com/in/bijoysarkar19</a> &nbsp;·&nbsp; <b>CV:</b> <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" style="color: var(--sky); text-decoration: underline;" rel="noopener noreferrer">Bijoy Sarkar CV</a></span>
       </div>
     </footer>
 
@@ -2522,19 +2822,18 @@
       let speed = isDeleting ? 40 : 80;
 
       if (!isDeleting && charIdx === currentRole.length) {
-        speed = 1800; // Pause at end of word
+        speed = 1800;
         isDeleting = true;
       } else if (isDeleting && charIdx === 0) {
         isDeleting = false;
         roleIdx = (roleIdx + 1) % roles.length;
-        speed = 400; // Pause before typing new word
+        speed = 400;
       }
 
       setTimeout(typeLoop, speed);
     }
     typeLoop();
 
-    
     // ========================================================
     // INTERACTIVE SCROLLSPY (Syncs with 3-bar hamburger mobile menu & desktop navbar)
     // Works reliably on direct domain, local preview, and htmlpreview.github.io
@@ -2574,21 +2873,18 @@
         document.documentElement.offsetHeight || 0
       );
 
-      // 1. If at bottom of page, highlight Contact
       if (scrollPos + windowHeight >= docHeight - 120) {
         setActiveNav('contact');
         return;
       }
 
-      // 2. If at top of page, highlight Home
       if (scrollPos < 100) {
         setActiveNav('home');
         return;
       }
 
-      // 3. Scan visible sections using viewport bounding rects
       let activeSectionId = 'home';
-      const navThreshold = 180; // Distance below floating navbar
+      const navThreshold = 180;
 
       for (let i = 0; i < scrollSections.length; i++) {
         const sec = scrollSections[i];
@@ -2615,7 +2911,6 @@
         .catch(() => {});
     })();
 
-    // Listen to both window and document scroll for universal browser & iframe support
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     document.addEventListener('scroll', updateActiveNav, { passive: true });
     window.addEventListener('resize', updateActiveNav, { passive: true });
@@ -2632,39 +2927,52 @@
       if (!btn) return;
       btn.disabled = true;
       if (icon) icon.style.animation = 'rotateRing 0.8s linear infinite';
-      if (text) text.textContent = 'Refreshing...';
+      if (text) text.textContent = 'Updating Activity...';
+      if (badge) {
+        badge.textContent = 'SYNCING';
+        badge.style.color = '#38bdf8';
+      }
 
-      // Reload both SVGs with cache-busting timestamp in-place without page redirect
       const timestamp = Date.now();
-      const calendarImgs = document.querySelectorAll('img[src*="contributions.svg"], img[src*="contribution-snake.svg"]');
-      calendarImgs.forEach(img => {
+      const activityImages = [
+        document.getElementById('statSvgStreak'),
+        document.getElementById('statSvgStats'),
+        document.getElementById('statSvgTrophies'),
+        document.getElementById('statSvgLangs'),
+        document.getElementById('statSvgContributions')
+      ];
+
+      activityImages.forEach(img => {
+        if (!img || !img.src) return;
         const baseSrc = img.src.split('?')[0];
-        img.src = `${baseSrc}?t=${timestamp}`;
+        const paramSymbol = baseSrc.includes('?') ? '&' : '?';
+        img.src = `${baseSrc}${paramSymbol}t=${timestamp}`;
       });
 
       setTimeout(() => {
         if (icon) icon.style.animation = 'none';
-        if (text) text.textContent = '✓ Refreshed';
-        if (badge) badge.textContent = 'Activity & Grid Updated Just Now';
+        if (text) text.textContent = 'Activity Refreshed!';
+        if (badge) {
+          badge.textContent = 'LIVE SYNCED';
+          badge.style.color = '#34d399';
+        }
+
         setTimeout(() => {
-          if (text) text.textContent = 'Refresh Activity';
           btn.disabled = false;
-        }, 2000);
-      }, 700);
+          if (text) text.textContent = 'Refresh Activity';
+        }, 2200);
+      }, 1400);
     }
 
     function toggleMobileMenu() {
       const menu = document.getElementById('navLinks');
       const btn = document.getElementById('menuToggleBtn');
-      if (!menu) return;
-      menu.classList.toggle('mobile-open');
-      if (btn) btn.classList.toggle('is-active');
-      if (menu.classList.contains('mobile-open')) {
-        updateActiveNav();
-      }
+      if (!menu || !btn) return;
+      const isOpen = menu.classList.toggle('mobile-open');
+      btn.classList.toggle('is-active', isOpen);
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     }
 
-    // Auto-close menu when tapping outside
     document.addEventListener('click', (e) => {
       const navWrapper = document.querySelector('.nav-wrapper');
       const menu = document.getElementById('navLinks');
@@ -2676,7 +2984,6 @@
       }
     });
 
-    // Universal navigation link click handler (bypasses htmlpreview URL rewrite)
     navAnchors.forEach(link => {
       link.addEventListener('click', (e) => {
         const targetId = getAnchorTargetId(link);
@@ -2699,6 +3006,433 @@
       });
     });
 
+    // ========================================================
+    // CYBERPUNK MODAL & LIGHTBOX CONTROLLER
+    // ========================================================
+    const modalEl = document.getElementById('cyberModal');
+    const modalHeadingText = document.getElementById('modalHeadingText');
+    const modalBody = document.getElementById('modalBody');
+
+    const PROJECT_SPECS = {
+      sentineledge: {
+        title: 'SentinelEdge — Architecture Spec',
+        badge: 'Edge AI & Real-Time Computer Vision',
+        summary: 'Privacy-first edge-to-cloud video intelligence platform featuring real-time AI object detection, multi-object tracking, and privacy-preserving inference.',
+        pipeline: [
+          ['1. Ingestion', 'RTSP / WebRTC low-latency streaming pipeline from distributed camera nodes.'],
+          ['2. Detection & Tracking', 'YOLOv8 real-time inference accelerated via ONNX/TensorRT with DeepSORT multi-target tracking.'],
+          ['3. Privacy Protection', 'Automated facial & vehicle license plate anonymization blurring directly on edge hardware.'],
+          ['4. Telemetry & Cloud', 'FastAPI event broker transmitting encrypted JSON event metadata to central dashboard.']
+        ],
+        stack: ['Python 3.11', 'YOLOv8', 'OpenCV', 'DeepSORT', 'FastAPI', 'Docker', 'WebSockets'],
+        repo: 'https://github.com/BijoySarkar19/SentinelEdge'
+      },
+      civiclens: {
+        title: 'CivicLens Core — Architecture Spec',
+        badge: 'GIS Infrastructure & Full-Stack Cloud',
+        summary: 'Digital Municipal Corporation platform featuring geospatial GIS infrastructure mapping, AI defect risk prediction, and automated civic resolution workflows.',
+        pipeline: [
+          ['1. Geospatial Layer', 'Leaflet & MapLibre tile rasterization with high-precision GeoJSON spatial defect querying.'],
+          ['2. Citizen Dispatch', 'Mobile-first civic defect dispatching with EXIF GPS location verification.'],
+          ['3. AI Risk Scoring', 'Defect severity prioritization and automated SLA escalation engine for municipal crews.'],
+          ['4. Audit Logging', 'PostgreSQL spatial schema with IST audit logs for municipal accountability.']
+        ],
+        stack: ['TypeScript', 'Next.js 16', 'React 19', 'PostgreSQL', 'Leaflet GIS', 'Tailwind CSS', 'Docker'],
+        repo: 'https://github.com/BijoySarkar19/CivicLens-Core'
+      },
+      rakshak: {
+        title: 'Rakshak-AI — Architecture Spec',
+        badge: 'On-Device Edge Health AI',
+        summary: 'Offline conversational healthcare assistant powered by Llama 3.2 with speech recognition, BMI calculation, and encrypted SQLite storage.',
+        pipeline: [
+          ['1. Audio STT', 'Offline speech-to-text voice recognition engine with noise suppression.'],
+          ['2. Quantised LLM', 'Llama 3.2 4-bit quantised local inference engine (zero cloud dependency).'],
+          ['3. Health Analytics', 'BMI calculation, symptom triaging, and preventive medical guidance.'],
+          ['4. Local Encryption', 'AES-256 encrypted SQLite local patient session storage.']
+        ],
+        stack: ['Python 3.11', 'Llama 3.2', 'llama.cpp', 'SpeechRecognition', 'Tkinter GUI', 'SQLite (AES)'],
+        repo: 'https://github.com/BijoySarkar19'
+      },
+      roadseg: {
+        title: 'Road Segmentation — Model Architecture Spec',
+        badge: 'Deep Learning & Satellite Vision',
+        summary: 'Deep-learning computer vision architecture designed to detect and segment intricate road networks from high-resolution satellite imagery.',
+        pipeline: [
+          ['1. Data Pipeline', 'Satellite image pre-processing with Albumentations (CLAHE, flips, contrast).'],
+          ['2. Feature Extraction', 'U-Net architecture with ResNet-50 / EfficientNet encoder backbone.'],
+          ['3. Loss Optimization', 'Combined BCE + Dice loss function for resolving class imbalance on sparse roads.'],
+          ['4. Mask Vectorization', 'Post-processing morphological thinning to extract topological road graphs.']
+        ],
+        stack: ['Python 3.11', 'PyTorch', 'Torchvision', 'Albumentations', 'OpenCV', 'Kaggle GPU'],
+        repo: 'https://github.com/BijoySarkar19'
+      },
+      attendance: {
+        title: 'Smart Attendance — Architecture Spec',
+        badge: 'Biometrics & Computer Vision Pipeline',
+        summary: 'Automated facial-recognition attendance pipeline delivering instant multi-face identification, anti-spoofing checks, and real-time logging.',
+        pipeline: [
+          ['1. Frame Capture', 'High-definition 30 FPS video stream capture via OpenCV.'],
+          ['2. Face Localization', 'Haar-Cascade / MTCNN facial detection with bounding box alignment.'],
+          ['3. Vector Embeddings', '128-dimensional facial metric embedding generation (dlib / FaceNet).'],
+          ['4. Roster Dispatch', 'Liveness verification, Euclidean matching, and automated SQLite/CSV attendance logging.']
+        ],
+        stack: ['Python 3.11', 'OpenCV', 'face_recognition', 'dlib', 'SQLite', 'Pandas'],
+        repo: 'https://github.com/BijoySarkar19'
+      },
+      portfolio: {
+        title: 'Bijoy Sarkar Portfolio — Architecture Spec',
+        badge: 'Next.js 16 Full-Stack & Cyberpunk Engine',
+        summary: 'Full-stack developer portfolio and intelligent showcase featuring interactive 300-frame canvas, dark glassmorphism, and live developer tools.',
+        pipeline: [
+          ['1. Frame Engine', 'High-performance 300-frame canvas engine synchronized with smooth scroll.'],
+          ['2. Component Layer', 'Next.js 16 App Router & React 19 architecture with zero layout shift.'],
+          ['3. Live Tooling', 'Commit Hunter game, interactive scrollspy, and real-time GitHub sync.'],
+          ['4. Edge Hosting', 'Global Vercel Edge Network with asset caching and sub-second TTFB.']
+        ],
+        stack: ['TypeScript', 'Next.js 16', 'React 19', 'Three.js / HTML5 Canvas', 'Tailwind CSS', 'Vercel Edge'],
+        repo: 'https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio'
+      }
+    };
+
+    const CERT_SPECS = {
+      'stqc-vapt': {
+        title: 'Cybersecurity Intern (2026)',
+        org: 'ETDC, STQC Directorate, Ministry of Electronics & IT (MeitY), Government of India',
+        id: 'STQC-MEITY-VAPT-2026',
+        year: '2026',
+        desc: 'Vulnerability Assessment & Penetration Testing (VAPT) across government enterprise networks, web application security auditing, and compliance testing against OWASP Top 10 guidelines.',
+        skills: ['VAPT', 'Network Security', 'Wireshark', 'Nmap', 'Metasploit', 'OWASP Top 10', 'Compliance'],
+        link: 'https://github.com/BijoySarkar19/Bijoy_Sarkar_CV'
+      },
+      'nits-aiml': {
+        title: 'AI/ML Research Intern (2026)',
+        org: 'National Institute of Technology Silchar (NIT Silchar)',
+        id: 'NITS-AIML-RES-2026',
+        year: '2026',
+        desc: 'Advanced research and experimentation in Deep Learning architectures, Computer Vision models, transfer learning, and empirical benchmark evaluation for visual intelligence systems.',
+        skills: ['Deep Learning', 'PyTorch', 'Computer Vision', 'CNNs', 'Transfer Learning', 'Research Paper Synthesis'],
+        link: 'https://github.com/BijoySarkar19/Bijoy_Sarkar_CV'
+      },
+      'talkeng-flutter': {
+        title: 'App Developer Intern (2025)',
+        org: 'TalkEng, Agartala',
+        id: 'TALKENG-FLUTTER-2025',
+        year: '2025',
+        desc: 'Cross-platform mobile application development using Flutter & Dart. Engineered real-time Firestore synchronization, audio/data streaming workflows, and responsive UI components.',
+        skills: ['Flutter', 'Dart', 'Firebase Firestore', 'REST APIs', 'State Management', 'Mobile UI/UX'],
+        link: 'https://github.com/BijoySarkar19/Bijoy_Sarkar_CV'
+      },
+      'apnividya-fs': {
+        title: 'Full-Stack Development (2024)',
+        org: 'Apni Vidya, Agartala',
+        id: 'APNI-VIDYA-FS-2024',
+        year: '2024',
+        desc: 'Full-stack web application development with React.js frontend and Node.js backend. Implemented normalized relational database schemas, secure authentication, and RESTful APIs.',
+        skills: ['React.js', 'Node.js', 'Express', 'SQL', 'RESTful APIs', 'Database Design'],
+        link: 'https://github.com/BijoySarkar19/Bijoy_Sarkar_CV'
+      },
+      'opencv-kaggle': {
+        title: 'Computer Vision Specialist (2025)',
+        org: 'OpenCV & Kaggle Certified',
+        id: 'OPENCV-KAGGLE-CV-2025',
+        year: '2025',
+        desc: 'Certified competency in Computer Vision engineering, real-time object detection with YOLO, spatial image convolutions, morphological segmentation, and Kaggle competition benchmarking.',
+        skills: ['OpenCV', 'YOLOv8', 'Semantic Segmentation', 'Feature Extraction', 'Model Fine-tuning'],
+        link: 'https://github.com/BijoySarkar19'
+      },
+      'algo-dsa': {
+        title: 'Algorithmic Problem Solving (2024)',
+        org: 'Data Structures & Algorithms Mastery',
+        id: 'DSA-ALGO-2024',
+        year: '2024',
+        desc: 'Demonstrated mastery of rigorous algorithmic problem solving, complex asymptotic complexity analysis, graph algorithms, dynamic programming, and data structures in C++, Java, and Python.',
+        skills: ['Data Structures', 'Algorithms', 'C++', 'Java', 'Python', 'Dynamic Programming', 'Graph Theory'],
+        link: 'https://github.com/BijoySarkar19'
+      }
+    };
+
+    const GALLERY_SPECS = {
+      casual: {
+        title: 'Campus & Casual Portrait',
+        src: 'assets/portrait-casual.jpg',
+        badge: 'Campus Life & Engineering Journey',
+        desc: 'Bijoy Sarkar at ICFAI University Tripura campus. Balancing engineering coursework, AI research, and software development.'
+      },
+      editorial: {
+        title: 'Editorial & Style Portrait',
+        src: 'assets/portrait-editorial.jpg',
+        badge: 'Professional Developer Aesthetic',
+        desc: 'Studio editorial portrait showcasing developer discipline, focus, and modern systems engineering mindset.'
+      },
+      outdoor: {
+        title: 'Outdoor & Travel Portrait',
+        src: 'assets/portrait-outdoor.jpg',
+        badge: 'Life Outside The Code',
+        desc: 'Exploring outdoors and new perspectives. Passionate about motorcycling, travel, fitness, and staying active.'
+      },
+      hero: {
+        title: 'Official GitHub Developer Portrait',
+        src: 'https://github.com/BijoySarkar19.png',
+        badge: 'Live Synchronized Avatar (@BijoySarkar19)',
+        desc: 'Official developer portrait synchronized live with GitHub profile @BijoySarkar19.'
+      }
+    };
+
+    function openCyberModal(heading, renderFn) {
+      if (!modalEl || !modalHeadingText || !modalBody) return;
+      modalHeadingText.textContent = heading;
+      while (modalBody.firstChild) {
+        modalBody.removeChild(modalBody.firstChild);
+      }
+      renderFn(modalBody);
+      modalEl.classList.add('active');
+      modalEl.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCyberModal() {
+      if (!modalEl) return;
+      modalEl.classList.remove('active');
+      modalEl.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target === modalEl) {
+        closeCyberModal();
+      }
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && modalEl && modalEl.classList.contains('active')) {
+        closeCyberModal();
+      }
+    });
+
+    function openProjectSpec(pid) {
+      const spec = PROJECT_SPECS[pid];
+      if (!spec) return;
+      openCyberModal(spec.title, container => {
+        const badge = document.createElement('div');
+        badge.className = 'modal-badge';
+        badge.textContent = spec.badge;
+        container.appendChild(badge);
+
+        const desc = document.createElement('p');
+        desc.className = 'modal-desc';
+        desc.textContent = spec.summary;
+        container.appendChild(desc);
+
+        const pipeTitle = document.createElement('div');
+        pipeTitle.className = 'modal-section-title';
+        pipeTitle.textContent = 'SYSTEM ARCHITECTURE PIPELINE';
+        container.appendChild(pipeTitle);
+
+        const pipeGrid = document.createElement('div');
+        pipeGrid.className = 'pipeline-grid';
+        spec.pipeline.forEach((p, idx) => {
+          const step = document.createElement('div');
+          step.className = 'pipeline-step';
+          
+          const num = document.createElement('div');
+          num.className = 'step-num';
+          num.textContent = (idx + 1).toString();
+          
+          const content = document.createElement('div');
+          content.className = 'step-content';
+          
+          const t = document.createElement('div');
+          t.className = 'step-title';
+          t.textContent = p[0];
+          
+          const d = document.createElement('div');
+          d.className = 'step-desc';
+          d.textContent = p[1];
+
+          content.appendChild(t);
+          content.appendChild(d);
+          step.appendChild(num);
+          step.appendChild(content);
+          pipeGrid.appendChild(step);
+        });
+        container.appendChild(pipeGrid);
+
+        const techTitle = document.createElement('div');
+        techTitle.className = 'modal-section-title';
+        techTitle.textContent = 'CORE TECHNICAL STACK';
+        container.appendChild(techTitle);
+
+        const tagsBox = document.createElement('div');
+        tagsBox.className = 'modal-tags';
+        spec.stack.forEach(tech => {
+          const tag = document.createElement('span');
+          tag.className = 'modal-tag';
+          tag.textContent = tech;
+          tagsBox.appendChild(tag);
+        });
+        container.appendChild(tagsBox);
+
+        const actions = document.createElement('div');
+        actions.className = 'modal-actions';
+        const repoLink = document.createElement('a');
+        repoLink.href = spec.repo;
+        repoLink.target = '_blank';
+        repoLink.rel = 'noopener noreferrer';
+        repoLink.className = 'nav-cta';
+        repoLink.textContent = 'View Repository on GitHub ↗';
+        actions.appendChild(repoLink);
+        container.appendChild(actions);
+      });
+    }
+
+    function openCertificateModal(cid) {
+      const spec = CERT_SPECS[cid];
+      if (!spec) return;
+      openCyberModal(spec.title, container => {
+        const badge = document.createElement('div');
+        badge.className = 'modal-badge';
+        badge.style.background = 'rgba(16, 185, 129, 0.15)';
+        badge.style.borderColor = '#10b981';
+        badge.style.color = '#10b981';
+        badge.textContent = '✓ Verified Credential · ' + spec.year;
+        container.appendChild(badge);
+
+        const org = document.createElement('h3');
+        org.style.fontSize = '17px';
+        org.style.fontWeight = '700';
+        org.style.color = '#fff';
+        org.style.marginBottom = '6px';
+        org.textContent = spec.org;
+        container.appendChild(org);
+
+        const credId = document.createElement('div');
+        credId.style.fontSize = '12px';
+        credId.style.color = '#38bdf8';
+        credId.style.fontFamily = 'ui-monospace, monospace';
+        credId.style.marginBottom = '16px';
+        credId.textContent = 'Credential ID: ' + spec.id;
+        container.appendChild(credId);
+
+        const desc = document.createElement('p');
+        desc.className = 'modal-desc';
+        desc.textContent = spec.desc;
+        container.appendChild(desc);
+
+        const skillsTitle = document.createElement('div');
+        skillsTitle.className = 'modal-section-title';
+        skillsTitle.textContent = 'VERIFIED TECHNICAL SKILLS';
+        container.appendChild(skillsTitle);
+
+        const tagsBox = document.createElement('div');
+        tagsBox.className = 'modal-tags';
+        spec.skills.forEach(skill => {
+          const tag = document.createElement('span');
+          tag.className = 'modal-tag';
+          tag.textContent = skill;
+          tagsBox.appendChild(tag);
+        });
+        container.appendChild(tagsBox);
+
+        const actions = document.createElement('div');
+        actions.className = 'modal-actions';
+        const docLink = document.createElement('a');
+        docLink.href = spec.link;
+        docLink.target = '_blank';
+        docLink.rel = 'noopener noreferrer';
+        docLink.className = 'nav-cta';
+        docLink.textContent = 'Open Official Credential / CV ↗';
+        actions.appendChild(docLink);
+        container.appendChild(actions);
+      });
+    }
+
+    function openGalleryModal(gid) {
+      const spec = GALLERY_SPECS[gid];
+      if (!spec) return;
+      openCyberModal(spec.title, container => {
+        const badge = document.createElement('div');
+        badge.className = 'modal-badge';
+        badge.textContent = spec.badge;
+        container.appendChild(badge);
+
+        const img = document.createElement('img');
+        img.src = spec.src;
+        img.alt = spec.title;
+        img.style.width = '100%';
+        img.style.maxHeight = '60vh';
+        img.style.objectFit = 'contain';
+        img.style.borderRadius = '12px';
+        img.style.border = '1px solid rgba(56, 189, 248, 0.3)';
+        img.style.background = '#040914';
+        img.style.marginBottom = '16px';
+        img.onerror = function() {
+          this.src = 'assets/profile-avatar.png';
+        };
+        container.appendChild(img);
+
+        const desc = document.createElement('p');
+        desc.className = 'modal-desc';
+        desc.style.marginBottom = '8px';
+        desc.textContent = spec.desc;
+        container.appendChild(desc);
+      });
+    }
+
+    function filterProjects(category) {
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => {
+        if (tab.getAttribute('data-filter') === category) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category') || '';
+        if (category === 'all' || cat.includes(category)) {
+          card.classList.remove('is-hidden');
+        } else {
+          card.classList.add('is-hidden');
+        }
+      });
+    }
+
+    function updateCharCount() {
+      const msg = document.getElementById('message');
+      const counter = document.getElementById('message-char-count');
+      const err = document.getElementById('message-error');
+      if (!msg || !counter) return;
+      const len = msg.value.length;
+      counter.textContent = `${len} / 3000`;
+      if (len >= 3000) {
+        counter.className = 'char-counter limit';
+      } else if (len >= 2500) {
+        counter.className = 'char-counter warning';
+      } else {
+        counter.className = 'char-counter';
+      }
+      if (err) {
+        err.style.display = (len > 0 && len < 10) ? 'block' : 'none';
+      }
+    }
+
+    function validateEmailInput() {
+      const email = document.getElementById('email');
+      const err = document.getElementById('email-error');
+      if (!email || !err) return true;
+      const val = email.value.trim();
+      const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (val && !regex.test(val)) {
+        err.style.display = 'block';
+        return false;
+      } else {
+        err.style.display = 'none';
+        return true;
+      }
+    }
+
     async function handleContactSubmit(e) {
       e.preventDefault();
       const form = document.getElementById('contact-form');
@@ -2706,14 +3440,42 @@
       const btnText = document.getElementById('btn-text');
       const feedback = document.getElementById('form-feedback');
       
+      const gotcha = document.getElementById('_gotcha');
+      if (gotcha && gotcha.value) {
+        form.reset();
+        renderFeedbackSuccess('Message dispatched successfully! Thank you.');
+        return;
+      }
+
+      const lastSubmit = parseInt(sessionStorage.getItem('bijoy_contact_timestamp') || '0', 10);
+      const now = Date.now();
+      if (now - lastSubmit < 60000) {
+        const remaining = Math.ceil((60000 - (now - lastSubmit)) / 1000);
+        renderFeedbackError(`Rate limit protection active: Please wait ${remaining} seconds before dispatching another message.`);
+        return;
+      }
+
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const message = document.getElementById('message').value.trim();
       
-      if (!name || !email || !message) return;
-      
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+      if (name.length < 2) {
+        document.getElementById('name-error').style.display = 'block';
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        document.getElementById('email-error').style.display = 'block';
+        return;
+      }
+      if (message.length < 10) {
+        document.getElementById('message-error').style.display = 'block';
+        return;
+      }
+
       btn.disabled = true;
-      btnText.textContent = '⏳ Sending Message...';
+      btnText.textContent = '⏳ Dispatching Message...';
       feedback.style.display = 'none';
 
       try {
@@ -2728,21 +3490,17 @@
             email: email,
             message: message,
             _subject: `[Portfolio Contact] Message from ${name}`,
-            _template: 'table'
+            _template: 'table',
+            _captcha: 'false'
           })
         });
         
         const data = await res.json();
         if (res.ok || data.success === 'true' || data.success === true) {
-          feedback.style.display = 'block';
-          feedback.innerHTML = `
-            <div style="background:rgba(16,185,129,0.18); border:1px solid #10b981; border-radius:12px; padding:18px; text-align:center; animation: fadeIn 0.4s ease;">
-              <div style="font-size:20px; font-weight:700; color:#10b981; margin-bottom:6px;">✓ Message Dispatched Successfully!</div>
-              <p style="color:#f1f5f9; font-size:14px; margin-bottom:8px;">Thank you <b>${escapeHtml(name)}</b>! Your message has been sent directly to <b>bijoysarkar7252@gmail.com</b>.</p>
-              <p style="color:#94a3b8; font-size:13px;">Bijoy will review your message and reply to <b>${escapeHtml(email)}</b> shortly.</p>
-            </div>
-          `;
+          sessionStorage.setItem('bijoy_contact_timestamp', Date.now().toString());
           form.reset();
+          updateCharCount();
+          renderFeedbackSuccess(`Thank you ${name}! Your message has been sent directly to bijoysarkar7252@gmail.com.`);
           btn.style.display = 'none';
         } else {
           throw new Error(data.message || 'Delivery error');
@@ -2750,29 +3508,109 @@
       } catch (err) {
         const mailtoUri = 'mailto:bijoysarkar7252@gmail.com?subject=' + 
           encodeURIComponent('Portfolio Contact from ' + name) + 
-          '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')\n\nMessage:\n' + message);
+          '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')
+
+Message:
+' + message);
         
         window.location.href = mailtoUri;
-        
-        feedback.style.display = 'block';
-        feedback.innerHTML = `
-          <div style="background:rgba(14,165,233,0.18); border:1px solid #38bdf8; border-radius:12px; padding:18px; text-align:center; animation: fadeIn 0.4s ease;">
-            <div style="font-size:18px; font-weight:700; color:#38bdf8; margin-bottom:6px;">✉️ Opening Mail Client...</div>
-            <p style="color:#f1f5f9; font-size:14px; margin-bottom:10px;">Your message has been prepared to send directly to <b>bijoysarkar7252@gmail.com</b>.</p>
-            <a href="${mailtoUri}" class="btn-submit" style="display:inline-block; text-decoration:none; padding:8px 20px; font-size:13px; border-radius:8px;">Click Here If Your Email App Didn't Open</a>
-          </div>
-        `;
+        renderFeedbackMailto(mailtoUri);
         btn.disabled = false;
         btnText.textContent = 'Send Message';
       }
     }
 
-    function escapeHtml(str) {
-      return str.replace(/[&<>"']/g, function(m) {
-        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
-      });
+    function renderFeedbackSuccess(text) {
+      const fb = document.getElementById('form-feedback');
+      while (fb.firstChild) fb.removeChild(fb.firstChild);
+      const box = document.createElement('div');
+      box.style.background = 'rgba(16,185,129,0.18)';
+      box.style.border = '1px solid #10b981';
+      box.style.borderRadius = '12px';
+      box.style.padding = '18px';
+      box.style.textAlign = 'center';
+      
+      const title = document.createElement('div');
+      title.style.fontSize = '18px';
+      title.style.fontWeight = '700';
+      title.style.color = '#10b981';
+      title.style.marginBottom = '6px';
+      title.textContent = '✓ Message Dispatched Successfully!';
+      
+      const p = document.createElement('p');
+      p.style.color = '#f1f5f9';
+      p.style.fontSize = '14px';
+      p.style.marginBottom = '6px';
+      p.textContent = text;
+      
+      const p2 = document.createElement('p');
+      p2.style.color = '#94a3b8';
+      p2.style.fontSize = '13px';
+      p2.textContent = 'Bijoy will review your message and reply promptly.';
+      
+      box.appendChild(title);
+      box.appendChild(p);
+      box.appendChild(p2);
+      fb.appendChild(box);
+      fb.style.display = 'block';
     }
-  </script>
+
+    function renderFeedbackError(text) {
+      const fb = document.getElementById('form-feedback');
+      while (fb.firstChild) fb.removeChild(fb.firstChild);
+      const box = document.createElement('div');
+      box.style.background = 'rgba(239,68,68,0.18)';
+      box.style.border = '1px solid #ef4444';
+      box.style.borderRadius = '12px';
+      box.style.padding = '14px';
+      box.style.textAlign = 'center';
+      box.style.color = '#fca5a5';
+      box.style.fontSize = '14px';
+      box.textContent = text;
+      fb.appendChild(box);
+      fb.style.display = 'block';
+    }
+
+    function renderFeedbackMailto(uri) {
+      const fb = document.getElementById('form-feedback');
+      while (fb.firstChild) fb.removeChild(fb.firstChild);
+      const box = document.createElement('div');
+      box.style.background = 'rgba(14,165,233,0.18)';
+      box.style.border = '1px solid #38bdf8';
+      box.style.borderRadius = '12px';
+      box.style.padding = '18px';
+      box.style.textAlign = 'center';
+
+      const title = document.createElement('div');
+      title.style.fontSize = '18px';
+      title.style.fontWeight = '700';
+      title.style.color = '#38bdf8';
+      title.style.marginBottom = '6px';
+      title.textContent = '✉️ Opening Mail Client...';
+
+      const p = document.createElement('p');
+      p.style.color = '#f1f5f9';
+      p.style.fontSize = '14px';
+      p.style.marginBottom = '12px';
+      p.textContent = 'Your message has been prepared to send directly to bijoysarkar7252@gmail.com.';
+
+      const a = document.createElement('a');
+      a.href = uri;
+      a.className = 'btn-submit';
+      a.style.display = 'inline-block';
+      a.style.textDecoration = 'none';
+      a.style.padding = '8px 20px';
+      a.style.fontSize = '13px';
+      a.style.borderRadius = '8px';
+      a.textContent = 'Click Here If Your Email App Did Not Open';
+
+      box.appendChild(title);
+      box.appendChild(p);
+      box.appendChild(a);
+      fb.appendChild(box);
+      fb.style.display = 'block';
+    }
+</script>
 
   <!-- Live Game Script (Commit Hunter) -->
   <script>
@@ -2790,8 +3628,8 @@
     let food = { x: 15, y: 15 };
     let star = { x: 5, y: 5, active: false };
     let score = 0;
-    let highScore = localStorage.getItem('bijoy_game_best') || 0;
-    bestVal.innerText = highScore;
+    let highScore = Math.max(0, Math.min(999999, parseInt(localStorage.getItem('bijoy_game_best') || '0', 10) || 0));
+    bestVal.innerText = highScore.toString();
 
     let gameLoop = null;
     let gameSpeed = 100;
@@ -2800,27 +3638,53 @@
     let isGameOver = true;
     let soundEnabled = true;
 
-    // Web Audio Synthesizer
-    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    // Web Audio Synthesizer (Lazy initialized on user gesture)
+    let audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) {
+          audioCtx = new AudioContextClass();
+        }
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
     function playBeep(freq, type, duration) {
-      if (!soundEnabled || !audioCtx) return;
+      if (!soundEnabled) return;
       try {
-        const osc = audioCtx.createOscillator();
-        const gain = audioCtx.createGain();
+        const actx = getAudioContext();
+        if (!actx) return;
+        const osc = actx.createOscillator();
+        const gain = actx.createGain();
         osc.type = type;
         osc.frequency.value = freq;
-        gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+        gain.gain.setValueAtTime(0.15, actx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, actx.currentTime + duration);
         osc.connect(gain);
-        gain.connect(audioCtx.destination);
+        gain.connect(actx.destination);
         osc.start();
-        osc.stop(audioCtx.currentTime + duration);
+        osc.stop(actx.currentTime + duration);
       } catch(e) {}
     }
 
     function toggleSound() {
       soundEnabled = !soundEnabled;
       soundBtn.innerText = soundEnabled ? '🔊 SOUND: ON' : '🔇 SOUND: OFF';
+      if (soundEnabled) {
+        playBeep(440, 'sine', 0.1);
+      }
+    }
+
+    function resetHighScore() {
+      if (confirm('Reset your high score record back to 0?')) {
+        highScore = 0;
+        localStorage.removeItem('bijoy_game_best');
+        bestVal.innerText = '0';
+      }
     }
 
     function toggleGame() {
@@ -2834,11 +3698,11 @@
     }
 
     function startNewGame() {
-      if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+      getAudioContext();
       snake = [{ x: 10, y: 10 }, { x: 10, y: 11 }];
       velocity = { x: 0, y: -1 };
       score = 0;
-      scoreVal.innerText = score;
+      scoreVal.innerText = score.toString();
       spawnFood();
       clearInterval(gameLoop);
       isRunning = true;
@@ -2855,7 +3719,6 @@
       isPaused = true;
       startBtn.innerHTML = '▶ RESUME';
 
-      // Aesthetic PAUSE overlay on canvas
       ctx.fillStyle = 'rgba(5, 12, 28, 0.78)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = '#00f2fe';
@@ -2869,7 +3732,7 @@
 
     function resumeGame() {
       if (isGameOver) return;
-      if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+      getAudioContext();
       clearInterval(gameLoop);
       isRunning = true;
       isPaused = false;
@@ -2888,7 +3751,6 @@
       }
     }
 
-        // Touch swipe support on game canvas
     let touchStartX = 0;
     let touchStartY = 0;
     canvas.addEventListener('touchstart', e => {
@@ -2942,13 +3804,11 @@
     function update() {
       const head = { x: snake[0].x + velocity.x, y: snake[0].y + velocity.y };
 
-      // Screen wrap
       if (head.x < 0) head.x = tileCount - 1;
       if (head.x >= tileCount) head.x = 0;
       if (head.y < 0) head.y = tileCount - 1;
       if (head.y >= tileCount) head.y = 0;
 
-      // Self collision
       for (let i = 0; i < snake.length; i++) {
         if (head.x === snake[i].x && head.y === snake[i].y) {
           gameOver();
@@ -2960,17 +3820,17 @@
 
       if (head.x === food.x && head.y === food.y) {
         score += 1;
-        scoreVal.innerText = score;
+        scoreVal.innerText = score.toString();
         playBeep(587.33, 'sine', 0.1);
         spawnFood();
         if (score > highScore) {
           highScore = score;
-          bestVal.innerText = highScore;
-          localStorage.setItem('bijoy_game_best', highScore);
+          bestVal.innerText = highScore.toString();
+          localStorage.setItem('bijoy_game_best', highScore.toString());
         }
       } else if (star.active && head.x === star.x && head.y === star.y) {
         score += 5;
-        scoreVal.innerText = score;
+        scoreVal.innerText = score.toString();
         star.active = false;
         playBeep(880, 'triangle', 0.2);
       } else {
@@ -3005,7 +3865,6 @@
       ctx.fillStyle = '#050c1c';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Grid
       ctx.strokeStyle = '#0d1d38';
       ctx.lineWidth = 0.5;
       for (let i = 0; i < tileCount; i++) {
@@ -3015,13 +3874,11 @@
         ctx.stroke();
       }
 
-      // Food (Green GitHub Block)
       ctx.fillStyle = '#39d353';
       ctx.shadowColor = '#39d353';
       ctx.shadowBlur = 10;
       ctx.fillRect(food.x * gridSize + 2, food.y * gridSize + 2, gridSize - 4, gridSize - 4);
 
-      // Bonus Golden Star
       if (star.active) {
         ctx.fillStyle = '#fbbf24';
         ctx.shadowColor = '#fbbf24';
@@ -3029,7 +3886,6 @@
         ctx.fillRect(star.x * gridSize + 3, star.y * gridSize + 3, gridSize - 6, gridSize - 6);
       }
 
-      // Cyan Snake Body
       ctx.shadowBlur = 8;
       for (let i = 0; i < snake.length; i++) {
         if (i === 0) {
@@ -3045,6 +3901,24 @@
     }
 
     draw();
-  </script>
+</script>
+  <!-- ========================================================
+       CYBERPUNK INTERACTIVE MODAL (Lightbox, Credentials & Architecture)
+       ======================================================== -->
+  <div id="cyberModal" class="cyber-modal-overlay" aria-hidden="true" role="dialog" onclick="handleModalOverlayClick(event)">
+    <div class="cyber-modal-container" role="document">
+      <div class="cyber-modal-header">
+        <div class="cyber-modal-title" id="modalTitle">
+          <span class="emblem" style="color: var(--cyan);">◈</span>
+          <span id="modalHeadingText">Details</span>
+        </div>
+        <button class="cyber-modal-close" onclick="closeCyberModal()" aria-label="Close modal">✕</button>
+      </div>
+      <div class="cyber-modal-body" id="modalBody">
+        <!-- Content populated safely via DOM API -->
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
