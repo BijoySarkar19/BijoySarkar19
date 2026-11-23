@@ -17,10 +17,10 @@
 
 <img src="./assets/profile-avatar.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
-# BIJOY SARKAR
+# BIJOY SARKAR · [@BijoySarkar19](https://github.com/BijoySarkar19)
 
-### B.Tech CSE Student | Software Developer | AI/ML & Computer Vision Enthusiast
-📍 **Agartala, Tripura, India**
+### Software Developer · AI/ML & Computer Vision Engineer · B.Tech CSE
+📍 **Agartala, Tripura, India** &nbsp;|&nbsp; 🔗 **Official GitHub Profile:** [https://github.com/BijoySarkar19](https://github.com/BijoySarkar19) &nbsp;|&nbsp; 🌐 **Portfolio:** [bijoy-sarkar-portfolio.vercel.app](https://bijoy-sarkar-portfolio.vercel.app/)
 
 <p align="center">
   <img src="https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge" alt="Software Developer"/>
@@ -32,7 +32,7 @@
 <p align="center">
   <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/✦_PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
   <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf"><img src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/></a>
-  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-Explore_Projects-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB_PROFILE-@BijoySarkar19-00F2FE?style=for-the-badge&logo=github&logoColor=040914&labelColor=0284C7" alt="Bijoy Sarkar GitHub Profile BijoySarkar19"/></a>
   <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
   <a href="mailto:bijoysarkar7252@gmail.com"><img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
@@ -411,3 +411,40 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 </p>
 
 </div>
+
+---
+
+<!-- ========================================================
+     SEARCH ENGINE OPTIMIZATION (SEO) & PROFILE DISCOVERABILITY
+     ======================================================== -->
+<div align="center">
+
+<h3>🔍 Developer Profile & Discoverability Index</h3>
+
+<p align="center">
+  <b>Official Profiles & Verified Links:</b><br/>
+  🔗 <b>GitHub Profile:</b> <a href="https://github.com/BijoySarkar19">https://github.com/BijoySarkar19</a> &nbsp;|&nbsp;
+  🌐 <b>Portfolio Website:</b> <a href="https://bijoy-sarkar-portfolio.vercel.app/">https://bijoy-sarkar-portfolio.vercel.app/</a> &nbsp;|&nbsp;
+  💼 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bijoysarkar19">linkedin.com/in/bijoysarkar19</a> &nbsp;|&nbsp;
+  📄 <b>Curriculum Vitae (CV):</b> <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf">Bijoy Sarkar CV (PDF)</a>
+</p>
+
+<p align="center">
+  <sub><b>Search Keywords & Indexing Terms:</b> Bijoy Sarkar · BijoySarkar19 · Bijoy Sarkar GitHub · BijoySarkar19 GitHub · github.com/BijoySarkar19 · Bijoy Sarkar Developer · Bijoy Sarkar Software Developer · Bijoy Sarkar AI ML Engineer · Bijoy Sarkar Computer Vision · Bijoy Sarkar Agartala · Bijoy Sarkar Tripura · Bijoy Sarkar ICFAI University Tripura · Bijoy Sarkar Portfolio · Bijoy Sarkar Projects · SentinelEdge · CivicLens Core · Rakshak-AI · Road Segmentation · 535+ GitHub Contributions · Software Developer India</sub>
+</p>
+
+<!--
+Structured Web Crawler Metadata:
+Name: Bijoy Sarkar (বিজয় সরকার)
+GitHub Handle: @BijoySarkar19
+Official GitHub Profile URL: https://github.com/BijoySarkar19
+Developer Portfolio: https://bijoy-sarkar-portfolio.vercel.app/
+Primary Specialization: Software Development, Artificial Intelligence (AI), Machine Learning (ML), Computer Vision (CV), Full-Stack Web Development, Edge AI, Flutter
+Institution: ICFAI University Tripura (Faculty of Science and Technology - B.Tech CSE)
+Location: Agartala, Tripura, India (799001)
+Featured Open Source Work: SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation Deep Learning, Smart Attendance Facial Recognition, Commit Hunter Game
+Email: bijoysarkar7252@gmail.com
+-->
+
+</div>
+

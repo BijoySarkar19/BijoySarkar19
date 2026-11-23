@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Canonical Sitemaps
+Sitemap: https://bijoy-sarkar-portfolio.vercel.app/sitemap.xml
+Sitemap: https://bijoysarkar19.github.io/BijoySarkar19/sitemap.xml
