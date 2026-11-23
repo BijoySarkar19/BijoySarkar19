@@ -1614,19 +1614,7 @@
       .hero-title { font-size: 64px; }
     }
       
-        /* Interactive Top Scroll Progress Bar */
-    .scroll-progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      width: 0%;
-      background: linear-gradient(90deg, var(--cyan) 0%, var(--sky) 50%, #2563eb 100%);
-      box-shadow: 0 0 10px rgba(0, 242, 254, 0.8), 0 0 20px rgba(56, 189, 248, 0.5);
-      z-index: 99999;
-      pointer-events: none;
-      transition: width 0.08s ease-out;
-    }
+    
 
     /* Smooth Scroll & Offset for Floating Navbar */
     html {
@@ -1667,8 +1655,7 @@
   </style>
 </head>
 <body>
-  <!-- Interactive Scroll Progress Bar -->
-  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
 
   <!-- ========================================================
        TOPBAR NAVIGATION BAR (Centered Floating Pill)
@@ -1683,8 +1670,8 @@
         <li><a href="#home" class="active">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#skills">SKILLS</a></li>
         <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
         <li><a href="#contributions">CONTRIBUTIONS</a></li>
         <li><a href="#game">GAME</a></li>
         <li><a href="#contact">CONTACT</a></li>
@@ -1700,21 +1687,21 @@
     </nav>
   </div>
 
-  <main class="container" id="home">
+  <main class="container">
 
     <!-- ========================================================
          HERO SECTION (Matching Reference Layout)
          ======================================================== -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="hero-content">
         <div class="hero-kicker">
           <span>◈</span> BIJOY SARKAR <span>◈</span>
         </div>
         <h1 class="hero-title">
-          ⚡ Hi, I'm <span class="cyan-glow">BIJOY</span> ⚡
+          Hi, I'm <span class="cyan-glow">BIJOY</span>
         </h1>
         <div class="hero-subtitle">
-          I'm a <span class="typewriter-text" id="typewriter">Developer</span>
+          <span style="white-space: nowrap;">I'm a</span> <span class="typewriter-text" id="typewriter">Developer</span>
         </div>
         <p class="hero-description">
           Computer Science &amp; Engineering student at ICFAI University Tripura. Passionate about building robust software systems, deep learning computer vision architectures, and scalable full-stack applications.
@@ -2438,7 +2425,7 @@
             <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell me about your project, idea, or role..." required></textarea>
           </div>
           <button type="submit" id="btn-submit" class="btn-submit">
-            <span id="btn-text">⚡ Send Message ⚡</span>
+            <span id="btn-text">Send Message</span>
           </button>
         </form>
       </div>
@@ -2534,54 +2521,48 @@
 
     
     // ========================================================
-    // INTERACTIVE SCROLLSPY & SCROLL PROGRESS
+    // INTERACTIVE SCROLLSPY (Syncs with 3-bar mobile menu & navbar)
     // ========================================================
     const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
-    const scrollSections = Array.from(navAnchors).map(a => {
-      const targetId = a.getAttribute('href');
-      const targetEl = document.querySelector(targetId);
-      return { anchor: a, el: targetEl };
-    }).filter(item => item.el !== null);
+    const scrollSectionIds = ['home', 'about', 'certificates', 'projects', 'skills', 'contributions', 'game', 'contact'];
+    const scrollSections = scrollSectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
-    const progressBar = document.getElementById('scrollProgressBar');
+    function updateActiveNav() {
+      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight || 800;
+      const docHeight = document.documentElement.scrollHeight || document.body.scrollHeight || 3000;
 
-    function handleScrollInteractions() {
-      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-      const totalScrollable = document.documentElement.scrollHeight - window.innerHeight;
-
-      // 1. Update Scroll Progress Bar (0% to 100%)
-      if (progressBar && totalScrollable > 0) {
-        const pct = Math.min(100, Math.max(0, (scrollY / totalScrollable) * 100));
-        progressBar.style.width = pct + '%';
+      // If at bottom of page, highlight Contact
+      if (scrollPos + windowHeight >= docHeight - 90) {
+        setActiveNav('contact');
+        return;
       }
 
-      // 2. Dynamic Scrollspy - calculate currently visible section
-      let activeItem = scrollSections[0];
-      const headerOffset = 150; // buffer for floating navbar
+      // Check section bounding rects for accurate visible section detection
+      let currentId = 'home';
+      const offsetThreshold = 180; // Buffer for floating navbar
 
       for (let i = 0; i < scrollSections.length; i++) {
-        const secTop = scrollSections[i].el.offsetTop - headerOffset;
-        if (scrollY >= secTop) {
-          activeItem = scrollSections[i];
+        const sec = scrollSections[i];
+        const rect = sec.getBoundingClientRect();
+        if (rect.top <= offsetThreshold) {
+          currentId = sec.id;
         }
       }
 
-      // If at bottom of page, highlight the last section (Contact)
-      if (scrollY + window.innerHeight >= document.documentElement.scrollHeight - 60) {
-        activeItem = scrollSections[scrollSections.length - 1];
-      }
+      setActiveNav(currentId);
+    }
 
-      // Update .active class on nav links
-      scrollSections.forEach(item => {
-        if (item === activeItem) {
-          item.anchor.classList.add('active');
+    function setActiveNav(id) {
+      navAnchors.forEach(a => {
+        if (a.getAttribute('href') === '#' + id) {
+          a.classList.add('active');
         } else {
-          item.anchor.classList.remove('active');
+          a.classList.remove('active');
         }
       });
     }
 
-    
     // Live GitHub Profile Photo Synchronizer
     (function syncLiveGitHubAvatar() {
       const img = document.getElementById('heroProfileImg');
@@ -2596,18 +2577,21 @@
         .catch(() => {});
     })();
 
-    window.addEventListener('scroll', handleScrollInteractions, { passive: true });
-    window.addEventListener('resize', handleScrollInteractions, { passive: true });
-    handleScrollInteractions();
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    window.addEventListener('resize', updateActiveNav, { passive: true });
+    updateActiveNav();
 
     function toggleMobileMenu() {
       const menu = document.getElementById('navLinks');
       const btn = document.getElementById('menuToggleBtn');
       menu.classList.toggle('mobile-open');
       if (btn) btn.classList.toggle('is-active');
+      if (menu.classList.contains('mobile-open')) {
+        updateActiveNav();
+      }
     }
 
-    // Auto-close menu when tapping outside or tapping any nav link
+    // Auto-close menu when tapping outside
     document.addEventListener('click', (e) => {
       const navWrapper = document.querySelector('.nav-wrapper');
       const menu = document.getElementById('navLinks');
@@ -2619,8 +2603,20 @@
       }
     });
 
+    // Smooth navigation link click handler with accurate scroll sync
     document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (targetId && targetId.startsWith('#')) {
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            const headerOffset = 80;
+            const targetPos = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+            window.scrollTo({ top: targetPos, behavior: 'smooth' });
+            setActiveNav(targetId.substring(1));
+          }
+        }
         const menu = document.getElementById('navLinks');
         const btn = document.getElementById('menuToggleBtn');
         if (menu && menu.classList.contains('mobile-open')) {
@@ -2694,7 +2690,7 @@
           </div>
         `;
         btn.disabled = false;
-        btnText.textContent = '⚡ Send Message ⚡';
+        btnText.textContent = 'Send Message';
       }
     }
 
