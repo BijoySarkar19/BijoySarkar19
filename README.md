@@ -17,10 +17,16 @@
 
 <img src="https://github.com/BijoySarkar19.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
-# BIJOY SARKAR
+# Bijoy Sarkar (@BijoySarkar19)
 
-### Software Developer · AI/ML & Computer Vision Engineer · B.Tech CSE
-📍 **Agartala, Tripura, India**
+### Official GitHub Profile · Software Developer & AI/ML Engineer
+📍 **Agartala, Tripura, India** · 🎓 **ICFAI University Tripura (B.Tech CSE)**
+
+<p align="center">
+  <b>Welcome to the official GitHub profile of Bijoy Sarkar (<a href="https://github.com/BijoySarkar19">@BijoySarkar19</a>)</b><br/>
+  Passionate Software Developer &amp; AI/ML Engineer specializing in Computer Vision, Deep Learning, and Scalable Full-Stack Systems.<br/>
+  Explore verified open-source projects, system architectures, and 535+ GitHub contributions below.
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge" alt="Software Developer"/>
@@ -414,19 +420,22 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 
 ---
 
-<!--
-========================================================
-SEARCH ENGINE OPTIMIZATION (SEO) & SEARCH CRAWLER INDEX
-========================================================
-Name: Bijoy Sarkar (বিজয় সরকার)
-GitHub Handle: @BijoySarkar19
-Official GitHub Profile: https://github.com/BijoySarkar19
-Official Portfolio Website: https://bijoy-sarkar-portfolio.vercel.app/
-LinkedIn Profile: https://www.linkedin.com/in/bijoysarkar19
-Curriculum Vitae (CV): https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf
-Location: Agartala, Tripura, India (799001)
-Alma Mater: ICFAI University Tripura (B.Tech Computer Science & Engineering)
-Primary Focus: Software Development, Artificial Intelligence (AI), Machine Learning (ML), Computer Vision (CV), Full-Stack Web Development, Edge AI, Flutter
-Featured Projects: SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation Deep Learning, Smart Attendance System, Commit Hunter Game
-Search Keywords & Indexing Terms: Bijoy Sarkar, BijoySarkar19, Bijoy Sarkar GitHub, BijoySarkar19 GitHub, github.com/BijoySarkar19, Bijoy Sarkar Developer, Bijoy Sarkar Software Developer, Bijoy Sarkar AI ML Engineer, Bijoy Sarkar Computer Vision, Bijoy Sarkar Agartala, Bijoy Sarkar Tripura, Bijoy Sarkar ICFAI University Tripura, Bijoy Sarkar Portfolio, Bijoy Sarkar Projects, SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation, 535+ GitHub Contributions, Software Developer India
--->
+<details>
+<summary><b>🔍 Official Profile Verification &amp; Search Indexing Details (Click to Expand)</b></summary>
+<br/>
+
+| Information Entity | Verified Profile Reference |
+| :--- | :--- |
+| **Full Name** | **Bijoy Sarkar** (বিজয় সরকার) |
+| **Primary Alias** | BijoySarkar19 / @BijoySarkar19 |
+| **Official GitHub Profile** | [https://github.com/BijoySarkar19](https://github.com/BijoySarkar19) |
+| **GitHub Profile Repository** | [https://github.com/BijoySarkar19/BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19) |
+| **Official Portfolio Website** | [https://bijoy-sarkar-portfolio.vercel.app/](https://bijoy-sarkar-portfolio.vercel.app/) |
+| **LinkedIn Profile** | [https://www.linkedin.com/in/bijoysarkar19](https://www.linkedin.com/in/bijoysarkar19) |
+| **Academic Institution** | ICFAI University Tripura (B.Tech Computer Science &amp; Engineering) |
+| **Geographic Location** | Agartala, Tripura, India (799001) |
+| **Professional Competencies** | Software Development, Artificial Intelligence, Machine Learning, Computer Vision, Deep Learning, Full-Stack Systems |
+| **Primary Repositories** | [SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge) · [CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core) · [Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio) · [Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV) |
+| **Search Engine Entity Mapping** | Bijoy Sarkar GitHub, BijoySarkar19 GitHub, Bijoy Sarkar Developer, Bijoy Sarkar Software Developer, Bijoy Sarkar AI ML Engineer, Bijoy Sarkar Tripura, Bijoy Sarkar Agartala |
+
+</details>
