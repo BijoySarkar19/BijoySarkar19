@@ -3638,10 +3638,7 @@
       } catch (err) {
         const mailtoUri = 'mailto:bijoysarkar7252@gmail.com?subject=' + 
           encodeURIComponent('Portfolio Contact from ' + name) + 
-          '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')
-
-Message:
-' + message);
+          '&body=' + encodeURIComponent('From: ' + name + ' (' + email + ')\n\nMessage:\n' + message);
         
         window.location.href = mailtoUri;
         renderFeedbackMailto(mailtoUri);
