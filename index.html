@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Bijoy Sarkar (@BijoySarkar19) | GitHub Profile &amp; Software Developer Portfolio</title>
+  <title>Bijoy Sarkar | GitHub Profile &amp; Software Developer Portfolio</title>
   
   <!-- Primary Meta Tags & SEO Optimization -->
-  <meta name="title" content="Bijoy Sarkar (@BijoySarkar19) | GitHub Profile &amp; Software Developer Portfolio">
+  <meta name="title" content="Bijoy Sarkar | GitHub Profile &amp; Software Developer Portfolio">
   <meta name="description" content="Official GitHub profile and developer portfolio of Bijoy Sarkar (@BijoySarkar19), Software Developer and AI/ML Engineer at ICFAI University Tripura, Agartala. 535+ verified GitHub contributions, Computer Vision architectures (SentinelEdge, CivicLens Core, Rakshak-AI), tech stack, and interactive developer tools.">
   <meta name="keywords" content="Bijoy Sarkar, BijoySarkar19, Bijoy Sarkar GitHub, BijoySarkar19 GitHub, github.com/BijoySarkar19, Bijoy Sarkar Profile, Bijoy Sarkar Portfolio, Bijoy Sarkar Developer, Bijoy Sarkar Software Developer, Bijoy Sarkar AI ML Engineer, Bijoy Sarkar Computer Vision, Bijoy Sarkar ICFAI University Tripura, Bijoy Sarkar Agartala, Bijoy Sarkar Tripura, Bijoy Sarkar B.Tech CSE, Bijoy Sarkar Resume, Bijoy Sarkar CV, SentinelEdge, CivicLens Core, Rakshak-AI, Road Segmentation, Python Developer Agartala, AI Engineer India, Full Stack Developer India, Computer Science Agartala">
   <meta name="author" content="Bijoy Sarkar (@BijoySarkar19)">
@@ -26,7 +26,7 @@
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Bijoy Sarkar GitHub Portfolio (@BijoySarkar19)">
   <meta property="og:url" content="https://bijoy-sarkar-portfolio.vercel.app/">
-  <meta property="og:title" content="Bijoy Sarkar (@BijoySarkar19) | GitHub Profile &amp; Software Developer Portfolio">
+  <meta property="og:title" content="Bijoy Sarkar | GitHub Profile &amp; Software Developer Portfolio">
   <meta property="og:description" content="Explore Bijoy Sarkar's (@BijoySarkar19) official GitHub profile, 535+ verified contributions, AI/ML Computer Vision systems, full-stack projects, and CV.">
   <meta property="og:image" content="https://raw.githubusercontent.com/BijoySarkar19/BijoySarkar19/main/assets/profile-avatar.png">
   <meta property="og:see_also" content="https://github.com/BijoySarkar19">
@@ -38,7 +38,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://bijoy-sarkar-portfolio.vercel.app/">
-  <meta name="twitter:title" content="Bijoy Sarkar (@BijoySarkar19) | GitHub Profile &amp; Software Developer Portfolio">
+  <meta name="twitter:title" content="Bijoy Sarkar | GitHub Profile &amp; Software Developer Portfolio">
   <meta name="twitter:description" content="Official developer portfolio of Bijoy Sarkar (@BijoySarkar19), B.Tech CSE student at ICFAI University Tripura. 535+ GitHub contributions, Computer Vision, AI/ML.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/BijoySarkar19/BijoySarkar19/main/assets/profile-avatar.png">
 
@@ -1949,6 +1949,93 @@
       color: #ef4444;
     }
 
+
+    /* ========================================================
+       ANTI-COPY, ANTI-SCRAPING & BUTTON PROTECTION
+       ======================================================== */
+    *, *::before, *::after {
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+      user-select: none !important;
+      -webkit-user-drag: none !important;
+      -khtml-user-drag: none !important;
+      -moz-user-drag: none !important;
+      -o-user-drag: none !important;
+      user-drag: none !important;
+    }
+
+    input, textarea {
+      -webkit-user-select: text !important;
+      -moz-user-select: text !important;
+      -ms-user-select: text !important;
+      user-select: text !important;
+    }
+
+
+    /* Responsive Official Reference Bar in Footer */
+    .footer-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 6px 14px;
+      margin-top: 14px;
+      font-size: 11.5px;
+      color: var(--text-dim);
+      line-height: 1.6;
+      text-align: center;
+      width: 100%;
+      max-width: 960px;
+      margin-inline: auto;
+      padding: 0 12px;
+      user-select: none !important;
+      -webkit-user-select: none !important;
+    }
+    .footer-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+    .footer-meta-item a {
+      color: var(--sky);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.2s ease, text-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .footer-meta-item a:hover {
+      color: var(--cyan);
+      text-shadow: 0 0 8px rgba(0, 242, 254, 0.6);
+    }
+    .footer-meta-sep {
+      color: rgba(56, 189, 248, 0.4);
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      .footer-meta-bar {
+        gap: 8px 12px;
+        font-size: 11px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .footer-meta-bar {
+        flex-direction: column;
+        gap: 6px;
+      }
+      .footer-meta-sep {
+        display: none;
+      }
+      .footer-meta-item {
+        white-space: normal;
+        word-break: break-all;
+        justify-content: center;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -1959,23 +2046,23 @@
        ======================================================== -->
   <div class="nav-wrapper">
     <nav class="navbar" aria-label="Main Navigation">
-      <a href="#home" class="nav-brand">
+      <a draggable="false" oncontextmenu="return false;" href="#home" class="nav-brand">
         <span class="status-dot"></span> BIJOY
       </a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" data-target="home" class="active">HOME</a></li>
-        <li><a href="#about" data-target="about">ABOUT</a></li>
-        <li><a href="#certificates" data-target="certificates">Certificates</a></li>
-        <li><a href="#projects" data-target="projects">PROJECTS</a></li>
-        <li><a href="#skills" data-target="skills">SKILLS</a></li>
-        <li><a href="#contributions" data-target="contributions">CONTRIBUTIONS</a></li>
-        <li><a href="#game" data-target="game">GAME</a></li>
-        <li><a href="#contact" data-target="contact">CONTACT</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#home" data-target="home" class="active">HOME</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#about" data-target="about">ABOUT</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#certificates" data-target="certificates">Certificates</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#projects" data-target="projects">PROJECTS</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#skills" data-target="skills">SKILLS</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#contributions" data-target="contributions">CONTRIBUTIONS</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#game" data-target="game">GAME</a></li>
+        <li><a draggable="false" oncontextmenu="return false;" href="#contact" data-target="contact">CONTACT</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" id="menuToggleBtn">
+        <button draggable="false" oncontextmenu="return false;" class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" id="menuToggleBtn">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
@@ -2004,24 +2091,24 @@
           Computer Science &amp; Engineering student at ICFAI University Tripura. Passionate about building robust software systems, deep learning computer vision architectures, and scalable full-stack applications.
         </p>
         <div class="hero-actions">
-          <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-download-cv" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none; box-shadow: 0 0 20px rgba(0, 242, 254, 0.45);">
+          <a draggable="false" oncontextmenu="return false;" href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-download-cv" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none; box-shadow: 0 0 20px rgba(0, 242, 254, 0.45);">
             🌐 Visit Official Portfolio ↗
           </a>
-          <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-download-cv">
+          <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-download-cv">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download CV
           </a>
           <div class="social-pills">
-            <a href="https://github.com/BijoySarkar19" target="_blank" rel="author me noopener noreferrer" class="social-icon-btn" aria-label="Bijoy Sarkar GitHub Profile (@BijoySarkar19)" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">
+            <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="author me noopener noreferrer" class="social-icon-btn" aria-label="Bijoy Sarkar GitHub Profile (@BijoySarkar19)" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <a draggable="false" oncontextmenu="return false;" href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
             </a>
-            <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+            <a draggable="false" oncontextmenu="return false;" href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
-            <a href="mailto:bijoysarkar7252@gmail.com" class="social-icon-btn" aria-label="Email">
+            <a draggable="false" oncontextmenu="return false;" href="mailto:bijoysarkar7252@gmail.com" class="social-icon-btn" aria-label="Email">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </a>
           </div>
@@ -2034,7 +2121,7 @@
           <div class="aura-backdrop"></div>
           <div class="aura-ring"></div>
           <div class="portrait-frame" onclick="openGalleryModal('hero')" title="Click to view full portrait">
-            <img class="portrait-img" id="heroProfileImg" src="https://github.com/BijoySarkar19.png" onerror="this.onerror=null; this.src='assets/profile-avatar.png';" alt="Bijoy Sarkar Developer Portrait">
+            <img draggable="false" oncontextmenu="return false;" class="portrait-img" id="heroProfileImg" src="https://github.com/BijoySarkar19.png" onerror="this.onerror=null; this.src='assets/profile-avatar.png';" alt="Bijoy Sarkar Developer Portrait">
             <div class="portrait-badge">
               <div>
                 <div class="badge-label">BIJOY SARKAR</div>
@@ -2187,7 +2274,7 @@
               <span class="cert-pill">Compliance</span>
             </div>
           </div>
-          <button type="button" class="cert-link" onclick="openCertificateModal(\'stqc-vapt\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
+          <button draggable="false" oncontextmenu="return false;" type="button" class="cert-link" onclick="openCertificateModal(\'stqc-vapt\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
           </button>
         </div>
@@ -2205,7 +2292,7 @@
               <span class="cert-pill">Computer Vision</span>
             </div>
           </div>
-          <button type="button" class="cert-link" onclick="openCertificateModal(\'nits-aiml\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
+          <button draggable="false" oncontextmenu="return false;" type="button" class="cert-link" onclick="openCertificateModal(\'nits-aiml\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
           </button>
         </div>
@@ -2223,7 +2310,7 @@
               <span class="cert-pill">REST APIs</span>
             </div>
           </div>
-          <button type="button" class="cert-link" onclick="openCertificateModal(\'talkeng-flutter\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
+          <button draggable="false" oncontextmenu="return false;" type="button" class="cert-link" onclick="openCertificateModal(\'talkeng-flutter\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
           </button>
         </div>
@@ -2241,7 +2328,7 @@
               <span class="cert-pill">SQL</span>
             </div>
           </div>
-          <button type="button" class="cert-link" onclick="openCertificateModal(\'apnividya-fs\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
+          <button draggable="false" oncontextmenu="return false;" type="button" class="cert-link" onclick="openCertificateModal(\'apnividya-fs\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
           </button>
         </div>
@@ -2259,7 +2346,7 @@
               <span class="cert-pill">Segmentation</span>
             </div>
           </div>
-          <button type="button" class="cert-link" onclick="openCertificateModal(\'opencv-kaggle\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
+          <button draggable="false" oncontextmenu="return false;" type="button" class="cert-link" onclick="openCertificateModal(\'opencv-kaggle\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
           </button>
         </div>
@@ -2277,7 +2364,7 @@
               <span class="cert-pill">Python</span>
             </div>
           </div>
-          <button type="button" class="cert-link" onclick="openCertificateModal(\'algo-dsa\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
+          <button draggable="false" oncontextmenu="return false;" type="button" class="cert-link" onclick="openCertificateModal(\'algo-dsa\')" style="background:none; border:none; cursor:pointer; font-family:inherit; padding:0; text-align:left;">
             🗎 View Credential →
           </button>
         </div>
@@ -2355,10 +2442,10 @@
       </div>
 
       <div class="project-filter-tabs" role="tablist" aria-label="Project Categories">
-        <button class="filter-tab active" data-filter="all" onclick="filterProjects('all')">All Projects (6)</button>
-        <button class="filter-tab" data-filter="ai-vision" onclick="filterProjects('ai-vision')">AI &amp; Vision (4)</button>
-        <button class="filter-tab" data-filter="fullstack" onclick="filterProjects('fullstack')">Full-Stack &amp; Cloud (2)</button>
-        <button class="filter-tab" data-filter="systems" onclick="filterProjects('systems')">Systems &amp; Edge (4)</button>
+        <button draggable="false" oncontextmenu="return false;" class="filter-tab active" data-filter="all" onclick="filterProjects('all')">All Projects (6)</button>
+        <button draggable="false" oncontextmenu="return false;" class="filter-tab" data-filter="ai-vision" onclick="filterProjects('ai-vision')">AI &amp; Vision (4)</button>
+        <button draggable="false" oncontextmenu="return false;" class="filter-tab" data-filter="fullstack" onclick="filterProjects('fullstack')">Full-Stack &amp; Cloud (2)</button>
+        <button draggable="false" oncontextmenu="return false;" class="filter-tab" data-filter="systems" onclick="filterProjects('systems')">Systems &amp; Edge (4)</button>
       </div>
 
       <div class="projects-grid">
@@ -2379,7 +2466,7 @@
               <span class="project-tag">FastAPI</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19/SentinelEdge" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
+              <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19/SentinelEdge" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
           </div>
         </article>
 
@@ -2400,7 +2487,7 @@
               <span class="project-tag">Leaflet</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19/CivicLens-Core" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
+              <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19/CivicLens-Core" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
           </div>
         </article>
 
@@ -2421,7 +2508,7 @@
               <span class="project-tag">SQLite</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
+              <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
           </div>
         </article>
 
@@ -2442,7 +2529,7 @@
               <span class="project-tag">Kaggle</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
+              <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
           </div>
         </article>
 
@@ -2463,7 +2550,7 @@
               <span class="project-tag">SQLite</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
+              <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer" class="btn-project primary">GitHub Repo</a></div>
           </div>
         </article>
 
@@ -2484,8 +2571,8 @@
               <span class="project-tag">Vercel</span>
             </div>
             <div class="project-links" style="display: flex; gap: 8px;">
-              <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project primary" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none;">Official Portfolio ↗</a>
-              <a href="https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio" target="_blank" rel="noopener noreferrer" class="btn-project" style="background: rgba(14, 28, 56, 0.75); border: 1px solid var(--border-color); color: #fff;">GitHub Repo</a></div>
+              <a draggable="false" oncontextmenu="return false;" href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-project primary" style="background: linear-gradient(135deg, #00f2fe, #2563eb); color: #040914; font-weight: 800; border: none;">Official Portfolio ↗</a>
+              <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio" target="_blank" rel="noopener noreferrer" class="btn-project" style="background: rgba(14, 28, 56, 0.75); border: 1px solid var(--border-color); color: #fff;">GitHub Repo</a></div>
           </div>
         </article>
       </div>
@@ -2611,15 +2698,15 @@
       <!-- Heatmap Calendar Card -->
       <div class="chart-container">
         <div class="chart-heading"><span class="dot"></span> My Contribution Calendar</div>
-        <a href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer">
-          <img class="chart-svg-img" src="assets/generated/contributions.svg" alt="GitHub Contribution Calendar Heatmap">
+        <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="noopener noreferrer">
+          <img draggable="false" oncontextmenu="return false;" class="chart-svg-img" src="assets/generated/contributions.svg" alt="GitHub Contribution Calendar Heatmap">
         </a>
       </div>
 
       <!-- Synchronized Snake Card -->
       <div class="chart-container">
         <div class="chart-heading"><span class="dot"></span> 🐍 Synchronized Contribution Snake</div>
-        <img class="chart-svg-img" src="assets/generated/contribution-snake.svg" alt="Animated Contribution Snake Actively Biting Contribution Squares">
+        <img draggable="false" oncontextmenu="return false;" class="chart-svg-img" src="assets/generated/contribution-snake.svg" alt="Animated Contribution Snake Actively Biting Contribution Squares">
       </div>
 
       <div class="sync-status-row">
@@ -2628,11 +2715,11 @@
           <span id="syncStatusText">Calendar &amp; Snake Grid 100% Synchronized</span>
         </div>
         <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-          <button type="button" id="btnRefreshActivity" onclick="refreshActivityData()" class="nav-cta" style="font-size: 11.5px; padding: 6px 14px; cursor: pointer; border: 1px solid rgba(0, 242, 254, 0.4); display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af 0%, #0284c7 60%, #00f2fe 100%);">
+          <button draggable="false" oncontextmenu="return false;" type="button" id="btnRefreshActivity" onclick="refreshActivityData()" class="nav-cta" style="font-size: 11.5px; padding: 6px 14px; cursor: pointer; border: 1px solid rgba(0, 242, 254, 0.4); display: inline-flex; align-items: center; gap: 6px; background: linear-gradient(135deg, #1e40af 0%, #0284c7 60%, #00f2fe 100%);">
             <span id="refreshIcon" style="display: inline-block;">↻</span>
             <span id="refreshBtnText">Refresh Activity</span>
           </button>
-          <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener noreferrer" style="font-size: 11.5px; color: var(--sky); display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.25); background: rgba(14, 28, 56, 0.6); transition: all 0.2s ease;">
+          <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml" target="_blank" rel="noopener noreferrer" style="font-size: 11.5px; color: var(--sky); display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.25); background: rgba(14, 28, 56, 0.6); transition: all 0.2s ease;">
             Actions Log ↗
           </a>
         </div>
@@ -2652,11 +2739,11 @@
         <div class="game-scores">
           <span class="score-chip">COMMITS: <b id="scoreVal">0</b></span>
           <span class="score-chip">GOAL: <b style="color: #34d399;">535</b></span>
-          <span class="score-chip">BEST: <b id="bestVal">0</b><button type="button" class="score-reset-btn" onclick="resetHighScore()" title="Reset local high score">reset</button></span>
+          <span class="score-chip">BEST: <b id="bestVal">0</b><button draggable="false" oncontextmenu="return false;" type="button" class="score-reset-btn" onclick="resetHighScore()" title="Reset local high score">reset</button></span>
         </div>
         <div class="game-actions">
-          <button class="nav-cta" style="background: rgba(14,28,56,0.85); border-color: var(--border-color); font-size: 12px;" id="soundBtn" onclick="toggleSound()">🔊 SOUND: ON</button>
-          <button class="nav-cta" style="font-size: 12px;" id="startBtn" onclick="toggleGame()">▶ START GAME</button>
+          <button draggable="false" oncontextmenu="return false;" class="nav-cta" style="background: rgba(14,28,56,0.85); border-color: var(--border-color); font-size: 12px;" id="soundBtn" onclick="toggleSound()">🔊 SOUND: ON</button>
+          <button draggable="false" oncontextmenu="return false;" class="nav-cta" style="font-size: 12px;" id="startBtn" onclick="toggleGame()">▶ START GAME</button>
         </div>
       </div>
 
@@ -2667,11 +2754,11 @@
       <!-- Touch D-Pad for Mobile & iPad Players -->
       <div class="d-pad-box" aria-label="Touch Controls">
         <div></div>
-        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(0, -1)" ontouchstart="triggerMove(0, -1); event.preventDefault();" aria-label="Up">▲</button>
+        <button draggable="false" oncontextmenu="return false;" class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(0, -1)" ontouchstart="triggerMove(0, -1); event.preventDefault();" aria-label="Up">▲</button>
         <div></div>
-        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(-1, 0)" ontouchstart="triggerMove(-1, 0); event.preventDefault();" aria-label="Left">◀</button>
-        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(0, 1)" ontouchstart="triggerMove(0, 1); event.preventDefault();" aria-label="Down">▼</button>
-        <button class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(1, 0)" ontouchstart="triggerMove(1, 0); event.preventDefault();" aria-label="Right">▶</button>
+        <button draggable="false" oncontextmenu="return false;" class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(-1, 0)" ontouchstart="triggerMove(-1, 0); event.preventDefault();" aria-label="Left">◀</button>
+        <button draggable="false" oncontextmenu="return false;" class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(0, 1)" ontouchstart="triggerMove(0, 1); event.preventDefault();" aria-label="Down">▼</button>
+        <button draggable="false" oncontextmenu="return false;" class="d-pad-btn" style="touch-action: manipulation;" onclick="triggerMove(1, 0)" ontouchstart="triggerMove(1, 0); event.preventDefault();" aria-label="Right">▶</button>
       </div>
     </section>
 
@@ -2738,7 +2825,7 @@
               <div id="message-char-count" class="char-counter">0 / 3000</div>
             </div>
           </div>
-          <button type="submit" id="btn-submit" class="btn-submit">
+          <button draggable="false" oncontextmenu="return false;" type="submit" id="btn-submit" class="btn-submit">
             <span id="btn-text">Send Message</span>
           </button>
         </form>
@@ -2756,15 +2843,15 @@
 
       <div class="gallery-grid">
         <div class="gallery-item" onclick="openGalleryModal('casual')">
-          <img class="gallery-img img-casual" src="assets/portrait-casual.jpg" alt="Bijoy Sarkar Casual Portrait">
+          <img draggable="false" oncontextmenu="return false;" class="gallery-img img-casual" src="assets/portrait-casual.jpg" alt="Bijoy Sarkar Casual Portrait">
           <div class="gallery-tag"><span>Campus &amp; Casual</span></div>
         </div>
         <div class="gallery-item" onclick="openGalleryModal('editorial')">
-          <img class="gallery-img img-editorial" src="assets/portrait-editorial.jpg" alt="Bijoy Sarkar Editorial Portrait">
+          <img draggable="false" oncontextmenu="return false;" class="gallery-img img-editorial" src="assets/portrait-editorial.jpg" alt="Bijoy Sarkar Editorial Portrait">
           <div class="gallery-tag"><span>Editorial &amp; Style</span></div>
         </div>
         <div class="gallery-item" onclick="openGalleryModal('outdoor')">
-          <img class="gallery-img img-outdoor" src="assets/portrait-outdoor.jpg" alt="Bijoy Sarkar Outdoor Portrait">
+          <img draggable="false" oncontextmenu="return false;" class="gallery-img img-outdoor" src="assets/portrait-outdoor.jpg" alt="Bijoy Sarkar Outdoor Portrait">
           <div class="gallery-tag"><span>Outdoor &amp; Travel</span></div>
         </div>
       </div>
@@ -2787,14 +2874,20 @@
     <footer class="footer">
       <div class="footer-brand">LET'S BUILD SOMETHING MEANINGFUL.</div>
       <div class="footer-links">
-        <a href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-cta" style="font-size: 12px; padding: 6px 16px;">✦ Portfolio</a>
-        <a href="https://github.com/BijoySarkar19" target="_blank" rel="author me noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">GitHub (@BijoySarkar19)</a>
-        <a href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">LinkedIn</a>
-        <a href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">Instagram</a>
+        <a draggable="false" oncontextmenu="return false;" href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-cta" style="font-size: 12px; padding: 6px 16px;">✦ Portfolio</a>
+        <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="author me noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;" title="Bijoy Sarkar GitHub Profile (@BijoySarkar19)">GitHub (@BijoySarkar19)</a>
+        <a draggable="false" oncontextmenu="return false;" href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">LinkedIn</a>
+        <a draggable="false" oncontextmenu="return false;" href="https://www.instagram.com/bijoyysarkarr/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" style="border-radius: 8px; width: auto; padding: 0 14px; font-size: 12px;">Instagram</a>
       </div>
-      <p class="footer-small">Designed &amp; Engineered by <a href="https://github.com/BijoySarkar19" rel="me author" style="color: var(--cyan); text-decoration: none; font-weight: 700;">Bijoy Sarkar (@BijoySarkar19)</a> · Powered by Code · Built with Curiosity</p>
-      <div class="footer-seo-tags" style="text-align: center; margin-top: 14px; font-size: 11px; color: var(--text-dim); line-height: 1.6;">
-        <span><b>Official Profile:</b> <a href="https://github.com/BijoySarkar19" rel="me author" style="color: var(--sky); text-decoration: underline;">https://github.com/BijoySarkar19</a> &nbsp;·&nbsp; <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bijoysarkar19" rel="me noopener noreferrer" target="_blank" style="color: var(--sky); text-decoration: underline;">linkedin.com/in/bijoysarkar19</a> &nbsp;·&nbsp; <b>CV:</b> <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" style="color: var(--sky); text-decoration: underline;" rel="noopener noreferrer">Bijoy Sarkar CV</a></span>
+      <p class="footer-small">Designed &amp; Engineered by <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" rel="me author" style="color: var(--cyan); text-decoration: none; font-weight: 700;">Bijoy Sarkar</a> · Powered by Code · Built with Curiosity</p>
+      <div class="footer-meta-bar">
+        <span class="footer-meta-item"><b>Official Portfolio:</b> <a draggable="false" oncontextmenu="return false;" href="https://bijoy-sarkar-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">https://bijoy-sarkar-portfolio.vercel.app</a></span>
+        <span class="footer-meta-sep">·</span>
+        <span class="footer-meta-item"><b>Official Profile:</b> <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19" target="_blank" rel="me author noopener noreferrer">https://github.com/BijoySarkar19</a></span>
+        <span class="footer-meta-sep">·</span>
+        <span class="footer-meta-item"><b>LinkedIn:</b> <a draggable="false" oncontextmenu="return false;" href="https://www.linkedin.com/in/bijoysarkar19" target="_blank" rel="me noopener noreferrer">linkedin.com/in/bijoysarkar19</a></span>
+        <span class="footer-meta-sep">·</span>
+        <span class="footer-meta-item"><b>CV:</b> <a draggable="false" oncontextmenu="return false;" href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf" target="_blank" rel="noopener noreferrer">Bijoy Sarkar CV</a></span>
       </div>
     </footer>
 
@@ -2832,6 +2925,44 @@
       setTimeout(typeLoop, speed);
     }
     typeLoop();
+
+    
+    // ========================================================
+    // ANTI-COPY, CONTEXT-MENU & ADDRESS COPY PROTECTION
+    // ========================================================
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      return false;
+    }, { passive: false });
+
+    document.addEventListener('copy', function(e) {
+      e.preventDefault();
+      return false;
+    }, { passive: false });
+
+    document.addEventListener('cut', function(e) {
+      e.preventDefault();
+      return false;
+    }, { passive: false });
+
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+      return false;
+    }, { passive: false });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return;
+      }
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'C' || e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'a' || e.key === 'A')) {
+        e.preventDefault();
+        return false;
+      }
+      if (e.key === 'F12') {
+        e.preventDefault();
+        return false;
+      }
+    });
 
     // ========================================================
     // INTERACTIVE SCROLLSPY (Syncs with 3-bar hamburger mobile menu & desktop navbar)
@@ -3911,7 +4042,7 @@ Message:
           <span class="emblem" style="color: var(--cyan);">◈</span>
           <span id="modalHeadingText">Details</span>
         </div>
-        <button class="cyber-modal-close" onclick="closeCyberModal()" aria-label="Close modal">✕</button>
+        <button draggable="false" oncontextmenu="return false;" class="cyber-modal-close" onclick="closeCyberModal()" aria-label="Close modal">✕</button>
       </div>
       <div class="cyber-modal-body" id="modalBody">
         <!-- Content populated safely via DOM API -->

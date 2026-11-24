@@ -1,61 +1,61 @@
-<div align="center">
+<div align="center" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
 
-<img src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
+<img draggable="false" src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
 
 <br/>
 
 <!-- Interactive Live Preview Launcher -->
 <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html">
-  <img src="https://img.shields.io/badge/🎮_LAUNCH_LIVE_PREVIEW-Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
+  <img draggable="false" src="https://img.shields.io/badge/🎮_LAUNCH_LIVE_PREVIEW-Interactive_Portfolio_&_Game-00F2FE?style=for-the-badge&logo=googlechrome&logoColor=040914&labelColor=0284C7" alt="Launch Live Preview"/>
 </a>
 &nbsp;
 <a href="https://bijoy-sarkar-portfolio.vercel.app/">
-  <img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Website"/>
+  <img draggable="false" src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Website"/>
 </a>
 
 <br/><br/>
 
-<img src="https://github.com/BijoySarkar19.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
+<img draggable="false" src="https://github.com/BijoySarkar19.png" width="160" style="border-radius:50%; border:3px solid #00F2FE; box-shadow:0 0 30px rgba(0,242,254,0.4);" alt="Bijoy Sarkar GitHub Profile Photo"/>
 
-# Bijoy Sarkar (@BijoySarkar19)
+# Bijoy Sarkar
 
 ### Official GitHub Profile · Software Developer & AI/ML Engineer
 📍 **Agartala, Tripura, India** · 🎓 **ICFAI University Tripura (B.Tech CSE)**
 
 <p align="center">
-  <b>Welcome to the official GitHub profile of Bijoy Sarkar (<a href="https://github.com/BijoySarkar19">@BijoySarkar19</a>)</b><br/>
+  <b>Welcome to the official GitHub profile of Bijoy Sarkar</b><br/>
   Passionate Software Developer &amp; AI/ML Engineer specializing in Computer Vision, Deep Learning, and Scalable Full-Stack Systems.<br/>
   Explore verified open-source projects, system architectures, and 535+ GitHub contributions below.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge" alt="Software Developer"/>
-  <img src="https://img.shields.io/badge/AI%2FML_ENTHUSIAST-2563EB?style=for-the-badge" alt="AI/ML"/>
-  <img src="https://img.shields.io/badge/COMPUTER_VISION-0F766E?style=for-the-badge" alt="Computer Vision"/>
-  <img src="https://img.shields.io/badge/FULL_STACK_DEVELOPER-5B21B6?style=for-the-badge" alt="Full Stack"/>
+  <img draggable="false" src="https://img.shields.io/badge/SOFTWARE_DEVELOPER-172554?style=for-the-badge" alt="Software Developer"/>
+  <img draggable="false" src="https://img.shields.io/badge/AI%2FML_ENTHUSIAST-2563EB?style=for-the-badge" alt="AI/ML"/>
+  <img draggable="false" src="https://img.shields.io/badge/COMPUTER_VISION-0F766E?style=for-the-badge" alt="Computer Vision"/>
+  <img draggable="false" src="https://img.shields.io/badge/FULL_STACK_DEVELOPER-5B21B6?style=for-the-badge" alt="Full Stack"/>
 </p>
 
 <p align="center">
-  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/✦_PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf"><img src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/></a>
-  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB_PROFILE-@BijoySarkar19-00F2FE?style=for-the-badge&logo=github&logoColor=040914&labelColor=0284C7" alt="Bijoy Sarkar GitHub Profile BijoySarkar19"/></a>
-  <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-  <a href="mailto:bijoysarkar7252@gmail.com"><img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img draggable="false" src="https://img.shields.io/badge/✦_PORTFOLIO-Visit_My_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="https://github.com/BijoySarkar19/Bijoy_Sarkar_CV/raw/refs/heads/main/Bijoy_Sarkar_CV.pdf"><img draggable="false" src="https://img.shields.io/badge/⬇_DOWNLOAD_CV-PDF-00F2FE?style=for-the-badge&logoColor=040914&labelColor=0284C7" alt="Download CV"/></a>
+  <a href="https://github.com/BijoySarkar19"><img draggable="false" src="https://img.shields.io/badge/GITHUB_PROFILE-@BijoySarkar19-00F2FE?style=for-the-badge&logo=github&logoColor=040914&labelColor=0284C7" alt="Bijoy Sarkar GitHub Profile BijoySarkar19"/></a>
+  <a href="https://www.linkedin.com/in/bijoysarkar19"><img draggable="false" src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://www.instagram.com/bijoyysarkarr/"><img draggable="false" src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="mailto:bijoysarkar7252@gmail.com"><img draggable="false" src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
 <!-- Floating Tech Ribbon -->
 <p align="center">
-  <img src="https://img.shields.io/badge/React_JS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img draggable="false" src="https://img.shields.io/badge/React_JS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <img draggable="false" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img draggable="false" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img draggable="false" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  <img draggable="false" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+  <img draggable="false" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img draggable="false" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img draggable="false" src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img draggable="false" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
+  <img draggable="false" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
 </p>
 
 </div>
@@ -104,7 +104,7 @@ I am a passionate software developer with extensive hands-on experience in build
 
 <td width="34%" align="center" valign="middle">
 
-<img src="./assets/cyber-shield.svg" width="220" alt="Masculine Animated Cyber-Shield with AI Core"/>
+<img draggable="false" src="./assets/cyber-shield.svg" width="220" alt="Masculine Animated Cyber-Shield with AI Core"/>
 
 <br/>
 <sub>CYBER SHIELD &amp; NEURAL CORE</sub>
@@ -184,7 +184,7 @@ Engineered responsive frontend interfaces, integrated RESTful APIs, and maintain
 <tr>
 <td width="35%" align="center" valign="middle">
 
-<img src="./assets/circuit-totem.svg" width="190" alt="Holographic Quantum Circuit Totem"/>
+<img draggable="false" src="./assets/circuit-totem.svg" width="190" alt="Holographic Quantum Circuit Totem"/>
 
 <br/>
 <sub>QUANTUM CIRCUIT DATA BUS</sub>
@@ -303,7 +303,7 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 </div>
 
 <div align="center">
-  <img src="./assets/generated/skills.svg" width="100%" alt="Core Technical Skills & Proficiency Breakdown"/>
+  <img draggable="false" src="./assets/generated/skills.svg" width="100%" alt="Core Technical Skills & Proficiency Breakdown"/>
 </div>
 
 ---
@@ -315,19 +315,19 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <p><i>Rolling 12-month activity timeline &amp; synchronized activity snake</i></p>
 
 <a href="https://github.com/BijoySarkar19">
-  <img src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar Heatmap"/>
+  <img draggable="false" src="./assets/generated/contributions.svg" width="100%" alt="GitHub Contribution Calendar Heatmap"/>
 </a>
 
-<img src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake actively biting contribution squares"/>
+<img draggable="false" src="./assets/generated/contribution-snake.svg" width="100%" alt="Animated GitHub Contribution Snake actively biting contribution squares"/>
 
 <p align="center">
-  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="View Activity"/></a>
+  <a href="https://github.com/BijoySarkar19"><img draggable="false" src="https://img.shields.io/badge/VIEW_GITHUB_ACTIVITY-Open_Profile-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="View Activity"/></a>
   &nbsp;
-  <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml"><img src="https://img.shields.io/badge/REFRESH_ACTIVITY-GitHub_Actions-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white" alt="Refresh Activity"/></a>
+  <a href="https://github.com/BijoySarkar19/BijoySarkar19/actions/workflows/refresh-profile.yml"><img draggable="false" src="https://img.shields.io/badge/REFRESH_ACTIVITY-GitHub_Actions-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=white" alt="Refresh Activity"/></a>
 </p>
 
-<img src="./assets/generated/github-stats.svg" width="100%" alt="Automatically refreshed GitHub statistics"/>
-<img src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
+<img draggable="false" src="./assets/generated/github-stats.svg" width="100%" alt="Automatically refreshed GitHub statistics"/>
+<img draggable="false" src="./assets/generated/top-languages.svg" width="100%" alt="Automatically refreshed programming language breakdown"/>
 
 </div>
 
@@ -354,9 +354,9 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <h2>◈ 🎮 PLAY LIVE: COMMIT HUNTER (SNAKE GAME) ◈</h2>
 
 <p align="center">
-  <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game"><img src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live"/></a>
+  <a href="https://htmlpreview.github.io/?https://github.com/BijoySarkar19/BijoySarkar19/blob/main/preview.html#game"><img draggable="false" src="https://img.shields.io/badge/🎮_PLAY_LIVE_NOW-HTMLPreview-10B981?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Live"/></a>
   &nbsp;
-  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio"/></a>
+  <a href="https://bijoy-sarkar-portfolio.vercel.app/"><img draggable="false" src="https://img.shields.io/badge/🌐_VISIT_PORTFOLIO-Live_Website-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio"/></a>
 </p>
 
 Play the interactive **Commit Hunter** game directly in your browser! Collect green GitHub contribution blocks (+1) and bonus golden stars (+5) to match or beat your 535-contribution streak! Works on keyboard (Arrow keys / WASD) and touchscreens.
@@ -378,10 +378,10 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 </p>
 
 <p align="center">
-  <a href="mailto:bijoysarkar7252@gmail.com"><img src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://www.linkedin.com/in/bijoysarkar19"><img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/BijoySarkar19"><img src="https://img.shields.io/badge/GITHUB-Follow-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-  <a href="https://www.instagram.com/bijoyysarkarr/"><img src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="mailto:bijoysarkar7252@gmail.com"><img draggable="false" src="https://img.shields.io/badge/EMAIL-bijoysarkar7252%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/bijoysarkar19"><img draggable="false" src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/BijoySarkar19"><img draggable="false" src="https://img.shields.io/badge/GITHUB-Follow-172554?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.instagram.com/bijoyysarkarr/"><img draggable="false" src="https://img.shields.io/badge/INSTAGRAM-Follow-C13584?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
 </p>
 
 </div>
@@ -393,11 +393,11 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 <h2>◈ BEYOND THE CODE ◈</h2>
 
 <p align="center">
-  <img src="./assets/portrait-casual.jpg" width="31%" alt="Bijoy Sarkar Casual Portrait"/>
+  <img draggable="false" src="./assets/portrait-casual.jpg" width="31%" alt="Bijoy Sarkar Casual Portrait"/>
   &nbsp;
-  <img src="./assets/portrait-editorial.jpg" width="31%" alt="Bijoy Sarkar Editorial Portrait"/>
+  <img draggable="false" src="./assets/portrait-editorial.jpg" width="31%" alt="Bijoy Sarkar Editorial Portrait"/>
   &nbsp;
-  <img src="./assets/portrait-outdoor.jpg" width="31%" alt="Bijoy Sarkar Outdoor Portrait"/>
+  <img draggable="false" src="./assets/portrait-outdoor.jpg" width="31%" alt="Bijoy Sarkar Outdoor Portrait"/>
 </p>
 
 <p align="center">
@@ -419,23 +419,3 @@ Play the interactive **Commit Hunter** game directly in your browser! Collect gr
 </div>
 
 ---
-
-<details>
-<summary><b>🔍 Official Profile Verification &amp; Search Indexing Details (Click to Expand)</b></summary>
-<br/>
-
-| Information Entity | Verified Profile Reference |
-| :--- | :--- |
-| **Full Name** | **Bijoy Sarkar** (বিজয় সরকার) |
-| **Primary Alias** | BijoySarkar19 / @BijoySarkar19 |
-| **Official GitHub Profile** | [https://github.com/BijoySarkar19](https://github.com/BijoySarkar19) |
-| **GitHub Profile Repository** | [https://github.com/BijoySarkar19/BijoySarkar19](https://github.com/BijoySarkar19/BijoySarkar19) |
-| **Official Portfolio Website** | [https://bijoy-sarkar-portfolio.vercel.app/](https://bijoy-sarkar-portfolio.vercel.app/) |
-| **LinkedIn Profile** | [https://www.linkedin.com/in/bijoysarkar19](https://www.linkedin.com/in/bijoysarkar19) |
-| **Academic Institution** | ICFAI University Tripura (B.Tech Computer Science &amp; Engineering) |
-| **Geographic Location** | Agartala, Tripura, India (799001) |
-| **Professional Competencies** | Software Development, Artificial Intelligence, Machine Learning, Computer Vision, Deep Learning, Full-Stack Systems |
-| **Primary Repositories** | [SentinelEdge](https://github.com/BijoySarkar19/SentinelEdge) · [CivicLens-Core](https://github.com/BijoySarkar19/CivicLens-Core) · [Bijoy-Sarkar-portfolio](https://github.com/BijoySarkar19/Bijoy-Sarkar-portfolio) · [Bijoy_Sarkar_CV](https://github.com/BijoySarkar19/Bijoy_Sarkar_CV) |
-| **Search Engine Entity Mapping** | Bijoy Sarkar GitHub, BijoySarkar19 GitHub, Bijoy Sarkar Developer, Bijoy Sarkar Software Developer, Bijoy Sarkar AI ML Engineer, Bijoy Sarkar Tripura, Bijoy Sarkar Agartala |
-
-</details>
