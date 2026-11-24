@@ -1951,25 +1951,22 @@
 
 
     /* ========================================================
-       ANTI-COPY, ANTI-SCRAPING & BUTTON PROTECTION
+       SELECTABLE TEXT & BUTTON NAMES (WITH LINK ADDRESS SHIELD)
        ======================================================== */
     *, *::before, *::after {
-      -webkit-user-select: none !important;
-      -moz-user-select: none !important;
-      -ms-user-select: none !important;
-      user-select: none !important;
-      -webkit-user-drag: none !important;
-      -khtml-user-drag: none !important;
-      -moz-user-drag: none !important;
-      -o-user-drag: none !important;
-      user-drag: none !important;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+      -webkit-user-drag: none;
+      user-drag: none;
     }
 
-    input, textarea {
-      -webkit-user-select: text !important;
-      -moz-user-select: text !important;
-      -ms-user-select: text !important;
-      user-select: text !important;
+    img {
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-drag: none;
     }
 
 
@@ -2171,7 +2168,7 @@
               <div class="metric-desc">Years Experience</div>
             </div>
             <div class="metric-card">
-              <div class="metric-num">50+</div>
+              <div class="metric-num">5+</div>
               <div class="metric-desc">Projects Built</div>
             </div>
             <div class="metric-card">
@@ -2928,39 +2925,44 @@
 
     
     // ========================================================
-    // ANTI-COPY, CONTEXT-MENU & ADDRESS COPY PROTECTION
+    // TEXT & BUTTON NAME COPYING (WITH LINK ADDRESS PROTECTION)
+    // Allows text and button labels to be copied freely,
+    // but ensures the underlying link URL / address is NEVER copied.
     // ========================================================
-    document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-      return false;
-    }, { passive: false });
-
     document.addEventListener('copy', function(e) {
-      e.preventDefault();
-      return false;
-    }, { passive: false });
+      const selection = window.getSelection();
+      if (!selection || selection.rangeCount === 0) return;
+      const text = selection.toString();
+      if (!text) return;
 
-    document.addEventListener('cut', function(e) {
-      e.preventDefault();
-      return false;
-    }, { passive: false });
+      // Place ONLY plain text on the clipboard (strips all <a href="..."> tags)
+      if (e.clipboardData) {
+        e.clipboardData.clearData();
+        e.clipboardData.setData('text/plain', text);
+        const safeText = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        e.clipboardData.setData('text/html', '<span>' + safeText + '</span>');
+        e.preventDefault();
+      }
+    });
 
+    // Prevent dragging buttons or links to prevent dragging their URLs
     document.addEventListener('dragstart', function(e) {
-      e.preventDefault();
-      return false;
-    }, { passive: false });
+      if (e.target.closest('a, button, img')) {
+        e.preventDefault();
+        return false;
+      }
+    });
 
-    document.addEventListener('keydown', function(e) {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
-        return;
-      }
-      if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'C' || e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'a' || e.key === 'A')) {
-        e.preventDefault();
-        return false;
-      }
-      if (e.key === 'F12') {
-        e.preventDefault();
-        return false;
+    // Allow context menu for copying selected text/button names,
+    // but prevent "Copy link address" when right-clicking buttons/links without selection
+    document.addEventListener('contextmenu', function(e) {
+      const anchor = e.target.closest('a, button');
+      if (anchor) {
+        const selection = window.getSelection();
+        if (!selection || !selection.toString().trim()) {
+          e.preventDefault();
+          return false;
+        }
       }
     });
 

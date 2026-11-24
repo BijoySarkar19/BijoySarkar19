@@ -1,4 +1,4 @@
-<div align="center" style="user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;">
+<div align="center">
 
 <img draggable="false" src="./assets/hero-banner.gif" width="100%" alt="Bijoy Sarkar Animated Developer Banner"/>
 
@@ -84,7 +84,7 @@ I am a passionate software developer with extensive hands-on experience in build
   <sub>YEARS EXPERIENCE</sub>
 </td>
 <td align="center" width="50%">
-  <h3>50+</h3>
+  <h3>5+</h3>
   <sub>PROJECTS BUILT</sub>
 </td>
 </tr>
