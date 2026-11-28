@@ -25,7 +25,7 @@
 <p align="center">
   <b>Welcome to the official GitHub profile of Bijoy Sarkar</b><br/>
   Passionate Software Developer &amp; AI/ML Engineer specializing in Computer Vision, Deep Learning, and Scalable Full-Stack Systems.<br/>
-  Explore verified open-source projects, system architectures, and 586+ GitHub contributions below.
+  Explore verified open-source projects, system architectures, and 587+ GitHub contributions below.
 </p>
 
 <p align="center">
@@ -90,7 +90,7 @@ I am a passionate software developer with extensive hands-on experience in build
 </tr>
 <tr>
 <td align="center" width="50%">
-  <h3>586+</h3>
+  <h3>587+</h3>
   <sub>CONTRIBUTIONS</sub>
 </td>
 <td align="center" width="50%">
@@ -311,7 +311,7 @@ Full-stack developer portfolio and intelligent showcase featuring interactive 30
 <a name="contributions"></a>
 <div align="center">
 
-<h2>◈ GITHUB CONTRIBUTION ACTIVITY (586 CONTRIBUTIONS) ◈</h2>
+<h2>◈ GITHUB CONTRIBUTION ACTIVITY (587 CONTRIBUTIONS) ◈</h2>
 <p><i>Rolling 12-month activity timeline &amp; synchronized activity snake</i></p>
 
 <a href="https://github.com/BijoySarkar19">
