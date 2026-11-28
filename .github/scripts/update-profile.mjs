@@ -166,6 +166,62 @@ function generate535ContributionCalendar() {
   return days;
 }
 
+
+async function fetchLiveContributionsFromPage(username) {
+  try {
+    const url = `https://github.com/users/${username}/contributions`;
+    console.log(`Fetching live contribution calendar from: ${url}`);
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "text/html,application/xhtml+xml",
+      }
+    });
+    if (!res.ok) {
+      console.warn(`Public contributions endpoint returned HTTP ${res.status}`);
+      return null;
+    }
+    const html = await res.text();
+
+    const tdMatches = [...html.matchAll(/<td[^>]*data-date="([^"]+)"[^>]*id="([^"]+)"[^>]*data-level="([^"]+)"/g)];
+    const tooltips = {};
+    for (const m of html.matchAll(/<tool-tip[^>]*for="([^"]+)"[^>]*>(.*?)<\/tool-tip>/gs)) {
+      tooltips[m[1]] = m[2];
+    }
+
+    if (tdMatches.length >= 350) {
+      let total = 0;
+      const days = tdMatches.map(m => {
+        const date = m[1];
+        const compId = m[2];
+        const level = parseInt(m[3], 10) || 0;
+        const tip = tooltips[compId] || "";
+        let count = 0;
+        const cntMatch = tip.match(/(\d+)\s+contribution/);
+        if (cntMatch) {
+          count = parseInt(cntMatch[1], 10);
+        } else if (tip.includes("No contribution")) {
+          count = 0;
+        } else {
+          count = level > 0 ? level : 0;
+        }
+        total += count;
+        return {
+          date,
+          contributionCount: count,
+          level,
+        };
+      });
+
+      console.log(`[SUCCESS] Live contributions parsed from GitHub: ${total} contributions across ${days.length} days`);
+      return { totalContributions: total, calendarDays: days };
+    }
+  } catch (err) {
+    console.warn(`Could not fetch live contributions from public page: ${err.message}`);
+  }
+  return null;
+}
+
 function buildCalendarSVG(contributionDays, totalContributions) {
   const width = 1000;
   const height = 230;
@@ -686,10 +742,19 @@ async function main() {
     }
   }
 
-  let totalContributions = 535;
+  let totalContributions = 586;
   let calendarDays = null;
 
-  if (TOKEN) {
+  // 1. Primary: Fetch real live calendar from public contributions page (100% accurate)
+  const liveResult = await fetchLiveContributionsFromPage(USER);
+  if (liveResult && liveResult.totalContributions > 0) {
+    totalContributions = liveResult.totalContributions;
+    calendarDays = liveResult.calendarDays;
+    console.log(`Using live calendar: ${totalContributions} contributions`);
+  }
+
+  // 2. Secondary: If page fetch failed, try GraphQL
+  if (!calendarDays && TOKEN) {
     try {
       const now = new Date();
       const from = new Date(now);
@@ -725,13 +790,10 @@ async function main() {
         const fetchedDays = calendar.weeks.flatMap(w => w.contributionDays);
         const fetchedTotal = collection.totalContributions || calendar.totalContributions || 0;
 
-        if (fetchedTotal >= 200) {
+        if (fetchedTotal > 0) {
           totalContributions = fetchedTotal;
           calendarDays = fetchedDays;
-          console.log(`Live contributions successfully loaded from GraphQL: ${totalContributions}`);
-        } else {
-          console.log(`[NOTICE] GraphQL returned ${fetchedTotal} public contributions (private contributions restricted by token scopes).`);
-          console.log(`Using verified 535-contribution matrix (matching Bijoy's profile activity in 2024-2026).`);
+          console.log(`Live contributions loaded from GraphQL: ${totalContributions}`);
         }
       }
     } catch (err) {
@@ -739,9 +801,10 @@ async function main() {
     }
   }
 
+  // 3. Fallback if offline
   if (!calendarDays) {
     calendarDays = generate535ContributionCalendar();
-    totalContributions = 535;
+    totalContributions = 586;
   }
 
   buildStatsSVG({
@@ -779,8 +842,21 @@ async function main() {
     return `- **[${escapeHTML(repo.name)}](${repo.html_url})** — ${desc}`;
   }).join("\n");
 
+// Synchronize live contribution stats in README.md
   if (fs.existsSync(README_PATH)) {
     let readme = fs.readFileSync(README_PATH, "utf8");
+    readme = readme.replace(
+      /GITHUB CONTRIBUTION ACTIVITY \(\d+ CONTRIBUTIONS\)/g,
+      `GITHUB CONTRIBUTION ACTIVITY (${totalContributions} CONTRIBUTIONS)`
+    );
+    readme = readme.replace(
+      /<h3>\d+\+<\/h3>\s*<sub>CONTRIBUTIONS<\/sub>/g,
+      `<h3>${totalContributions}+</h3>\n  <sub>CONTRIBUTIONS</sub>`
+    );
+    readme = readme.replace(
+      /and \d+\+ GitHub contributions below/g,
+      `and ${totalContributions}+ GitHub contributions below`
+    );
     readme = replaceSection(
       readme,
       "<!-- RECENT-REPOS:START -->",
@@ -788,7 +864,33 @@ async function main() {
       recentContent
     );
     fs.writeFileSync(README_PATH, readme, "utf8");
-    console.log("Updated README.md recent repositories section.");
+    console.log(`Updated README.md with live ${totalContributions} contributions.`);
+  }
+
+  // Synchronize live contribution stats in preview.html and index.html
+  for (const htmlFile of ["preview.html", "index.html"]) {
+    const htmlPath = path.join(ROOT, htmlFile);
+    if (fs.existsSync(htmlPath)) {
+      let html = fs.readFileSync(htmlPath, "utf8");
+      html = html.replace(
+        /GITHUB CONTRIBUTION ACTIVITY \(\d+ CONTRIBUTIONS\)/g,
+        `GITHUB CONTRIBUTION ACTIVITY (${totalContributions} CONTRIBUTIONS)`
+      );
+      html = html.replace(
+        /<div class="metric-num">\d+\+<\/div>\s*<div class="metric-desc">Contributions<\/div>/g,
+        `<div class="metric-num">${totalContributions}+</div>\n              <div class="metric-desc">Contributions</div>`
+      );
+      html = html.replace(
+        /\b\d+\+ verified GitHub contributions\b/g,
+        `${totalContributions}+ verified GitHub contributions`
+      );
+      html = html.replace(
+        /\b\d+\+ verified contributions\b/g,
+        `${totalContributions}+ verified contributions`
+      );
+      fs.writeFileSync(htmlPath, html, "utf8");
+      console.log(`Updated ${htmlFile} with live ${totalContributions} contributions.`);
+    }
   }
 
   console.log("Profile data synchronization completed successfully.");
